@@ -1,0 +1,72 @@
+{% extends 'layout/master/child-content.html' %}
+
+{% block title %}
+  Dossiers de presse
+{% endblock %}
+
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_journaliste.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/vous-etes.html">Vous &ecirc;tes</a>
+      </li>
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/vous-etes/journaliste.html">Journaliste</a>
+      </li>
+      <li class="list-inline-item g-color-bleu-ua">
+        <span class="g-mr-5">&gt;</span><span>Dossiers de presse</span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A0" class="first last">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Dossiers de presse th&eacute;matiques</span></h1>
+        <p class="secondary">
+          <strong>T&eacute;l&eacute;charger le dossier de presse en PDF :</strong>
+        </p>
+        <p>
+          <a href="/_attachment/nouvel-article-270/DP_politique_energieUA_versionfinale.pdf?download=true" class="download">L&#039;UA, actrice de la transition &eacute;nerg&eacute;tique (2017)</a>
+        </p>
+        <p>
+          <a href="/_attachment/nouvel-article-270/20200401_conf_presse_UA_covid-19.pdf?download=true" class="download">L&#039;organisation op&eacute;rationnelle de l&#039;UA - dossier sp&eacute;cial &quot;confinement&quot; (2020)</a>
+        </p>
+        <p>
+          <a href="/_attachment/nouvel-article-270/20201008_conf_presse_UA_logement_etudiant.pdf?download=true" class="download" target="_blank">Mobilisation pour le logement &eacute;tudiant (2020)</a>
+        </p>
+        <p>
+          <a href="/_attachment/nouvel-article-270/DP_PlandeRelance_2021_MAI_12_VISITE_ETAT_UA.pdf?download=true" class="download">Plan de relance : l&#039;Etat accorde 8,5 m&euro; &agrave; l&#039;UA pour la r&eacute;novation de ses campus (2021)</a>
+        </p>
+        <p>
+          <a href="/_plugins/flipbook/www/_attachments-flipbook/nouvel-article-270/dossier_presse_A4_convention_UA_Inrae_12janvier2022.pdf/_contents/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-270/ametys-internal%253Aattachments/dossier_presse_A4_convention_UA_Inrae_12janvier2022.pdf/book.html" title="Convention_UA_Inrae_12_janvier2022.pdf" class="download" target="_blank">Signature convention UA/Inrae 12 janvier 2022</a>
+        </p>
+        <p>
+          <a href="/_attachment/nouvel-article-270/dossier_presse_festival_Spectacurieux_2023.pdf?download=true" class="download">Festival Spectacurieux 2023 : 10e &eacute;dition</a>
+        </p>
+        <p>
+          <a href="/_plugins/flipbook/www/_attachments-flipbook/nouvel-article-270/Conf%C3%A9rence%20de%20presse%20de%20rentr%C3%A9e%202024.pdf/_contents/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-270/ametys-internal%253Aattachments/Conf%C3%A9rence%20de%20presse%20de%20rentr%C3%A9e%202024.pdf/book.html" title="Conf&eacute;rence de presse de rentr&eacute;e 2024.pdf" class="download" target="_blank">Conf&eacute;rence de presse de rentr&eacute;e 2024-2025</a>
+        </p>
+        <div class="content-richtext-end">
+          <!-- empty -->
+        </div>
+        <div class="meta"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'vous-etes/journaliste/_sidemenu.html' %}
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
+    </div>
+  </div>
+{% endblock %}

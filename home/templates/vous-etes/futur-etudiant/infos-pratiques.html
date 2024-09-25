@@ -1,0 +1,87 @@
+{% extends 'layout/master/child-content.html' %}
+
+{% block title %}
+  Infos pratiques
+{% endblock %}
+
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_llu_jpo.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/vous-etes.html">Vous &ecirc;tes</a>
+      </li>
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/vous-etes/futur-etudiant.html">Futur étudiant / Lycéen</a>
+      </li>
+      <li class="list-inline-item g-color-bleu-ua">
+        <span class="g-mr-5">&gt;</span><span>Infos pratiques</span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A0" class="first">
+      <div class="ametys-cms-service sitemap wrapper">
+        <h1 class="art-postheader"><span class="service-title">Infos pratiques</span></h1>
+        <ul class="amytis-expanded-list" id="sitemap_3072399519030913">
+          <li class="amytis-expanded-list__item">
+            <a title="Bourses et aides" href="/fr/vous-etes/futur-etudiant/infos-pratiques/bourses-et-aides.html">Bourses et aides</a>
+          </li>
+          <li class="amytis-expanded-list__item">
+            <a title="Le site Bienvenue &agrave; l'UA" href="/fr/vous-etes/futur-etudiant/infos-pratiques/le-site-bienvenue-a-l-ua.html">Le site Bienvenue &agrave; l'UA</a>
+          </li>
+          <li class="amytis-expanded-list__item">
+            <a title="Aménager sa scolarité" href="/fr/vous-etes/futur-etudiant/infos-pratiques/amenager-sa-scolarite.html">Aménager sa scolarité</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100EB" class="even last">
+      <p>
+        <style type="text/css">
+          ul.treeview li.amytis-expanded-list__item {
+            border-bottom: 1px solid rgba(65, 71, 75, 0.2);
+            margin-top: 20px !important;
+          }
+          
+          ul.treeview li div a {
+            font-size: 1.2em !important;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          
+          ul.treeview li ul.amytis-expanded-second-type-list.collapse {
+            margin-top: 10px !important;
+            margin-bottom: 15px !important;
+            max-width: 800px;
+          }
+          
+          ul.treeview li ul.amytis-expanded-second-type-list li a {
+            color: black;
+          }
+          
+          @media only screen and (min-width: 400px) {
+            ul.treeview li ul.amytis-expanded-second-type-list {
+              column-count: 2;
+            }
+          }
+        </style>
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'vous-etes/futur-etudiant/_sidemenu.html' %}
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
+    </div>
+  </div>
+{% endblock %}

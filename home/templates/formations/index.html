@@ -1,0 +1,598 @@
+{% extends 'layout/master.html' %}
+
+{% block title %}
+  Formations
+{% endblock %}
+
+{% block content %}
+    <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_formationinnov.jpg" alt="" />
+    <div class="container-fluid g-px-50--sm g-px-125--xl">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
+          <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+            <ul class="u-list-inline">
+              <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Formations</span></li>
+            </ul>
+          </div>
+          <div class="g-mt-30 d-flex">
+            <a href="javascript:window.print();" class="u-image-lien u-image-print-ua"></a><span id="sendByMailHeader-47124139774211016"></span>
+            <script type="text/javascript">
+            
+             $j("#sendByMailHeader-47124139774211016").wrapInner("<a class='u-image-lien u-image-mail-ua' href='javascript: sendByMail_form_popup_47124139774211016()'></a>")
+            </script>
+            <form method="post" action="/fr/_plugins/socialnetworking/page/send-mail" id="sendByMail-47124139774211016">
+              <div class="sendByMail-form" id="sendByMail-form-47124139774211016">
+                <input value="page://88768dc8-b1ac-4707-b02b-982d042c660a" id="sendByMail-47124139774211016-id" name="page-id" type="hidden" />
+                <div class="field">
+                  <div class="label">
+                    <label for="sendByMail-47124139774211016-name">Votre nom<span class="mandatory"> *</span></label>
+                  </div>
+                  <div class="input">
+                    <input id="sendByMail-47124139774211016-name" name="name" type="text" />
+                  </div>
+                  <div class="field-end"></div>
+                  <script type="text/javascript">
+                  
+                   getAmetysUser(function (user) {
+                    if (user && user.fill) {
+                     user.fill("sendByMail-47124139774211016-name", "fullname");
+                    }
+                   });
+                  </script>
+                </div>
+                <div class="field">
+                  <div class="label">
+                    <label for="sendByMail-47124139774211016-email-by">Votre email<span class="mandatory"> *</span></label>
+                  </div>
+                  <div class="input">
+                    <input id="sendByMail-47124139774211016-email-by" name="email" type="text" />
+                  </div>
+                  <div class="field-end"></div>
+                  <script type="text/javascript">
+                  
+                   getAmetysUser(function (user) {
+                    if (user && user.fill) {
+                     user.fill("sendByMail-47124139774211016-email-by", "email");
+                    }
+                   });
+                  </script>
+                </div>
+                <div class="field">
+                  <div class="label">
+                    <label for="sendByMail-47124139774211016-email-to">Destinataire(s)<span class="mandatory"> *</span></label>
+                  </div>
+                  <div class="input">
+                    <input id="sendByMail-47124139774211016-email-to" name="emailTo" type="text" /><br />
+                    <span class="hint">S&eacute;par&eacute;s par des virgules</span>
+                  </div>
+                  <div class="field-end"></div>
+                </div>
+                <div class="field">
+                  <div class="label">
+                    <label for="sendByMail-47124139774211016-text">Message</label>
+                  </div>
+                  <div class="input">
+                    <textarea rows="3" cols="20" id="sendByMail-47124139774211016-text" name="text"></textarea>
+                  </div>
+                  <div class="field-end"></div>
+                </div>
+                <div class="field">
+                  <div class="input">
+                    <noscript>
+                      <div style="width: 302px; height: 462px;">
+                        <div style="width: 302px; height: 422px; position: relative;">
+                          <div style="width: 302px; height: 422px;">
+                            <iframe style="width: 302px; height: 422px; border-style: none;" scrolling="no" frameborder="0" src="https://www.google.com/recaptcha/api/fallback?k=6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU"></iframe>
+                          </div>
+                          <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                            <textarea style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" class="g-recaptcha-response" name="captcha-value" id="g-recaptcha-response"></textarea>
+                            <input name="captcha-key" type="hidden" />
+                          </div>
+                        </div>
+                      </div>
+                    </noscript>
+                    <script type="text/javascript">
+                    
+                     document.write("<input type=\"hidden\" name=\"captcha-key\" id=\"sendByMail-47124139774211016-captcha-key\"/>")
+                     document.write("<input type=\"hidden\" name=\"captcha-value\" id=\"sendByMail-47124139774211016-captcha\"/>")
+                     document.write("<div class=\"g-recaptcha\" id=\"captcha7554092658648315\"></div>")
+                     function loadValueToSend_captcha7554092658648315(value) {
+                      document.getElementById("sendByMail-47124139774211016-captcha").value = value;
+                     }
+                     var widgetIds = [];
+
+                     function ReCaptchaCallback_captcha7554092658648315() {
+                      recaptchaLoaded = true;
+                      for (const element of recaptchaFieldsToLoad) {
+                       var resetId = grecaptcha.render(element.captchaId, {
+                        'sitekey' : '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
+                        'callback' : element.callback,
+                        'theme' : element.theme,
+                        'size' : element.size,
+                        'tabindex' : "1"
+                       });
+                       widgetIds[element.captchaId] = resetId;
+                      }
+                     }
+
+                     if (typeof recaptchaLoaded == 'undefined') {
+                      // The recaptcha script was never loaded
+                      recaptchaLoaded = false;
+                      recaptchaFieldsToLoad = [ {
+                       'captchaId' : "captcha7554092658648315",
+                       'callback' : loadValueToSend_captcha7554092658648315,
+                       'theme' : 'light',
+                       'size' : 'normal',
+                      } ];
+                      document.write("<script src=\"https://www.google.com/recaptcha/api.js?onload=ReCaptchaCallback_captcha7554092658648315&render=explicit\" async defer><\/script>");
+                     } else if (recaptchaLoaded == false) {
+                      // The recaptcha script is loading but not ready.
+                      recaptchaFieldsToLoad.push({
+                       'captchaId' : "captcha7554092658648315",
+                       'callback' : loadValueToSend_captcha7554092658648315,
+                       'theme' : 'light',
+                       'size' : 'normal'
+                      })
+                     } else {
+                      // the recaptcha script is loaded and ready
+                      var resetId = grecaptcha.render("captcha7554092658648315", {
+                       'sitekey' : '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
+                       'callback' : loadValueToSend_captcha7554092658648315,
+                       'theme' : 'light',
+                       'size' : 'normal'
+                      });
+                      widgetIds[captcha7554092658648315] = resetId;
+                     }
+
+                     function refresh_sendByMail_47124139774211016(focusNow) {
+                      grecaptcha.reset(widgetIds["captcha7554092658648315"]);
+                     }
+                    </script>
+                  </div>
+                  <div class="field-end"></div>
+                </div>
+                <div id="sendByMail-submit-47124139774211016">
+                  <div class="button">
+                    <input type="submit" class="art-button" value="Envoyer" onclick="return sendByMail_form_submit_47124139774211016();" title="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <script type="text/javascript">
+            
+             function sendByMail_form_switch_47124139774211016() {
+              var form = document.getElementById('sendByMail-47124139774211016');
+              var submit = document.getElementById('sendByMail-submit-47124139774211016');
+              form.style.display = (form.style.display == 'none') ? '' : 'none';
+              submit.style.display = (submit.style.display == 'none') ? '' : 'none';
+             }
+
+             sendByMail_captchaRequired_47124139774211016 = true;
+
+             sendByMail_form_switch_47124139774211016();
+
+             function sendByMail_form_popup_47124139774211016() {
+              if (sendByMail_captchaRequired_47124139774211016) {
+               refresh_sendByMail_47124139774211016();
+              }
+              $j("#sendByMail-form-47124139774211016 script").remove();
+              $j("#sendByMail-form-47124139774211016").dialog({
+               resizable : false,
+               height : 'auto',
+               width : 'auto',
+               modal : true,
+               title : 'Envoyer par mail',
+               buttons : {
+                Envoyer : function () {
+                 sendByMail_form_submit_47124139774211016();
+                },
+                Annuler : function () {
+                 $j(this).dialog("close");
+                }
+               }
+              });
+
+              $j('#sendByMail-47124139774211016-email-to').val('');
+              $j('#sendByMail-47124139774211016-text').val('');
+              $j('#sendByMail-47124139774211016-captcha').val('');
+             }
+
+             function sendByMail_form_submit_47124139774211016() {
+              var form = document.getElementById('sendByMail-47124139774211016');
+
+              var pageId = $j('#sendByMail-47124139774211016-id');
+              var nameInput = $j('#sendByMail-47124139774211016-name');
+              var emailInputBy = $j('#sendByMail-47124139774211016-email-by');
+              var emailInputTo = $j('#sendByMail-47124139774211016-email-to');
+              var contentInput = $j('#sendByMail-47124139774211016-text');
+              var captchaKey = $j('#sendByMail-47124139774211016-captcha-key');
+              var captchaInput = $j('#sendByMail-47124139774211016-captcha');
+
+              var errors = false;
+
+              if (/^\s*$/.test(nameInput.val())) {
+               errors = true;
+               nameInput.parentsUntil('.field').parent().addClass('error');
+              } else {
+               nameInput.parentsUntil('.field').parent().removeClass('error');
+              }
+
+              if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?$/.test(emailInputBy.val()) || /^\s*$/.test(emailInputBy.val())) {
+               errors = true;
+               emailInputBy.parentsUntil('.field').parent().addClass('error');
+              } else {
+               emailInputBy.parentsUntil('.field').parent().removeClass('error');
+              }
+
+              if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?(\s*,\s*([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?)*$/.test(emailInputTo.val()) || /^\s*$/.test(emailInputTo.val())) {
+               errors = true;
+               emailInputTo.parentsUntil('.field').parent().addClass('error');
+              } else {
+               emailInputTo.parentsUntil('.field').parent().removeClass('error');
+              }
+
+              if (!errors) {
+               // send it in ajax
+               var data = {
+                "page-id" : pageId.val(),
+                "name" : nameInput.val(),
+                "email" : emailInputBy.val(),
+                "emailTo" : emailInputTo.val(),
+                "text" : contentInput.val(),
+                "captcha-key" : captchaKey.val(),
+                "captcha-value" : captchaInput.val(),
+                "ajax" : "true"
+               };
+
+               function result(data) {
+                var s = "";
+                $j('errors error', data).each(function () {
+                 s += $j(this).text() + "\n";
+                });
+
+                if (s == "") {
+                 var errors = $j('error > error', data);
+                 var mailErrors = $j('mailError > mailError', data);
+
+                 if (errors.length == 0 && mailErrors.length == 0) {
+                  $j("#sendByMail-form-47124139774211016").dialog("close");
+                  alert("Le mail a bien été envoyé");
+                 } else if (errors.length > 0) {
+                  var m = '';
+                  $j('error > error', data).each(function () {
+                   m += "\n*" + $j(this).text();
+                  });
+                  alert("Votre formulaire contient les erreurs suivantes :" + m);
+                  if (sendByMail_captchaRequired_47124139774211016) {
+                   refresh_sendByMail_47124139774211016();
+                  }
+                 } else if (mailErrors.length > 0) {
+                  var m = '';
+                  $j('mailError > mailError', data).each(function () {
+                   m += "\n" + $j(this).text();
+                  });
+
+                  alert("L'envoi du mail a échoué pour les adresses email suivantes :" + m);
+                  if (sendByMail_captchaRequired_47124139774211016) {
+                   refresh_sendByMail_47124139774211016();
+                  }
+                 }
+                } else {
+                 // Could really append ??
+                 alert(s);
+                 if (sendByMail_captchaRequired_47124139774211016) {
+                  refresh_sendByMail_47124139774211016();
+                 }
+                }
+               }
+
+               function handleError(jqXHR, textStatus, errorThrown) {
+                alert("Une erreur inattendue est survenue: l'envoi de mail a échoué.");
+               }
+
+               $j.ajax({
+                url : "/plugins/socialnetworking/send-mail",
+                data : data,
+                type : 'post',
+                success : result,
+                error : handleError
+               });
+              }
+
+              return false;
+             }
+            </script>
+            <div class="art-sharethis">
+              <div class="art-sharethis-wrapper">
+                <script type="text/javascript">
+                
+                 var switchTo5x = true; // Multi Post
+                 $j(document).ready(function () {
+                  var baseUrl = document.location.protocol == 'https:' ? 'https://ws.' : 'http://w.';
+                  $j.getScript(baseUrl + "sharethis.com/button/buttons.js", function (data, textStatus) {
+                   stLight.options({
+                    publisher : '7fcfec1e-16ef-41a0-8902-67b9f511c6ba',
+                    lang : 'fr',
+                    fbLang : 'fr_FR'
+                   });
+                  });
+                 });
+                </script>
+                <script type="text/javascript">
+                
+                 document.write("<span class='st_sharethis' displayText='ShareThis'></span>");
+                </script>
+              </div>
+            </div>
+          </div>
+          <div data-ametys-zone="default" id="ametys-cms-zone-default">
+            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100AF" class="first ">
+              <div class="ametys-cms-service sitemap  wrapper">
+                <h1 class="art-postheader">
+                  <span class="service-title">Formations</span>
+                </h1>
+                <ul class="amytis-list">
+                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+                      <a title="&Eacute;tudier &agrave; l&#039;UA" href="/fr/formations/etudier-a-l-ua.html">&Eacute;tudier &agrave; l&#039;UA</a>
+                    </div>
+                    <ul class="amytis-second-type-list " id="siteMapMenu-N10003">
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Choisir l&#039;UA" href="/fr/formations/etudier-a-l-ua/choisir-l-ua.html">Choisir l&#039;UA</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Catalogue des formations" href="/fr/formations/etudier-a-l-ua/catalogue-des-formations.html">Catalogue des formations</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Enqu&ecirc;tes et statistiques" href="/fr/formations/etudier-a-l-ua/enquetes-et-statistiques.html">Enqu&ecirc;tes et statistiques</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Apprendre le fran&ccedil;ais" href="/fr/formations/etudier-a-l-ua/apprendre-le-francais.html">Apprendre le fran&ccedil;ais</a></li>
+                    </ul></li>
+                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+                      <a title="&Eacute;tudier en alternance" href="/fr/formations/etudier-en-alternance.html">&Eacute;tudier en alternance</a>
+                    </div>
+                    <ul class="amytis-second-type-list " id="siteMapMenu-N10025">
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Choisir l&#039;alternance" href="/fr/formations/etudier-en-alternance/choisir-l-alternance.html">Choisir l&#039;alternance</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="FAQ alternance" href="/fr/formations/etudier-en-alternance/faq-alternance.html">FAQ alternance</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="FAQ contrat d&#039;apprentissage" href="/fr/formations/etudier-en-alternance/faq-contrat-d-apprentissage.html">FAQ contrat d&#039;apprentissage</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="FAQ contrat de professionnalisation" href="/fr/formations/etudier-en-alternance/faq-contrat-de-professionnalisation.html">FAQ contrat de professionnalisation</a></li>
+                    </ul></li>
+                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+                      <a title="Am&eacute;nager sa scolarit&eacute;" href="/fr/formations/amenager-sa-scolarite.html">Am&eacute;nager sa scolarit&eacute;</a>
+                    </div>
+                    <ul class="amytis-second-type-list " id="siteMapMenu-N10043">
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="P&eacute;riode de c&eacute;sure" href="/fr/formations/amenager-sa-scolarite/periode-de-cesure.html">P&eacute;riode de c&eacute;sure</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="R&eacute;gime sp&eacute;cial d&#039;&eacute;tudes (RSE)" href="/fr/formations/amenager-sa-scolarite/amenagements-de-scolarite.html">R&eacute;gime sp&eacute;cial d&#039;&eacute;tudes (RSE)</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="&Eacute;tudes et handicap" href="/fr/formations/amenager-sa-scolarite/accompagnement-du-handicap.html">&Eacute;tudes et handicap</a></li>
+                    </ul></li>
+                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+                      <a title="Personnaliser sa formation" href="/fr/formations/personnaliser-sa-formation.html">Personnaliser sa formation</a>
+                    </div>
+                    <ul class="amytis-second-type-list " id="siteMapMenu-N1005B">
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Partir &agrave; l&#039;&eacute;tranger" href="/fr/formations/personnaliser-sa-formation/partir-a-l-etranger.html">Partir &agrave; l&#039;&eacute;tranger</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Enseignements d&#039;ouverture optionnels" href="/fr/formations/personnaliser-sa-formation/enseignements-d-ouverture-optionnels.html">Enseignements d&#039;ouverture optionnels</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Certifications en langues" href="/fr/formations/personnaliser-sa-formation/certifications-en-langues.html">Certifications en langues</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Certification en informatique (Pix)" href="/fr/formations/personnaliser-sa-formation/certification-en-informatique-pix.html">Certification en informatique (Pix)</a></li>
+                    </ul></li>
+                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+                      <a title="&Ecirc;tre accompagn&eacute; et conseill&eacute;" href="/fr/formations/etre-accompagne-et-conseille.html">&Ecirc;tre accompagn&eacute; et conseill&eacute;</a>
+                    </div>
+                    <ul class="amytis-second-type-list " id="siteMapMenu-N1007A">
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Orientation et r&eacute;orientation" href="/fr/formations/etre-accompagne-et-conseille/orientation-et-reorientation.html">Orientation et r&eacute;orientation</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Insertion professionnelle" href="/fr/formations/etre-accompagne-et-conseille/insertion-professionnelle.html">Insertion professionnelle</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="R&eacute;ussite des &eacute;tudes" href="/fr/formations/etre-accompagne-et-conseille/reussite-des-etudes.html">R&eacute;ussite des &eacute;tudes</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Entrepreneuriat" href="/fr/formations/etre-accompagne-et-conseille/entrepreneuriat.html">Entrepreneuriat</a></li>
+                    </ul></li>
+                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+                      <a title="Se former &agrave; titre professionnel" href="/fr/formations/se-former-a-titre-professionnel.html">Se former &agrave; titre professionnel</a>
+                    </div>
+                    <ul class="amytis-second-type-list " id="siteMapMenu-N1009B">
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Reprise d&#039;&eacute;tudes" href="/fr/formations/se-former-a-titre-professionnel/reprise-d-etudes.html">Reprise d&#039;&eacute;tudes</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Validation des acquis" href="/fr/formations/se-former-a-titre-professionnel/vae-vapp.html">Validation des acquis</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Catalogue de formation professionnelle" href="/fr/formations/se-former-a-titre-professionnel/catalogue-de-formation-professionnelle.html">Catalogue de formation professionnelle</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Alternance" href="/fr/formations/se-former-a-titre-professionnel/alternance.html">Alternance</a></li>
+                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Plus d&#039;infos" href="/fr/formations/se-former-a-titre-professionnel/plus-d-infos.html">Plus d&#039;infos</a></li>
+                    </ul></li>
+                </ul>
+              </div>
+            </div>
+            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N101D5" class="even ">
+              <p>
+                <style type="text/css">
+ul.treeview li.amytis-expanded-list__item {
+	border-bottom: 1px solid rgba(65, 71, 75, 0.2);
+	margin-top: 20px !important;
+}
+
+ul.treeview li div a {
+	font-size: 1.2em !important;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+ul.treeview li ul.amytis-expanded-second-type-list.collapse {
+	margin-top: 10px !important;
+	margin-bottom: 15px !important;
+	max-width: 800px;
+}
+
+ul.treeview li ul.amytis-expanded-second-type-list li a {
+	color: black;
+}
+
+@media only screen and (min-width: 400px) {
+	ul.treeview li ul.amytis-expanded-second-type-list {
+		column-count: 2;
+	}
+}
+</style>
+              </p>
+            </div>
+            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N10216" class="last">
+              <div class="ametys-cms-service filtered-contents filtered-contents-abstract wrapper">
+                <div class="d-flex">
+                  <div class="d-inline-flex g-bg-white">
+                    <h1>Actualit&eacute;s</h1>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                
+                 var pagination_fc_04489047846015026 = [];
+
+                 pagination_fc_04489047846015026.push('1');
+                </script>
+                <div class="row justify-content-center" id="fc_04489047846015026-part-1">
+                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+                    <div class="ametys-cms-content news view-abstract vevent wrapper">
+                      <article class="u-block-hover g-brd-around g-border-top--sm">
+                        <figure class="g-pos-rel">
+                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/succes-pour-l-alternance-dating-2022-100-en-ligne-actualite-2-2-2-2-3/_attribute/illustration/image/APSMT.png?objectId=defaultWebContent://c404f9f9-3f39-44e3-afd6-ee6f75f80da7" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                        </figure>
+                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                              <a href="/fr/formations/actualites/actus-2024/rencontre-avec-l-asia-d-u-accompagnement-psychosocial-en-milieu-de-travail.html" class="u-link-v5 g-color-black g-font-size-18 ">Rencontre avec l&#039;ASIA : D.U. Accompagnement Psychosocial en Milieu de Travail</a>
+                            </h4>
+                            <div class="g-color-bleu-ua">
+                              <p class="content-date">
+                                Le <abbr class="dtstart"><span title="2024-09-17T07:00:00.000Z" class="value-title"></span>17 septembre 2024</abbr>
+                              </p>
+                            </div>
+                          </div>
+                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                            <li class="g-mb-0">Rencontre avec l&#039;ASIA, partenaire de l&#039;Universit&eacute; d&#039;Angers pour le Dipl&ocirc;me Universitaire Accompagnement et soutien &agrave; la parentalti&eacute;.</li>
+                          </ul>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+                    <div class="ametys-cms-content news view-abstract vevent wrapper">
+                      <article class="u-block-hover g-brd-around g-border-top--sm">
+                        <figure class="g-pos-rel">
+                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/un-nouveau-prix-litteraire-pour-alexandre-seurat-actualite/_attribute/illustration/image/carr%C3%A9%20seurat.jpg?objectId=defaultWebContent://d7567a45-9cd1-4d36-a135-9019a96f5e7c" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                        </figure>
+                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                              <a href="/fr/formations/actualites/actus-2024/un-nouveau-prix-litteraire-pour-alexandre-seurat.html" class="u-link-v5 g-color-black g-font-size-18 ">Un nouveau prix litt&eacute;raire pour Alexandre Seurat</a>
+                            </h4>
+                            <div class="g-color-bleu-ua">
+                              <p class="content-date"></p>
+                            </div>
+                          </div>
+                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                            <li class="g-mb-0">Professeur en lettres modernes &agrave; l&rsquo;<dfn title="Institut universitaire de technologie">IUT</dfn> Angers-Cholet, Alexandre Seurat a re&ccedil;u cet &eacute;t&eacute; le prix Notre-Dame de Sion pour son roman La Maladroite. Publi&eacute; en 2015, il vient d&rsquo;&ecirc;tre traduit en turc.
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+                    <div class="ametys-cms-content news view-abstract vevent wrapper">
+                      <article class="u-block-hover g-brd-around g-border-top--sm">
+                        <figure class="g-pos-rel">
+                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/journee-portes-ouvertes-de-la-formation-professionnelle-actualite-2-2-2-3-2-2-2/_attribute/illustration/image/NL%20%20(2).png?objectId=defaultWebContent://db14a0d9-e7bb-4400-9577-50acfbfac64f" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                        </figure>
+                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                              <a href="/fr/formations/actualites/actus-2024/reunion-d-information-collective-daeu-1-1.html" class="u-link-v5 g-color-black g-font-size-18 ">R&eacute;union d&#039;information collective DAEU </a>
+                            </h4>
+                            <div class="g-color-bleu-ua">
+                              <p class="content-date">
+                                Le <abbr class="dtstart"><span title="2024-08-27T07:00:00.000Z" class="value-title"></span>27 ao&ucirc;t 2024</abbr>
+                              </p>
+                            </div>
+                          </div>
+                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                            <li class="g-mb-0">Le service commun d&#039;alternance et de formation professionnelle vous accueille, vous conseille, vous informe et vous oriente. D&eacute;couvrez le DAEU, &eacute;quivalent BAC...</li>
+                          </ul>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript"></script>
+                <div class="position-relative g-mx-80--lg ">
+                  <div class="text-center pages">
+                    <script type="text/javascript">
+                    
+                     pagination_fc_04489047846015026_current = 0;
+                     var paginationLength = pagination_fc_04489047846015026.length;
+                     if (paginationLength > 1) {
+                      document
+                       .write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_9959136677619878fc_04489047846015026' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_04489047846015026(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
+
+                      var firstLastCls = '';
+                      for (var i = 0; i < paginationLength; i++) {
+                       firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
+                       document.write("<li id='content_filter_9959136677619878fc_04489047846015026" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_04489047846015026(" + i
+                        + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
+                       document.write("<li id='content_filter_9959136677619878fc_04489047846015026" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+                      }
+                      document.write("<li id='content_filter_next_9959136677619878fc_04489047846015026' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_04489047846015026(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
+
+                      try {
+                       show_fc_04489047846015026_buttonsid
+                      } catch (e) {
+                       show_fc_04489047846015026_buttonsid = [];
+                      }
+
+                      show_fc_04489047846015026_buttonsid.push("9959136677619878")
+                      function show_fc_04489047846015026(count) {
+                       if (count == 'next') {
+                        count = pagination_fc_04489047846015026_current + 1;
+                       } else if (count == 'prev') {
+                        count = pagination_fc_04489047846015026_current - 1;
+                       }
+
+                       pagination_fc_04489047846015026_current = count;
+
+                       for (var idindex = 0; idindex < show_fc_04489047846015026_buttonsid.length; idindex++) {
+                        var id = show_fc_04489047846015026_buttonsid[idindex];
+
+                        for (var i = 0; i < pagination_fc_04489047846015026.length; i++) {
+                         if (i == count) {
+                          document.getElementById('fc_04489047846015026-part-' + pagination_fc_04489047846015026[i]).style.display = "";
+                          document.getElementById('content_filter_' + id + 'fc_04489047846015026' + i + '_button').style.display = "none";
+                          document.getElementById('content_filter_' + id + 'fc_04489047846015026' + i).style.display = "";
+                         } else {
+                          document.getElementById('fc_04489047846015026-part-' + pagination_fc_04489047846015026[i]).style.display = "none";
+                          document.getElementById('content_filter_' + id + 'fc_04489047846015026' + i + '_button').style.display = "";
+                          document.getElementById('content_filter_' + id + 'fc_04489047846015026' + i).style.display = "none";
+                         }
+                        }
+
+                        document.getElementById("content_filter_prev_" + id + "fc_04489047846015026").style.display = (pagination_fc_04489047846015026_current == "0" ? 'none' : '');
+                        document.getElementById("content_filter_next_" + id + "fc_04489047846015026").style.display = (pagination_fc_04489047846015026_current == (pagination_fc_04489047846015026.length - 1) ? 'none' : '');
+                       }
+
+                       // onPaginationShow hook.
+                       if ($j.isFunction(onPaginationShow_fc_04489047846015026)) {
+                        onPaginationShow_fc_04489047846015026(count + 1);
+                       }
+                      }
+                     }
+                    </script>
+                    <div class="text-lg-right text-center g-mr-25--lg">
+                      <a href="/fr/formations/actualites.html" class="btn know-more"> &gt; Toutes les actus de la formation</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
+          <div class="g-py-80">
+            <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+              <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2">
+                <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-2-item-N102FC" class="first last"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid g-bg-gris-c-ua g-mt-30 g-pb-40">
+      <div data-ametys-zone="bottom" id="ametys-cms-zone-bottom"></div>
+    </div>
+    <div class="u-fleche-scroll text-right mt-5 g-hidden-md-down g-pr-50">
+      <a href="#!" class="g-bg-black-opacity-0_6 rounded-circle p-3"><img alt="Scroll" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/fleche-blanc.png" /></a>
+    </div>
+{% endblock %}

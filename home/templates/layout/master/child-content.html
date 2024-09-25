@@ -1,0 +1,26 @@
+{% extends 'layout/master/base.html' %}
+
+{% block content %}
+  {% block main_image %}
+
+  {% endblock %}
+  <div class="container-fluid g-px-50--sm g-px-125--xl">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
+        {% block fil_d_ariane %}
+
+        {% endblock %}
+        {% include '_partial/sendmail-share-js.html' %}
+        {% block data %}
+
+        {% endblock %}
+      </div>
+      <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
+        {% block sidebar %}
+
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  {% include '_partial/bottom-zone-fleche.html' %}
+{% endblock %}

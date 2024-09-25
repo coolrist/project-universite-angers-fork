@@ -1,0 +1,14 @@
+<div class="menu-secondaire g-bg-bleu-ua g-shadow-block-gris-c-ua-md g-px-25 g-pt-40 g-pb-25 g-mr-25--xl">
+    <h1>
+      <a href="{% url 'vous-etes:futur-etudiant:index' %}">Futur étudiant / Lycéen</a>
+    </h1>
+    <li>
+      <div class="list-group g-pl-30--xl g-pl-0--md g-pl-40">
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'decouvrir-l-universite' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:futur-etudiant:decouvrir-l-universite' %}">Découvrir l'université</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'choisir-sa-formation' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:futur-etudiant:choisir-sa-formation' %}">Choisir sa formation</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'candidater' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:futur-etudiant:candidater' %}">Candidater</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'infos-pratiques' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:futur-etudiant:infos-pratiques' %}">Infos pratiques</a>
+      </div>
+    </li>
+  </div>
+  

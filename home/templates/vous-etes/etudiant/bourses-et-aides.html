@@ -1,0 +1,88 @@
+{% extends 'layout/master/child-content.html' %}
+
+{% block title %}
+  Bourses et aides
+{% endblock %}
+
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_etudiants2.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/vous-etes.html">Vous &ecirc;tes</a>
+      </li>
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/vous-etes/etudiant-e.html">&Eacute;tudiant</a>
+      </li>
+      <li class="list-inline-item g-color-bleu-ua">
+        <span class="g-mr-5">&gt;</span><span>Bourses et aides</span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A0" class="first last">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Bourses et aides</span></h1>
+        <a name="N10044"></a>
+        <h2 class="ametys-richtext-title-1" style="text-align: left;">Simulateur d'aides #1jeune1solution</h2>
+        <p>
+          Pour conna&icirc;tre l'ensemble des aides et bourses auxquelles vous avez droit, procédez à une simulation sur le site national #1jeune1solution. Attention, si vous &ecirc;tes à la charge de vos parents, il vous faudra renseigner leur revenu brut global (dernier avis fiscal). <br />
+          <a href="https://www.1jeune1solution.gouv.fr/mes-aides" class="external" target="_blank">Consulter la boussole des aides #1jeune1solution</a>
+        </p>
+        <a name="N10051"></a>
+        <h2 class="ametys-richtext-title-1" style="text-align: left;">Aides du Crous</h2>
+        <p style="text-align: left;">
+          Le
+          <dfn title="Centre régional des &oelig;uvres universitaires et scolaires. Il gère notamment les restaurants universitaires et certaines résidences étudiantes. ">Crous</dfn>
+          propose différentes aides : bourses sur critères sociaux, aides spécifiques, au mérite, à la mobilité etc.
+        </p>
+        <ul class="custom">
+          <li style="text-align: left;">
+            <a href="https://www.crous-nantes.fr/bourses/" class="external" target="_blank">Infos bourses sur critères sociaux</a>
+          </li>
+          <li style="text-align: left;">
+            <a href="https://www.crous-nantes.fr/bourses/les-autres-aides-financieres/" class="external" target="_blank">Infos sur les autres aides</a>
+          </li>
+        </ul>
+        <a name="N1006D"></a>
+        <h2 class="ametys-richtext-title-1">Aides du Département du Maine et Loire</h2>
+        <p>
+          Le Département du Maine et Loire peut proposer certaines aides, sous conditions. <a href="https://www.maine-et-loire.fr/aides-et-services" class="external" target="_blank">En savoir plus</a>
+        </p>
+        <p class="secondary">
+          <strong>Obligation d'assiduité</strong><br />Les étudiants boursiers sont soumis à l'obligation d'assiduité aux cours, stages, TP et TD. Leur présence aux examens et aux contr&ocirc;les continus est exigée sous peine de remboursement des sommes per&ccedil;ues. Toutes les absences doivent &ecirc;tre justifiées auprès de la scolarité. <a href="http://www.etudiant.gouv.fr/cid96339/droits-obligations-des-boursiers.html" class="external" target="_blank">En savoir plus</a>
+        </p>
+        <div class="content-richtext-end">
+          <!-- empty -->
+        </div>
+        <div class="meta"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'vous-etes/etudiant/_sidemenu.html' %}
+  <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
+    <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
+      <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N101EE" class="first last">
+        <h1 class="art-postheader"><span class="content-title summary">Besoin d'aide ?</span></h1>
+        <p>Les assistantes sociales de l'université se tiennent à la disposition des étudiants pour les accompagner dans leurs démarches et leur apporter l&rsquo;aide et l&rsquo;écoute nécessaire en cas de difficulté.</p>
+        <p>
+          <a href="/fr/vie-des-campus/sante-et-social/service-social.html" title="En savoir plus sur le service social" class="btn know-more">En savoir plus</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
+    </div>
+  </div>
+{% endblock %}

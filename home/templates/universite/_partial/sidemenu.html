@@ -1,0 +1,56 @@
+<div class="menu-secondaire g-bg-bleu-ua g-shadow-block-gris-c-ua-md g-px-25 g-pt-40 g-pb-25 g-mr-25--xl">
+  <h1>
+    <a href="{% url 'universite:index' %}">Université</a>
+  </h1>
+  <li>
+    <div class="list-group g-pl-30--xl g-pl-0--md g-pl-40">
+      <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.app_name == 'universite:qui-sommes-nous' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'universite:qui-sommes-nous:nos-missions-et-nos-valeurs' %}">Qui sommes-nous ?</a>
+      {% if request.resolver_match.app_name == 'universite:qui-sommes-nous' %}
+        <ul class="custom mb-0 g-pb-3">
+          <li><a class="g-color-white g-font-weight-bold--hover" href="{% url 'universite:qui-sommes-nous:nos-missions-et-nos-valeurs' %}">Nos missions et nos valeurs</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/qui-sommes-nous/historique.html">Historique</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/qui-sommes-nous/quelques-chiffres.html">Quelques chiffres</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/qui-sommes-nous/fondation.html">Fondation</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/qui-sommes-nous/comue-angers-le-mans.html">Comue Angers-Le Mans</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/qui-sommes-nous/ua-mag.html">UA Mag</a></li>
+        </ul>
+      {% endif %}      
+      <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.app_name == 'universite:fonctionnement' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'universite:fonctionnement:organigramme' %}">Fonctionnement</a>
+      {% if request.resolver_match.app_name == 'universite:fonctionnement' %}
+        <ul class="custom mb-0 g-pb-3">
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/fonctionnement/gouvernance.html">Gouvernance</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/fonctionnement/instances-universitaires.html">Instances universitaires</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/fonctionnement/services-centraux.html">Services centraux</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/fonctionnement/services-communs.html">Services communs</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/fonctionnement/facultes-et-instituts.html">Facultés et instituts</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/fonctionnement/elections.html">&Eacute;lections</a></li>
+        </ul>
+      {% endif %}
+      <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.app_name == 'universite:strategies-et-grands-projets' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'universite:strategies-et-grands-projets:index' %}">Stratégies et grands projets</a>
+      <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.app_name == 'universite:les-chantiers-de-l-ua' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'universite:les-chantiers-de-l-ua:index' %}">Les chantiers de l'UA</a>
+      {% if request.resolver_match.app_name == 'universite:les-chantiers-de-l-ua' %}
+        <ul class="custom mb-0 g-pb-3">
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/sante-les-travaux-se-poursuivent.html">Santé : les travaux se poursuivent</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/llsh-le-batiment-a-va-etre-renove.html">LLSH : le bâtiment A va être rénové</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/sciences-les-batiments-a-a-d-vont-etre-rehabilites.html">Sciences : les bâtiments A à D vont être réhabilités</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/renovation-fonctionnelle-de-la-bu-belle-beille.html">Rénovation fonctionnelle de la BU Belle-Beille</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/extension-du-batiment-de-polyetch-angers.html">Extension du bâtiment de Polytech Angers</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/les-anciens-travaux-realises.html">Les anciens travaux réalisés</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/les-chantiers-de-l-ua/residences-etudiantes-debut-des-travaux-au-1er-semestre-2024.html">Résidences étudiantes : début des travaux au 1er semestre 2024</a></li>
+        </ul>
+      {% endif %}      
+      <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.app_name == 'universite:travailler-a-l-ua' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'universite:travailler-a-l-ua:index' %}">Travailler à l'UA</a>
+      {% if request.resolver_match.app_name == 'universite:travailler-a-l-ua' %}
+        <ul class="custom mb-0 g-pb-3">
+          <li><a class="g-color-white g-font-weight-bold--hover" href="{% url 'universite:travailler-a-l-ua:enseignants' %}">Enseignants, enseignants-chercheurs</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/travailler-a-l-ua/personnels-administratifs-et-techniques.html">Personnels administratifs et techniques</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/travailler-a-l-ua/chercheur-es-et-personnels-d-appui-a-la-recherche.html">Chercheur&middot;es et personnels d'appui à la recherche</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/travailler-a-l-ua/etudiants.html">étudiants</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/travailler-a-l-ua/intervenants-exterieurs.html">Intervenants extérieurs</a></li>
+          <li><a class="g-color-white g-font-weight-bold--hover" href="/fr/universite/travailler-a-l-ua/accompagnement-des-personnels-en-situation-de-handicap.html">Travailler avec un handicap</a></li>
+        </ul>
+      {% endif %}
+      <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.app_name == 'universite:hrs4r' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'universite:hrs4r:index' %}">HRS4R</a>
+    </div>
+  </li>
+</div>

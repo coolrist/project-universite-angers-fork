@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="Ametys CMS Open source (http://www.ametys.org)" name="generator" />
+    <link href="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/favicon.ico" rel="shortcut icon" />
+    <title>
+      {% block title %}
+
+      {% endblock %} - Université Angers
+    </title>
+    <meta charset="utf-8" />
+    <meta content="Université Angers" name="author" />
+    <meta content="Université Angers" name="copyright" />
+    <meta content="fr" name="language" />
+    <meta content="15 days" name="revisit-after" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    {% spaceless %}
+      {% if meta %}
+        {% for key, value in meta.items %}
+          {% if value %}
+            <meta name="DC.{{ key }}" content="{{ value }}" />
+          {% endif %}
+        {% endfor %} 
+      {% endif %}
+    {% endspaceless %}
+    <!--  -->
+    <link href="https://www.univ-angers.fr/_plugins/web/www/fr/filter/events/rss.xml" title="Flux RSS des actualités du site de l&#039;Université d&#039;Angers" type="application/rss+xml" rel="alternate" />
+    <link href="https://www.univ-angers.fr/_plugins/web/www/fr/filter/org.ametys.web.article.RSS/rss.xml" title="Flux RSS des articles du site de l&#039;Université d&#039;Angers" type="application/rss+xml" rel="alternate" />
+    <noscript>
+      <div>
+        <img alt="" style="border: 0" src="https://piwik.univ-angers.fr//piwik.php?idsite=20&amp;rec=1" />
+      </div>
+    </noscript>
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://490237ae-2837-4d10-8eeb-fa8be3800e46" rel="meta" />
+    <link href="https://www.univ-angers.fr/_plugins/web/zoneItem/79f491e7-d59f-4d51-b973-e93343a9ffc5/rss.xml" title="Voir le flux RSS de ces contenus" type="application/rss+xml" rel="alternate" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://22a61bb3-1687-46f5-af6a-0ac74d70ce89" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://afe91bd4-8110-4782-9b64-29884ab983f9" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://b5dd09bf-4dd2-4e8a-bbde-68ba48554ee9" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://aac5a037-e481-4b10-ae23-aae957c6ac09" rel="meta" />
+    <link href="https://www.univ-angers.fr/" title="Voir le flux RSS de ces contenus" type="application/rss+xml" rel="alternate" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://c1079a11-ca45-4936-b2f3-14b1df2dd2bf" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://2d463cee-0f89-40fb-bb76-233adc616784" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://690391f1-1044-425d-a4f3-99f6b06f253d" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://718e870c-22ba-45ec-ac9c-59d4c2179417" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://d2089a0b-eb3e-49a1-84d3-22062d5074e6" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://5a520c61-86ce-43af-9dae-cb388483c3a3" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://d7567a45-9cd1-4d36-a135-9019a96f5e7c" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://fa1e5780-17ff-4a6e-98aa-393db2d48e99" rel="meta" />
+    <link href="https://www.univ-angers.fr/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://81d3bb6d-f9a6-46b6-81f5-754912f8958f" rel="meta" />
+    {% comment %}
+    <link type="text/css" rel="stylesheet" href="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTkyNjM4NzA0Mg.css" media="screen" />
+    {% endcomment %} {% comment %}
+    <link type="text/css" rel="stylesheet" href="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTE5MDUyNjQ4Ng.css" />
+    {% endcomment %} {% comment %}
+    <link type="text/css" rel="stylesheet" href="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTU1MzcyMjg2NQ.css" media="handheld,screen" />
+    {% endcomment %} {% comment %}
+    <link type="text/css" rel="stylesheet" href="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTEyMjg4NTI2NTQ.css" />
+    {% endcomment %} {% comment %}
+    <link data-donotminimize="true" media="screen, print, handheld" href="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/css/services/filtered-contents-carousel.css" rel="stylesheet" type="text/css" />
+    {% endcomment %} {% comment %}
+    <link type="text/css" rel="stylesheet" href="https://www.univ-angers.fr/_plugins/web/resources-minimized/MTI5MDU4NzI1NQ.css" media="print,handheld,screen" />
+    {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/filtered-contents-carousel.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/unify.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/etlinefont/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/pirobox/css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/7.0.5/mediaelementplayer.min.css" integrity="sha512-7D82/+kVzJhvYhr5k2+TueNVDAoZA4MAklU9vjupYEAnLx97qV3UFZQZgwaD6dPSAEEIiQXBDkK0Wh5BMTUFBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-offcanvas/1.0.0/bootstrap-offcanvas.min.css" integrity="sha512-Dzi0zz9zCe2olZNhq+wnzGjO5ILOv8f/yD6j8srW+XGnnv9dUN04eEoIdVHxQqiy8uBn21niIWQpiCzYJEH3yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% comment %}
+    <script data-donotminimize="true" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/assets/vendor/popper.min.js"></script>
+    {% endcomment %} {% comment %}
+    <script data-donotminimize="true" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    {% endcomment %} {% comment %}
+    <script src="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTE5ODE1MTM2Mjk.js"></script>
+    {% endcomment %} {% comment %}
+    <script data-donotminimize="true" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/assets/js/components/hs.navigation.js"></script>
+    {% endcomment %} {% comment %}
+    <script src="https://www.univ-angers.fr/_plugins/web/resources-minimized/MjE0MTE0NjU5Nw.js"></script>
+    {% endcomment %} {% comment %}
+    <script src="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTE3MTA1NjIyNQ.js"></script>
+    {% endcomment %} {% comment %}
+    <script src="https://www.univ-angers.fr/_plugins/web/resources-minimized/LTc4ODI3ODM.js"></script>
+    {% endcomment %} {% comment %}
+    <script src="https://www.univ-angers.fr/_plugins/web/resources-minimized/NTQyMzIzMDIw.js"></script>
+    {% endcomment %}
+    <script>
+      let $j = jQuery.noConflict()
+    </script>
+    <script>
+      $j(document).ready(function () {
+        $j().piroBox_ext({
+          piro_speed: 600,
+          bg_alpha: 0.5,
+          piro_scroll: true,
+          prev_label: 'Précédent',
+          next_label: 'Suivant',
+          close_label: 'Fermer'
+        })
+      })
+    </script>
+    <script>
+      var ametysUser = null
+      
+      var _ametysUserCallbacks = []
+      var _ametysUserRunning = false
+      
+      var _fillUserInputs = function (id, field, callback) {
+        if (this[field]) {
+          var input = document.getElementById(id)
+          if (!input.value) {
+            input.value = this[field]
+            if (typeof callback == 'function') {
+              callback(id, input, this[field])
+            }
+          }
+        }
+      }
+      
+      function getAmetysUser(callback) {
+        if (ametysUser && typeof callback == 'function') {
+          callback(ametysUser)
+        } else {
+          if (typeof callback == 'function') {
+            _ametysUserCallbacks.push(callback)
+          }
+      
+          if (!_ametysUserRunning) {
+            _ametysUserRunning = true
+      
+            $j.ajax({
+              url: 'https://www.univ-angers.fr/_plugins/web/current-user',
+              dataType: 'json',
+              error: function (result, status, error) {
+                console.log(error)
+                ametysUser = null
+                _ametysUserRunning = false
+              },
+              success: function (user) {
+                ametysUser = user
+      
+                if (ametysUser) {
+                  ametysUser.fill = _fillUserInputs
+                }
+      
+                for (const element of _ametysUserCallbacks) {
+                  try {
+                    element(ametysUser)
+                  } catch (e) {
+                    console.error('Failed to invoked callback function ' + element.name + ':', e)
+                  }
+                }
+      
+                _ametysUserRunning = false
+              }
+            })
+          }
+        }
+      }
+    </script>
+    <script>
+      var ametysCookieConsentListener = []
+      
+      function ametysCallCookieConsentListener(accept) {
+        if (ametysCookieConsentListener.length > 0) {
+          for (const element of ametysCookieConsentListener) {
+            element.apply(window, [accept])
+          }
+        } else {
+          console.warn('ametysCookieConsentListener is empty.')
+        }
+      }
+      
+      var ametysCookieExpireDay = 390
+      
+      function ametysRefuseCookieConsent() {
+        $j.cookie('ametysHasConsent', false, { expires: ametysCookieExpireDay, path: '/' })
+      
+        ametysCallCookieConsentListener(false)
+        ametysHideInformCookieConsent()
+      }
+      
+      function ametysAcceptCookieConsent() {
+        $j.cookie('ametysHasConsent', true, { expires: ametysCookieExpireDay, path: '/' })
+      
+        ametysHideInformCookieConsent()
+      }
+      
+      function ametysHideInformCookieConsent() {
+        $j('#cookie-banner').hide()
+      }
+    </script>
+    <script>
+      var _paq = _paq || []
+      
+      _paq.push([
+        function () {
+          var self = this
+          function getOriginalVisitorCookieTimeout() {
+            var now = new Date(),
+              nowTs = Math.round(now.getTime() / 1000),
+              visitorInfo = self.getVisitorInfo()
+            var createTs = parseInt(visitorInfo[2])
+            var cookieTimeout = 33696000 // 13 mois en secondes
+            var originalTimeout = createTs + cookieTimeout - nowTs
+            return originalTimeout
+          }
+          this.setVisitorCookieTimeout(getOriginalVisitorCookieTimeout())
+        }
+      ])
+      
+      ametysCookieConsentListener.push(function (accept) {
+        if (accept) {
+          _paq.push(['setDocumentTitle', document.domain + '/' + document.title])
+          _paq.push(['setConsentGiven'])
+          ;(function () {
+            var u = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'piwik.univ-angers.fr//'
+            _paq.push(['setTrackerUrl', u + 'piwik.php'])
+      
+            var searchTracking = false
+      
+            var searchKeyword = ''
+            if (searchKeyword != '') {
+              // Internal search tracking on a search result page
+              _paq.push(['trackSiteSearch', searchKeyword, false, false])
+              searchTracking = true
+            }
+      
+            if (!searchTracking) {
+              _paq.push(['trackPageView'])
+            }
+            _paq.push(['enableLinkTracking'])
+            _paq.push(['setSiteId', '20'])
+            var d = document,
+              g = d.createElement('script'),
+              s = d.getElementsByTagName('script')[0]
+            g.type = 'text/javascript'
+            g.defer = true
+            g.async = true
+            g.src = u + 'piwik.js'
+            s.parentNode.insertBefore(g, s)
+          })()
+        } else {
+          _paq.push(['forgetConsentGiven'])
+        }
+      })
+    </script>
+  </head>
+  <body>
+    {% include 'layout/header.html' %}
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+    {% include 'layout/footer.html' %} {% block js %}
+
+    {% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/7.0.5/mediaelement.min.js" integrity="sha512-FJ0tgnw59v9io5WU0Esqfu2tcMYHfo7U+GwzrSgcxiqJtFK1/GNiyY8fWfccwvtbR3yyCB+NKbjO88FwpxLZQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js" integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js" integrity="sha512-vYYoQJKYzaJQaOaYxaJhhmxikOJ2SEgHwmCNa0EMP0aRr7opdt4HHrorAwnCyPm8bdW/JBApIomo85YaBX81zA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'vendor/pirobox/js/pirobox_extended_min.js' %}"></script>
+    <script src="{% static 'compiled-js/hs.min.js' %}"></script>
+    <script>
+      ;(function () {
+        // anonymous function for scope purposes
+        // Show the information banner to the top of the page
+        function showBanner() {
+          if (ametysCookieConsentListener.length > 0) {
+            var html = '<div class="cookiebanner-wrapper" id="cookie-banner">' + '<div class="cookiebanner">' + '<div class="cookiebanner-info">' + "En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins de mesure d'audience (statistiques anonymes)." + ' ' + '</div>' + '<div class="cookiebanner-buttons">' + '<a href="javascript:ametysAcceptCookieConsent()" class="cookiebanner-accept">' + 'Accepter' + '</a>' + ' ' + '<a href="javascript:ametysRefuseCookieConsent()" class="cookiebanner-refuse">' + 'Refuser' + '</a>' + '</div>' + '</div>' + '</div>'
+      
+            $j(document.body).prepend(html).addClass('cookiebanner-visible')
+          }
+        }
+      
+        // Get the Internet Explorer version, return -1 if not IE
+        function getInternetExplorerVersion() {
+          var rv = -1
+          if ($j.browser.msie) {
+            rv = $j.browser.version
+          }
+      
+          return rv
+        }
+      
+        // Check the navigator value DoNotTrack to know if the signal is activated and equal to 1
+        function notToTrack() {
+          if ((navigator.doNotTrack && (navigator.doNotTrack == 'yes' || navigator.doNotTrack == '1')) || (navigator.msDoNotTrack && navigator.msDoNotTrack == '1')) {
+            var isIE = getInternetExplorerVersion() != -1
+            return !isIE
+          }
+        }
+      
+        // If the signal equals 0, consent is true
+        function isToTrack() {
+          if (navigator.doNotTrack && (navigator.doNotTrack == 'no' || navigator.doNotTrack == 0)) {
+            return true
+          }
+        }
+      
+        var consentCookie = $j.cookie('ametysHasConsent')
+        if (consentCookie == null) {
+          // The user has no cookies, we show the banner.
+          if (notToTrack()) {
+            // Internet explorer DoNotTrack is not activated. Do not ask for consent and just opt him out
+            ametysCallCookieConsentListener(false)
+          } else if (isToTrack()) {
+            // Internet explorer DoNotTrack is activated. Do not ask for consent and just opt him in
+            ametysCallCookieConsentListener(true)
+          } else {
+            ametysCallCookieConsentListener(true)
+      
+            // Otherwise ask the user
+            $j(window).on('load', showBanner)
+          }
+        } else {
+          ametysCallCookieConsentListener(consentCookie == 'true')
+        }
+      })()
+    </script>
+  </body>
+</html>

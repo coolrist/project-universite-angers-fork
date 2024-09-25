@@ -1,0 +1,193 @@
+/* carousel */
+.carousel {
+    overflow: hidden; }
+  
+  .titre-carousel {
+    font-size: 5vw;
+    line-height: 1.1em;
+    text-align: center;
+    text-shadow: 0px 0px 8px #000000;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    color: white;
+    font-family: 'ua_poppins_textesemibold'; }
+  
+  @media (max-width: 992px) {
+    .titre-carousel {
+      font-size: 8vw; } }
+  
+  .text-carousel {
+    font-size: 1.2em;
+    text-shadow: 0px 0px 8px #000000;
+    color: white;
+    font-family: 'ua_poppins_textesemibold'; }
+  
+  .carousel-caption {
+    top: 20%;
+    bottom: auto; }
+  
+  .carousel-indicators {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end; }
+  
+  .carousel-indicators .active {
+    background-color: #0ABBEF;
+    border: none; }
+  
+  .carousel-indicators li {
+    height: 12px;
+    background-color: transparent;
+    border: solid white 1px; }
+  
+  .carousel-item {
+    max-height: 93vh;
+    overflow: hidden; }
+  
+  .s1 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss01";
+    -webkit-font-feature-settings: "ss01";
+    font-feature-settings: "ss01"; }
+  
+  .s2 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02"; }
+  
+  .s3 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss03";
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03"; }
+  
+  .s4 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss04";
+    -webkit-font-feature-settings: "ss04";
+    font-feature-settings: "ss04"; }
+  
+  .s5 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss05";
+    -webkit-font-feature-settings: "ss05";
+    font-feature-settings: "ss05"; }
+  
+  .s6 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss06";
+    -webkit-font-feature-settings: "ss06";
+    font-feature-settings: "ss06"; }
+  
+  .s7 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss07";
+    -webkit-font-feature-settings: "ss07";
+    font-feature-settings: "ss07"; }
+  
+  .s8 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss08";
+    -webkit-font-feature-settings: "ss08";
+    font-feature-settings: "ss08"; }
+  
+  .s9 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss09";
+    -webkit-font-feature-settings: "ss09";
+    font-feature-settings: "ss09"; }
+  
+  .s10 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss10";
+    -webkit-font-feature-settings: "ss10";
+    font-feature-settings: "ss10"; }
+  
+  .s11 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss11";
+    -webkit-font-feature-settings: "ss11";
+    font-feature-settings: "ss11"; }
+  
+  .s12 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss12";
+    -webkit-font-feature-settings: "ss12";
+    font-feature-settings: "ss12"; }
+  
+  .s13 {
+    font-family: 'UAPoppinsTitre';
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss13";
+    -webkit-font-feature-settings: "ss13";
+    font-feature-settings: "ss13"; }
+  
+  .s14 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss14";
+    -webkit-font-feature-settings: "ss14";
+    font-feature-settings: "ss14"; }
+  
+  .s15 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss15";
+    -webkit-font-feature-settings: "ss15";
+    font-feature-settings: "ss15"; }
+  
+  .s16 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss16";
+    -webkit-font-feature-settings: "ss16";
+    font-feature-settings: "ss16"; }
+  
+  .s17 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss17";
+    -webkit-font-feature-settings: "ss17";
+    font-feature-settings: "ss17"; }
+  
+  .s18 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss18";
+    -webkit-font-feature-settings: "ss18";
+    font-feature-settings: "ss18"; }
+  
+  .s19 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss19";
+    -webkit-font-feature-settings: "ss19";
+    font-feature-settings: "ss19"; }
+  
+  .s20 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss20";
+    -webkit-font-feature-settings: "ss20";
+    font-feature-settings: "ss20"; }
+  
+  .s21 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss21";
+    -webkit-font-feature-settings: "ss21";
+    font-feature-settings: "ss21"; }
+  
+  .s22 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss22";
+    -webkit-font-feature-settings: "ss22";
+    font-feature-settings: "ss22"; }
+  
+  .s23 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss23";
+    -webkit-font-feature-settings: "ss23";
+    font-feature-settings: "ss23"; }
+  
+  .s24 {
+    font-family: 'UAPoppinsTitre';
+    -moz-font-feature-settings: "ss24";
+    -webkit-font-feature-settings: "ss24";
+    font-feature-settings: "ss24"; }

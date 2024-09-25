@@ -1,0 +1,17 @@
+<div class="menu-secondaire g-bg-bleu-ua g-shadow-block-gris-c-ua-md g-px-25 g-pt-40 g-pb-25 g-mr-25--xl">
+    <h1>
+      <a href="{% url 'vous-etes:etudiant:index' %}">Étudiant</a>
+    </h1>
+    <li>
+      <div class="list-group g-pl-30--xl g-pl-0--md g-pl-40">
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'carte-pass-sup' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:carte-pass-sup' %}">Carte Pass Sup'</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'scolarite' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:scolarite' %}">ScolaritÉ</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'stages' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:stages' %}">Stages</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'examens' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:examens' %}">Examens</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'kit-numerique' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:kit-numerique' %}">Kit numÉrique</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'etre-accompagne-et-conseille' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'formations:etre-accompagne-et-conseille' %}">Dispositifs d'accompagnement</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'bourses-et-aides' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:bourses-et-aides' %}">Bourses et aides</a>
+        <a class="g-font-weight-bold--hover g-color-white text-uppercase {% if request.resolver_match.url_name == 'e2o' %} selected {% else %} g-pb-3 {% endif %}" href="{% url 'vous-etes:etudiant:e2o' %}">Enseignements d'ouverture optionnels</a>
+      </div>
+    </li>
+  </div>
