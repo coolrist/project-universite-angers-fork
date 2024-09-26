@@ -1,66 +1,64 @@
-{% extends 'layout/master.html' %}
+{% extends 'layout/master/child-content.html' %}
 
 {% block title %}
-    Les chantiers de l'UA
+  Les chantiers de l'UA
 {% endblock %}
 
-{% block content %}
-    <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_chantier.jpg" alt="" />
-    <div class="container-fluid g-px-50--sm g-px-125--xl">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
-          <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
-            <ul class="u-list-inline">
-              <li class="list-inline-item g-mr-5"><span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/universite.html">Université</a></li>
-              <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Les chantiers de l'UA</span></li>
-            </ul>
-          </div>
-          {% include '_partial/sendmail-share-js.html' %}
-          <div data-ametys-zone="default" id="ametys-cms-zone-default">
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A3" class="first last">
-              <div class="ametys-cms-content article view-main wrapper">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">Les chantiers de l'UA</span>
-                </h1>
-                <p class="introduction">Extension de La Passerelle, programme de rénovation sur le site Médecine de la Faculté de santé... L'Université d'Angers s'agrandit et se modernise,&nbsp;gr&acirc;ce au soutien des collectivités, pour toujours mieux accueillir ses étudiants et faciliter la recherche.</p>
-                <p>Découvrez les différents chantiers du moment gr&acirc;ce&nbsp;&agrave; une&nbsp;carte interactive.</p>
-                <p>&nbsp;</p>
-                <p>
-                  <iframe width="800px" height="500px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/les-travaux-de-lua_285869?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false#14/47.4812/-0.5737"></iframe>
-                <p>
-                  <a href="//umap.openstreetmap.fr/fr/map/les-travaux-de-lua_285869">Voir en plein écran</a>
-                </p>
-                </p>
-                <div class="content-richtext-end">
-                  <!--empty-->
-                </div>
-                <div class="meta"></div>
-              </div>
-            </div>
-          </div>
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_chantier.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/universite.html">Université</a>
+      </li>
+      <li class="list-inline-item g-color-bleu-ua">
+        <span class="g-mr-5">&gt;</span><span>Les chantiers de l'UA</span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A3" class="first last">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Les chantiers de l'UA</span></h1>
+        <p class="introduction">Extension de La Passerelle, programme de rénovation sur le site Médecine de la Faculté de santé... L'Université d'Angers s'agrandit et se modernise,&nbsp;gr&acirc;ce au soutien des collectivités, pour toujours mieux accueillir ses étudiants et faciliter la recherche.</p>
+        <p>Découvrez les différents chantiers du moment gr&acirc;ce&nbsp;&agrave; une&nbsp;carte interactive.</p>
+        <p>&nbsp;</p>
+        <div>
+          <iframe width="800px" height="500px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/les-travaux-de-lua_285869?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false#14/47.4812/-0.5737"></iframe>
+          <p>
+            <a href="//umap.openstreetmap.fr/fr/map/les-travaux-de-lua_285869">Voir en plein écran</a>
+          </p>
         </div>
-        <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
-          {% include 'universite/_partial/sidemenu.html' %}
-          <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
-            <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
-              <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10184" class="first last">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">UA Mag spécial travaux</span>
-                </h1>
-                <p>
-                  <a href="/_plugins/flipbook/www/_attachments-flipbook/nouveau-contenu-simple-638/Cahier_travaux.pdf/_contents/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouveau-contenu-simple-638/ametys-internal%253Aattachments/Cahier_travaux.pdf/book.html" title="Cahier_travaux.pdf" target="_blank"><span class="image-wrapper simple"
-                    style="display: inline-block; text-align: center"><img src="https://www.univ-angers.fr/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouveau-contenu-simple-638/_attribute/content/_data/Cahiertravaux_400x283.png" alt="" width="283" height="400" /></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="g-py-80">
-            <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
-              <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
-            </div>
-          </div>
+        <div class="content-richtext-end">
+          <!-- empty -->
         </div>
+        <div class="meta"></div>
       </div>
     </div>
-    {% include '_partial/bottom-zone-fleche.html' %}
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'universite/_partial/sidemenu.html' %}
+  <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
+    <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
+      <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10184" class="first last">
+        <h1 class="art-postheader"><span class="content-title summary">UA Mag spécial travaux</span></h1>
+        <p>
+          <a href="/_plugins/flipbook/www/_attachments-flipbook/nouveau-contenu-simple-638/Cahier_travaux.pdf/_contents/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouveau-contenu-simple-638/ametys-internal%253Aattachments/Cahier_travaux.pdf/book.html" title="Cahier_travaux.pdf" target="_blank"><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="https://www.univ-angers.fr/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouveau-contenu-simple-638/_attribute/content/_data/Cahiertravaux_400x283.png" alt="" width="283" height="400" /></span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
+    </div>
+  </div>
 {% endblock %}

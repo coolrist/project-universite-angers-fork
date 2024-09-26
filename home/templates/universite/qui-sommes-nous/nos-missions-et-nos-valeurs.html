@@ -1,121 +1,123 @@
-{% extends 'layout/master.html' %}
+{% extends 'layout/master/child-content.html' %}
 
 {% block title %}
-    Nos missions et nos valeurs
+  Nos missions et nos valeurs
 {% endblock %}
 
-{% block content %}
-    <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_marque.jpg" alt="" />
-    <div class="container-fluid g-px-50--sm g-px-125--xl">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
-          <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
-            <ul class="u-list-inline">
-              <li class="list-inline-item g-mr-5"><span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="{% url 'universite:index' %}">Université</a></li>
-              <li class="list-inline-item g-mr-5"><span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="{% url 'universite:qui-sommes-nous:nos-missions-et-nos-valeurs' %}">Qui sommes-nous ?</a></li>
-              <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Nos missions et nos valeurs</span></li>
-            </ul>
-          </div>
-          {% include '_partial/sendmail-share-js.html' %}
-          <div data-ametys-zone="default" id="ametys-cms-zone-default">
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A0" class="first ">
-              <div class="ametys-cms-content article view-main wrapper">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">Nos missions</span>
-                </h1>
-                <ul class="custom">
-                  <li>Une <a href="https://formations.univ-angers.fr/fr/index.html" class="simple">formation initiale</a> et <a href="/fr/formations/se-former-a-titre-professionnel.html" class="simple">continue</a> bien ancrée dans son environnement 
-                  </li>
-                  <li><a href="/fr/recherche.html" class="simple">Une recherche innovante et partenariale tournée vers l'avenir</a></li>
-                  <li>Une <a href="/fr/international.html" class="simple">université ouverte</a> sur l'Europe et sut le monde
-                  </li>
-                  <li>Une université au service de la <a href="/fr/formations/etre-accompagne-et-conseille/reussite-des-etudes.html" class="simple">réussite de tous</a>, de l'<a href="/fr/formations/etre-accompagne-et-conseille/orientation-et-reorientation.html" class="simple">orientation</a> &agrave; l'<a
-                    href="/fr/formations/etre-accompagne-et-conseille/insertion-professionnelle.html" class="simple">insertion professionnelle</a></li>
-                  <li>Une diffusion de la <a href="/fr/vie-des-campus/culture.html" class="simple">culture</a> et du <a href="/fr/recherche/science-et-societe.html" class="simple">savoir</a></li>
-                </ul>
-                <div class="content-richtext-end">
-                  <!--empty-->
-                </div>
-                <div class="meta"></div>
-              </div>
-            </div>
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N101B0" class="even ">
-              <div class="ametys-cms-content article view-main wrapper">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">Notre manifeste</span>
-                </h1>
-                <p class="introduction">
-                  À l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  , nous sommes convaincus que l'innovation et l'expérimentation doivent être au c&oelig;ur de l'enseignement et de la recherche. Nous osons prendre des risques et bousculer les codes établis pour tester des solutions originales et créatives. Résolument optimistes et tournés vers l'avenir, nous cultivons
-                  l'audace au quotidien pour ouvrir la voie à de nouveaux horizons. Car la vie est avant tout une expérience humaine, nous voulons que l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  soit une terre d'accueil et de partage, connectée au monde, aux femmes et aux hommes. Ensemble, nous imaginons et construisons le monde de demain.
-                </p>
-                <p style="text-align: center;">
-                  <cite><cite>Comme Goethe, nous pensons que<br />&quot;l'audace a du génie, du pouvoir, de la magie&quot;.
-                  </cite></cite>
-                </p>
-                <div class="content-richtext-end">
-                  <!--empty-->
-                </div>
-                <div class="meta"></div>
-              </div>
-            </div>
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N1028B" class="last">
-              <div class="ametys-cms-content article view-main wrapper">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">Nos valeurs</span>
-                </h1>
-                <p style="text-align: center;">
-                  <span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="https://www.univ-angers.fr/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-152/_attribute/content/_data/Valeurs_UA_443x634.png" alt="" width="634" height="443" /></span>
-                </p>
-                <div class="content-richtext-end">
-                  <!--empty-->
-                </div>
-                <div class="meta"></div>
-              </div>
-            </div>
-          </div>
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_marque.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="{% url 'universite:index' %}">Université</a>
+      </li>
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="{% url 'universite:qui-sommes-nous:nos-missions-et-nos-valeurs' %}">Qui sommes-nous ?</a>
+      </li>
+      <li class="list-inline-item g-color-bleu-ua">
+        <span class="g-mr-5">&gt;</span><span>Nos missions et nos valeurs</span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A0" class="first">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Nos missions</span></h1>
+        <ul class="custom">
+          <li>
+            Une <a href="https://formations.univ-angers.fr/fr/index.html" class="simple">formation initiale</a> et <a href="/fr/formations/se-former-a-titre-professionnel.html" class="simple">continue</a> bien ancrée dans son environnement
+          </li>
+          <li>
+            <a href="/fr/recherche.html" class="simple">Une recherche innovante et partenariale tournée vers l'avenir</a>
+          </li>
+          <li>
+            Une <a href="/fr/international.html" class="simple">université ouverte</a> sur l'Europe et sut le monde
+          </li>
+          <li>
+            Une université au service de la <a href="/fr/formations/etre-accompagne-et-conseille/reussite-des-etudes.html" class="simple">réussite de tous</a>, de l'<a href="/fr/formations/etre-accompagne-et-conseille/orientation-et-reorientation.html" class="simple">orientation</a> &agrave; l'<a href="/fr/formations/etre-accompagne-et-conseille/insertion-professionnelle.html" class="simple">insertion professionnelle</a>
+          </li>
+          <li>
+            Une diffusion de la <a href="/fr/vie-des-campus/culture.html" class="simple">culture</a> et du <a href="/fr/recherche/science-et-societe.html" class="simple">savoir</a>
+          </li>
+        </ul>
+        <div class="content-richtext-end">
+          <!-- empty -->
         </div>
-        <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
-          {% include 'universite/_partial/sidemenu.html' %}
-          <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
-            <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
-              <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10368" class="first last">
-                <div class="ametys-cms-content article view-main wrapper">
-                  <h1 class="art-postheader">
-                    <span class="content-title summary">Code de marque</span>
-                  </h1>
-                  <p>
-                    En 2017, l'Université d'Angers a engagé une démarche de développement de son attractivité au travers de la rédaction d'un code marque. La marque
-                    <dfn title="Université d'Angers">UA</dfn>
-                    a pour objectifs :
-                  </p>
-                  <ul class="disc">
-                    <li>d'accompagner la stratégie de l'établissement,</li>
-                    <li>de guider ses actions</li>
-                    <li>de créer une culture d'établissement autour d'une identité et des valeurs communes</li>
-                  </ul>
-                  <p style="text-align: center;">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/b1AgkVmtI8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </p>
-                  <p style="text-align: center;"> </p>
-                  <div class="content-richtext-end">
-                    <!--empty-->
-                  </div>
-                  <div class="meta"></div>
-                </div>
-              </div>
-            </div>
+        <div class="meta"></div>
+      </div>
+    </div>
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N101B0" class="even">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Notre manifeste</span></h1>
+        <p class="introduction">
+          À l'
+          <dfn title="Université d'Angers">UA</dfn>
+          , nous sommes convaincus que l'innovation et l'expérimentation doivent être au c&oelig;ur de l'enseignement et de la recherche. Nous osons prendre des risques et bousculer les codes établis pour tester des solutions originales et créatives. Résolument optimistes et tournés vers l'avenir, nous cultivons l'audace au quotidien pour ouvrir la voie à de nouveaux horizons. Car la vie est avant tout une expérience humaine, nous voulons que l'
+          <dfn title="Université d'Angers">UA</dfn>
+          soit une terre d'accueil et de partage, connectée au monde, aux femmes et aux hommes. Ensemble, nous imaginons et construisons le monde de demain.
+        </p>
+        <p style="text-align: center;">
+          <cite><cite>Comme Goethe, nous pensons que<br />&quot;l'audace a du génie, du pouvoir, de la magie&quot;.</cite></cite>
+        </p>
+        <div class="content-richtext-end">
+          <!-- empty -->
+        </div>
+        <div class="meta"></div>
+      </div>
+    </div>
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N1028B" class="last">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Nos valeurs</span></h1>
+        <p style="text-align: center;">
+          <span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="https://www.univ-angers.fr/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-152/_attribute/content/_data/Valeurs_UA_443x634.png" alt="" width="634" height="443" /></span>
+        </p>
+        <div class="content-richtext-end">
+          <!-- empty -->
+        </div>
+        <div class="meta"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'universite/_partial/sidemenu.html' %}
+  <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
+    <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
+      <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10368" class="first last">
+        <div class="ametys-cms-content article view-main wrapper">
+          <h1 class="art-postheader"><span class="content-title summary">Code de marque</span></h1>
+          <p>
+            En 2017, l'Université d'Angers a engagé une démarche de développement de son attractivité au travers de la rédaction d'un code marque. La marque
+            <dfn title="Université d'Angers">UA</dfn>
+            a pour objectifs :
+          </p>
+          <ul class="disc">
+            <li>d'accompagner la stratégie de l'établissement,</li>
+            <li>de guider ses actions</li>
+            <li>de créer une culture d'établissement autour d'une identité et des valeurs communes</li>
+          </ul>
+          <p style="text-align: center;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/b1AgkVmtI8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+          <p style="text-align: center;"></p>
+          <div class="content-richtext-end">
+            <!-- empty -->
           </div>
-          <div class="g-py-80">
-            <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
-              <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
-            </div>
-          </div>
+          <div class="meta"></div>
         </div>
       </div>
     </div>
-    {% include '_partial/bottom-zone-fleche.html' %}
+  </div>
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
+    </div>
+  </div>
 {% endblock %}
