@@ -1,2 +1,3 @@
 # Universite angers fork
-![alt](/screenshots/illustration.png)
+![alt](screenshots/illustration.png)
+
