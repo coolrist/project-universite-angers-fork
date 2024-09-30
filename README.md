@@ -13,6 +13,6 @@ Here is a demo of the site to give you an overview of its features and user inte
 
 <img src="screenshots/Screenshot_30-9-2024_165916.jpeg" alt="Home page" width="1024" height="auto">
 
-You can access the complete gallery by navigating to the directory screenshots.
+You can access the complete gallery by navigating to the directory _screenshots_.
 
 © 2024
