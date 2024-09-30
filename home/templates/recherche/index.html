@@ -1,939 +1,630 @@
-{% extends 'layout/master.html' %}
+{% extends 'layout/master/child-content.html' %}
 
 {% block title %}
   Recherche
 {% endblock %}
 
-{% block content %}
-    <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_recherchesante.jpg" alt="" />
-    <div class="container-fluid g-px-50--sm g-px-125--xl">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
-          <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
-            <ul class="u-list-inline">
-              <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Recherche</span></li>
-            </ul>
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_recherchesante.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Recherche</span></li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100AF" class="first ">
+      <div class="ametys-cms-service sitemap  wrapper">
+        <h1 class="art-postheader">
+          <span class="service-title">Recherche</span>
+        </h1>
+        <ul class="amytis-list">
+          <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+              <a title="La recherche &agrave; l&#039;UA" href="#">La recherche &agrave; l&#039;UA</a>
+            </div>
+            <ul class="amytis-second-type-list " id="siteMapMenu-N10003">
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Structures de recherche" href="#">Structures de recherche</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Projets de recherche" href="#">Projets de recherche</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Intégrité et éthique" href="#">Intégrité et éthique</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="EfferveSciences" href="#">EfferveSciences</a></li>
+            </ul></li>
+          <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+              <a title="Science et société" href="#">Science et société</a>
+            </div>
+            <ul class="amytis-second-type-list " id="siteMapMenu-N10021">
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Culture scientifique et technique" href="#">Culture scientifique et technique</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Open access et publications sur Hal UA" href="#">Open access et publications sur Hal UA</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Parutions" href="#">Parutions</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Sciences participatives" href="#">Sciences participatives</a></li>
+            </ul></li>
+          <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+              <a title="Innovation" href="#">Innovation</a>
+            </div>
+            <ul class="amytis-second-type-list " id="siteMapMenu-N10041">
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Découvrir nos fili&egrave;res innovantes" href="#">Découvrir nos fili&egrave;res innovantes</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Collaborer avec l&#039;UA" href="#">Collaborer avec l&#039;UA</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Accéder aux équipements scientifiques" href="#">Accéder aux équipements scientifiques</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Recruter un alternant ou un stagiaire" href="#">Recruter un alternant ou un stagiaire</a></li>
+            </ul></li>
+          <li class="amytis-list__item"><div class="amytis-list__link-wrap">
+              <a title="&Eacute;tudes doctorales et HDR" href="#">&Eacute;tudes doctorales et HDR</a>
+            </div>
+            <ul class="amytis-second-type-list " id="siteMapMenu-N1005F">
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="S&#039;inscrire en doctorat" href="#">S&#039;inscrire en doctorat</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Soutenir sa th&egrave;se" href="#">Soutenir sa th&egrave;se</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="La formation doctorale" href="#">La formation doctorale</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="&Eacute;coles doctorales" href="#">&Eacute;coles doctorales</a></li>
+              <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Habilitation &agrave; diriger des recherches" href="#">Habilitation &agrave; diriger des recherches</a></li>
+            </ul></li>
+        </ul>
+      </div>
+    </div>
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N1018E" class="even last">
+      <div class="ametys-cms-service filtered-contents filtered-contents-abstract wrapper">
+        <div class="d-flex">
+          <div class="d-inline-flex g-bg-white">
+            <h1>Actualités</h1>
           </div>
-          <div class="g-mt-30 d-flex">
-            <a href="javascript:window.print();" class="u-image-lien u-image-print-ua"></a><span id="sendByMailHeader-13790749746910014"></span>
-            <script type="text/javascript">
-             $j("#sendByMailHeader-13790749746910014").wrapInner("<a class='u-image-lien u-image-mail-ua' href='javascript: sendByMail_form_popup_13790749746910014()'></a>")
-            </script>
-            <form method="post" action="/fr/_plugins/socialnetworking/page/send-mail" id="sendByMail-13790749746910014">
-              <div class="sendByMail-form" id="sendByMail-form-13790749746910014">
-                <input value="page://0ed6b108-aa28-41d8-95ae-8589a50070f8" id="sendByMail-13790749746910014-id" name="page-id" type="hidden" />
-                <div class="field">
-                  <div class="label">
-                    <label for="sendByMail-13790749746910014-name">Votre nom<span class="mandatory"> *</span></label>
+        </div>
+        <script type="text/javascript">
+        var pagination_fc_5628601058287779 = ['1','2','3','4'];
+        </script>
+        <div class="row justify-content-center" id="fc_5628601058287779-part-1">
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/l-ua-decroche-le-label-science-avec-et-pour-la-societe-actualite/_attribute/illustration/image/carr%C3%A9%20mrgt.jpg?objectId=defaultWebContent://9c1d331d-7ef8-431b-80eb-062a01823c87" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Plus de 500 000 euros pour développer les sciences participatives</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date"></p>
+                    </div>
                   </div>
-                  <div class="input">
-                    <input id="sendByMail-13790749746910014-name" name="name" type="text" />
-                  </div>
-                  <div class="field-end"></div>
-                  <script type="text/javascript">
-                   getAmetysUser(function (user) {
-                    if (user && user.fill) {
-                     user.fill("sendByMail-13790749746910014-name", "fullname");
-                    }
-                   });
-                  </script>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Co-porté par l&rsquo;Université d&rsquo;Angers et Le Mans Université, le projet Popact (Prévention optimiste et active) a re&ccedil;u début juillet le label Sciences avec et pour la société (Saps) du minist&egrave;re de l&rsquo;Enseignement supérieur et de la Recherche. Il s&rsquo;accompagne
+                      d&rsquo;un financement de 515&nbsp;000 euros sur trois ans permettant la mise en &oelig;uvre de six actions de médiation aupr&egrave;s du grand public.</li>
+                  </ul>
                 </div>
-                <div class="field">
-                  <div class="label">
-                    <label for="sendByMail-13790749746910014-email-by">Votre email<span class="mandatory"> *</span></label>
-                  </div>
-                  <div class="input">
-                    <input id="sendByMail-13790749746910014-email-by" name="email" type="text" />
-                  </div>
-                  <div class="field-end"></div>
-                  <script type="text/javascript">
-                   getAmetysUser(function (user) {
-                    if (user && user.fill) {
-                     user.fill("sendByMail-13790749746910014-email-by", "email");
-                    }
-                   });
-                  </script>
-                </div>
-                <div class="field">
-                  <div class="label">
-                    <label for="sendByMail-13790749746910014-email-to">Destinataire(s)<span class="mandatory"> *</span></label>
-                  </div>
-                  <div class="input">
-                    <input id="sendByMail-13790749746910014-email-to" name="emailTo" type="text" /><br />
-                    <span class="hint">Séparés par des virgules</span>
-                  </div>
-                  <div class="field-end"></div>
-                </div>
-                <div class="field">
-                  <div class="label">
-                    <label for="sendByMail-13790749746910014-text">Message</label>
-                  </div>
-                  <div class="input">
-                    <textarea rows="3" cols="20" id="sendByMail-13790749746910014-text" name="text"></textarea>
-                  </div>
-                  <div class="field-end"></div>
-                </div>
-                <div class="field">
-                  <div class="input">
-                    <noscript>
-                      <div style="width: 302px; height: 462px;">
-                        <div style="width: 302px; height: 422px; position: relative;">
-                          <div style="width: 302px; height: 422px;">
-                            <iframe style="width: 302px; height: 422px; border-style: none;" scrolling="no" frameborder="0" src="https://www.google.com/recaptcha/api/fallback?k=6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU"></iframe>
-                          </div>
-                          <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-                            <textarea style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" class="g-recaptcha-response" name="captcha-value" id="g-recaptcha-response"></textarea>
-                            <input name="captcha-key" type="hidden" />
-                          </div>
-                        </div>
-                      </div>
-                    </noscript>
-                    <script type="text/javascript">
-                     document.write("<input type=\"hidden\" name=\"captcha-key\" id=\"sendByMail-13790749746910014-captcha-key\"/>")
-                     document.write("<input type=\"hidden\" name=\"captcha-value\" id=\"sendByMail-13790749746910014-captcha\"/>")
-                     document.write("<div class=\"g-recaptcha\" id=\"captcha16009302628524735\"></div>")
-                     function loadValueToSend_captcha16009302628524735(value) {
-                      document.getElementById("sendByMail-13790749746910014-captcha").value = value;
-                     }
-                     var widgetIds = [];
-
-                     function ReCaptchaCallback_captcha16009302628524735() {
-                      recaptchaLoaded = true;
-                      for (const element of recaptchaFieldsToLoad) {
-                       var resetId = grecaptcha.render(element.captchaId, {
-                        'sitekey' : '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
-                        'callback' : element.callback,
-                        'theme' : element.theme,
-                        'size' : element.size,
-                        'tabindex' : "1"
-                       });
-                       widgetIds[element.captchaId] = resetId;
-                      }
-                     }
-
-                     if (typeof recaptchaLoaded == 'undefined') {
-                      // The recaptcha script was never loaded
-                      recaptchaLoaded = false;
-                      recaptchaFieldsToLoad = [ {
-                       'captchaId' : "captcha16009302628524735",
-                       'callback' : loadValueToSend_captcha16009302628524735,
-                       'theme' : 'light',
-                       'size' : 'normal',
-                      } ];
-                      document.write("<script src=\"https://www.google.com/recaptcha/api.js?onload=ReCaptchaCallback_captcha16009302628524735&render=explicit\" async defer><\/script>");
-                     } else if (recaptchaLoaded == false) {
-                      // The recaptcha script is loading but not ready.
-                      recaptchaFieldsToLoad.push({
-                       'captchaId' : "captcha16009302628524735",
-                       'callback' : loadValueToSend_captcha16009302628524735,
-                       'theme' : 'light',
-                       'size' : 'normal'
-                      })
-                     } else {
-                      // the recaptcha script is loaded and ready
-                      var resetId = grecaptcha.render("captcha16009302628524735", {
-                       'sitekey' : '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
-                       'callback' : loadValueToSend_captcha16009302628524735,
-                       'theme' : 'light',
-                       'size' : 'normal'
-                      });
-                      widgetIds[captcha16009302628524735] = resetId;
-                     }
-
-                     function refresh_sendByMail_13790749746910014(focusNow) {
-                      grecaptcha.reset(widgetIds["captcha16009302628524735"]);
-                     }
-                    </script>
-                  </div>
-                  <div class="field-end"></div>
-                </div>
-                <div id="sendByMail-submit-13790749746910014">
-                  <div class="button">
-                    <input type="submit" class="art-button" value="Envoyer" onclick="return sendByMail_form_submit_13790749746910014();" title="" />
-                  </div>
-                </div>
-              </div>
-            </form>
-            <script type="text/javascript">
-             function sendByMail_form_switch_13790749746910014() {
-              var form = document.getElementById('sendByMail-13790749746910014');
-              var submit = document.getElementById('sendByMail-submit-13790749746910014');
-              form.style.display = (form.style.display == 'none') ? '' : 'none';
-              submit.style.display = (submit.style.display == 'none') ? '' : 'none';
-             }
-
-             sendByMail_captchaRequired_13790749746910014 = true;
-
-             sendByMail_form_switch_13790749746910014();
-
-             function sendByMail_form_popup_13790749746910014() {
-              if (sendByMail_captchaRequired_13790749746910014) {
-               refresh_sendByMail_13790749746910014();
-              }
-              $j("#sendByMail-form-13790749746910014 script").remove();
-              $j("#sendByMail-form-13790749746910014").dialog({
-               resizable : false,
-               height : 'auto',
-               width : 'auto',
-               modal : true,
-               title : 'Envoyer par mail',
-               buttons : {
-                Envoyer : function () {
-                 sendByMail_form_submit_13790749746910014();
-                },
-                Annuler : function () {
-                 $j(this).dialog("close");
-                }
-               }
-              });
-
-              $j('#sendByMail-13790749746910014-email-to').val('');
-              $j('#sendByMail-13790749746910014-text').val('');
-              $j('#sendByMail-13790749746910014-captcha').val('');
-             }
-
-             function sendByMail_form_submit_13790749746910014() {
-              var form = document.getElementById('sendByMail-13790749746910014');
-
-              var pageId = $j('#sendByMail-13790749746910014-id');
-              var nameInput = $j('#sendByMail-13790749746910014-name');
-              var emailInputBy = $j('#sendByMail-13790749746910014-email-by');
-              var emailInputTo = $j('#sendByMail-13790749746910014-email-to');
-              var contentInput = $j('#sendByMail-13790749746910014-text');
-              var captchaKey = $j('#sendByMail-13790749746910014-captcha-key');
-              var captchaInput = $j('#sendByMail-13790749746910014-captcha');
-
-              var errors = false;
-
-              if (/^\s*$/.test(nameInput.val())) {
-               errors = true;
-               nameInput.parentsUntil('.field').parent().addClass('error');
-              } else {
-               nameInput.parentsUntil('.field').parent().removeClass('error');
-              }
-
-              if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?$/.test(emailInputBy.val()) || /^\s*$/.test(emailInputBy.val())) {
-               errors = true;
-               emailInputBy.parentsUntil('.field').parent().addClass('error');
-              } else {
-               emailInputBy.parentsUntil('.field').parent().removeClass('error');
-              }
-
-              if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?(\s*,\s*([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?)*$/.test(emailInputTo.val()) || /^\s*$/.test(emailInputTo.val())) {
-               errors = true;
-               emailInputTo.parentsUntil('.field').parent().addClass('error');
-              } else {
-               emailInputTo.parentsUntil('.field').parent().removeClass('error');
-              }
-
-              if (!errors) {
-               // send it in ajax
-               var data = {
-                "page-id" : pageId.val(),
-                "name" : nameInput.val(),
-                "email" : emailInputBy.val(),
-                "emailTo" : emailInputTo.val(),
-                "text" : contentInput.val(),
-                "captcha-key" : captchaKey.val(),
-                "captcha-value" : captchaInput.val(),
-                "ajax" : "true"
-               };
-
-               function result(data) {
-                var s = "";
-                $j('errors error', data).each(function () {
-                 s += $j(this).text() + "\n";
-                });
-
-                if (s == "") {
-                 var errors = $j('error > error', data);
-                 var mailErrors = $j('mailError > mailError', data);
-
-                 if (errors.length == 0 && mailErrors.length == 0) {
-                  $j("#sendByMail-form-13790749746910014").dialog("close");
-                  alert("Le mail a bien été envoyé");
-                 } else if (errors.length > 0) {
-                  var m = '';
-                  $j('error > error', data).each(function () {
-                   m += "\n*" + $j(this).text();
-                  });
-                  alert("Votre formulaire contient les erreurs suivantes :" + m);
-                  if (sendByMail_captchaRequired_13790749746910014) {
-                   refresh_sendByMail_13790749746910014();
-                  }
-                 } else if (mailErrors.length > 0) {
-                  var m = '';
-                  $j('mailError > mailError', data).each(function () {
-                   m += "\n" + $j(this).text();
-                  });
-
-                  alert("L'envoi du mail a échoué pour les adresses email suivantes :" + m);
-                  if (sendByMail_captchaRequired_13790749746910014) {
-                   refresh_sendByMail_13790749746910014();
-                  }
-                 }
-                } else {
-                 // Could really append ??
-                 alert(s);
-                 if (sendByMail_captchaRequired_13790749746910014) {
-                  refresh_sendByMail_13790749746910014();
-                 }
-                }
-               }
-
-               function handleError(jqXHR, textStatus, errorThrown) {
-                alert("Une erreur inattendue est survenue: l'envoi de mail a échoué.");
-               }
-
-               $j.ajax({
-                url : "/plugins/socialnetworking/send-mail",
-                data : data,
-                type : 'post',
-                success : result,
-                error : handleError
-               });
-              }
-
-              return false;
-             }
-            </script>
-            <div class="art-sharethis">
-              <div class="art-sharethis-wrapper">
-                <script type="text/javascript">
-                 var switchTo5x = true; // Multi Post
-                 $j(document).ready(function () {
-                  var baseUrl = document.location.protocol == 'https:' ? 'https://ws.' : 'http://w.';
-                  $j.getScript(baseUrl + "sharethis.com/button/buttons.js", function (data, textStatus) {
-                   stLight.options({
-                    publisher : '7fcfec1e-16ef-41a0-8902-67b9f511c6ba',
-                    lang : 'fr',
-                    fbLang : 'fr_FR'
-                   });
-                  });
-                 });
-                </script>
-                <script type="text/javascript">
-                 document.write("<span class='st_sharethis' displayText='ShareThis'></span>");
-                </script>
-              </div>
+              </article>
             </div>
           </div>
-          <div data-ametys-zone="default" id="ametys-cms-zone-default">
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100AF" class="first ">
-              <div class="ametys-cms-service sitemap  wrapper">
-                <h1 class="art-postheader">
-                  <span class="service-title">Recherche</span>
-                </h1>
-                <ul class="amytis-list">
-                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
-                      <a title="La recherche &agrave; l&#039;UA" href="/fr/recherche/la-recherche-a-l-ua.html">La recherche &agrave; l&#039;UA</a>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/empty.jpg" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Séminaire Vég&amp;al</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Du <abbr class="dtstart"><span title="2024-10-11T10:30:00.000Z" class="value-title"></span>11 octobre 2024</abbr> au <abbr class="dtend"><span title="2024-12-13T12:30:00.000Z" class="value-title"></span>13 décembre 2024</abbr>
+                      </p>
                     </div>
-                    <ul class="amytis-second-type-list " id="siteMapMenu-N10003">
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Structures de recherche" href="/fr/recherche/la-recherche-a-l-ua/structures-de-recherche.html">Structures de recherche</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Projets de recherche" href="/fr/recherche/la-recherche-a-l-ua/projets-de-recherche-1.html">Projets de recherche</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Intégrité et éthique" href="/fr/recherche/la-recherche-a-l-ua/integrite-et-ethique-1.html">Intégrité et éthique</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="EfferveSciences" href="/fr/recherche/la-recherche-a-l-ua/effervesciences.html">EfferveSciences</a></li>
-                    </ul></li>
-                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
-                      <a title="Science et société" href="/fr/recherche/science-et-societe.html">Science et société</a>
-                    </div>
-                    <ul class="amytis-second-type-list " id="siteMapMenu-N10021">
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Culture scientifique et technique" href="/fr/recherche/science-et-societe/culture-scientifique-et-technique.html">Culture scientifique et technique</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Open access et publications sur Hal UA" href="/fr/recherche/science-et-societe/open-access-et-publications-sur-hal-ua.html">Open access et publications sur Hal UA</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Parutions" href="/fr/recherche/science-et-societe/parutions.html">Parutions</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Sciences participatives" href="/fr/recherche/science-et-societe/sciences-participatives.html">Sciences participatives</a></li>
-                    </ul></li>
-                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
-                      <a title="Innovation" href="/fr/recherche/innovation.html">Innovation</a>
-                    </div>
-                    <ul class="amytis-second-type-list " id="siteMapMenu-N10041">
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Découvrir nos fili&egrave;res innovantes" href="/fr/recherche/innovation/decouvrir-nos-filieres-innovantes.html">Découvrir nos fili&egrave;res innovantes</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Collaborer avec l&#039;UA" href="/fr/recherche/innovation/collaborer-avec-l-ua.html">Collaborer avec l&#039;UA</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Accéder aux équipements scientifiques" href="/fr/recherche/innovation/acceder-aux-equipements-scientifiques.html">Accéder aux équipements scientifiques</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Recruter un alternant ou un stagiaire" href="/fr/recherche/innovation/recruter-un-alternant-ou-un-stagiaire.html">Recruter un alternant ou un stagiaire</a></li>
-                    </ul></li>
-                  <li class="amytis-list__item"><div class="amytis-list__link-wrap">
-                      <a title="&Eacute;tudes doctorales et HDR" href="/fr/recherche/etudes-doctorales-et-hdr.html">&Eacute;tudes doctorales et HDR</a>
-                    </div>
-                    <ul class="amytis-second-type-list " id="siteMapMenu-N1005F">
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="S&#039;inscrire en doctorat" href="/fr/recherche/etudes-doctorales-et-hdr/s-inscrire-en-doctorat.html">S&#039;inscrire en doctorat</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Soutenir sa th&egrave;se" href="/fr/recherche/etudes-doctorales-et-hdr/soutenir-sa-these.html">Soutenir sa th&egrave;se</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="La formation doctorale" href="/fr/recherche/etudes-doctorales-et-hdr/la-formation-doctorale.html">La formation doctorale</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="&Eacute;coles doctorales" href="/fr/recherche/etudes-doctorales-et-hdr/ecoles-doctorales.html">&Eacute;coles doctorales</a></li>
-                      <li class="amytis-second-type-list__item"><a class="amytis-second-type-list__link" title="Habilitation &agrave; diriger des recherches" href="/fr/recherche/etudes-doctorales-et-hdr/habilitation-a-diriger-des-recherches.html">Habilitation &agrave; diriger des recherches</a></li>
-                    </ul></li>
-                </ul>
-              </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0"></li>
+                  </ul>
+                </div>
+              </article>
             </div>
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N1018E" class="even last">
-              <div class="ametys-cms-service filtered-contents filtered-contents-abstract wrapper">
-                <div class="d-flex">
-                  <div class="d-inline-flex g-bg-white">
-                    <h1>Actualités</h1>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/la-publicite-sur-le-web-des-effets-pas-si-anodins-que-cela-sur-les-consommateurs-actualite/_attribute/illustration/image/MicrosoftTeams-image%20(6).png?objectId=defaultWebContent://17babd3d-88b2-4783-b544-49a77ffb840f" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">La publicité sur le web : des effets pas si anodins que cela sur les consommateurs...</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date"></p>
+                    </div>
                   </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Membre du Groupe de recherche angevin en économie et management (Granem), Sandra Camus s&rsquo;intéresse aux effets insidieux des images publicitaires et promotionnelles sur les internautes. Son projet est financé &agrave; hauteur de 398 000 euros par l&#039;<dfn title="Agence nationale de la recherche ">ANR</dfn>.
+                    </li>
+                  </ul>
                 </div>
-                <script type="text/javascript">
-                 var pagination_fc_5628601058287779 = ['1','2','3','4'];
-                </script>
-                <div class="row justify-content-center" id="fc_5628601058287779-part-1">
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/l-ua-decroche-le-label-science-avec-et-pour-la-societe-actualite/_attribute/illustration/image/carr%C3%A9%20mrgt.jpg?objectId=defaultWebContent://9c1d331d-7ef8-431b-80eb-062a01823c87" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/projet-popact.html" class="u-link-v5 g-color-black g-font-size-18 ">Plus de 500 000 euros pour développer les sciences participatives</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date"></p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Co-porté par l&rsquo;Université d&rsquo;Angers et Le Mans Université, le projet Popact (Prévention optimiste et active) a re&ccedil;u début juillet le label Sciences avec et pour la société (Saps) du minist&egrave;re de l&rsquo;Enseignement supérieur et de la Recherche. Il s&rsquo;accompagne
-                              d&rsquo;un financement de 515&nbsp;000 euros sur trois ans permettant la mise en &oelig;uvre de six actions de médiation aupr&egrave;s du grand public.</li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/empty.jpg" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/seminaire-veg-al.html" class="u-link-v5 g-color-black g-font-size-18 ">Séminaire Vég&amp;al</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Du <abbr class="dtstart"><span title="2024-10-11T10:30:00.000Z" class="value-title"></span>11 octobre 2024</abbr> au <abbr class="dtend"><span title="2024-12-13T12:30:00.000Z" class="value-title"></span>13 décembre 2024</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0"></li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/la-publicite-sur-le-web-des-effets-pas-si-anodins-que-cela-sur-les-consommateurs-actualite/_attribute/illustration/image/MicrosoftTeams-image%20(6).png?objectId=defaultWebContent://17babd3d-88b2-4783-b544-49a77ffb840f" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2022/la-publicite-sur-le-web-des-effets-pas-si-anodins-que-cela-sur-les-consommateurs.html" class="u-link-v5 g-color-black g-font-size-18 ">La publicité sur le web : des effets pas si anodins que cela sur les consommateurs...</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date"></p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Membre du Groupe de recherche angevin en économie et management (Granem), Sandra Camus s&rsquo;intéresse aux effets insidieux des images publicitaires et promotionnelles sur les internautes. Son projet est financé &agrave; hauteur de 398 000 euros par l&#039;<dfn title="Agence nationale de la recherche ">ANR</dfn>.
-                            </li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <script type="text/javascript"></script>
-                <div class="row justify-content-center" id="fc_5628601058287779-part-2">
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://centrejeanbodin.univ-angers.fr/_resource/Chaire%20EARTH/Carr%C3%A9%20EXPO-TVDC-392%20Yann%20Arthus%20Bertrand.jpg" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/conference-de-thierry-burlot.html" class="u-link-v5 g-color-black g-font-size-18 ">Conférence de Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Le <abbr class="dtstart"><span title="2024-10-03T15:30:00.000Z" class="value-title"></span>3 octobre 2024</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Le Centre Jean Bodin a le plaisir de recevoir Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau, pour une conférence autour des enjeux de la gestion de l&#039;eau en France &agrave; l&#039;&egrave;re du dér&egrave;glement climatique, &agrave; la Faculté de Droit, d&#039;&Eacute;conomie et de Gestion
-                              d&#039;Angers.</li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://centrejeanbodin.univ-angers.fr/_resource/Chaire%20EARTH/Carr%C3%A9%20EXPO-TVDC-392%20Yann%20Arthus%20Bertrand.jpg" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/cine-debat-l-eau-vive.html" class="u-link-v5 g-color-black g-font-size-18 ">Ciné-débat - &quot;L&#039;eau Vive&quot; : Autour de la renaturation d&rsquo;un cours d&rsquo;eau : l&rsquo;exemple du Vicoin</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Le <abbr class="dtstart"><span title="2024-09-26T15:30:00.000Z" class="value-title"></span>26 septembre 2024</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Le Centre Jean Bodin a le plaisir d&#039;accueillir le réalisateur Grégory Morin pour un ciné-débat autour du film &quot;L&#039;eau Vive&quot;, &agrave; la Faculté de Droit, d&#039;&Eacute;conomie et de Gestion d&#039;Angers.</li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/atlantic-sunset-actualite/_attribute/illustration/image/andreas-slotosch--cZao2CDG_Q-unsplash_800.jpg?objectId=defaultWebContent://c1079a11-ca45-4936-b2f3-14b1df2dd2bf" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/atlantic-sunset.html" class="u-link-v5 g-color-black g-font-size-18 ">Comment les couchers de soleil sont-ils valorisés&nbsp;?</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date"></p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Des enseignants-chercheurs de l&rsquo;<dfn title="Université d&#039;Angers">UA</dfn> participent au programme de recherche européen Atlantic Sunset, qui porte sur les couchers de soleil et la mani&egrave;re dont ils sont valorisés par les acteurs publics ou privés.
-                            </li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <script type="text/javascript">
-                 document.getElementById('fc_5628601058287779-part-2').style.display = 'none';
-                </script>
-                <div class="row justify-content-center" id="fc_5628601058287779-part-3">
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/cycle-cineconf-programmation-2024-2025-actualite/_attribute/illustration/image/Logo%20Cin%C3%A9Conf.jpg?objectId=defaultWebContent://670d2cba-11ec-4a81-b5c8-7a249025ff16" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/cycle-cineconf-programmation-2024-2025.html" class="u-link-v5 g-color-black g-font-size-18 ">Cycle CinéConf : Programmation 2024-2025</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Du <abbr class="dtstart"><span title="2024-11-03T23:00:00.000Z" class="value-title"></span>4 novembre 2024</abbr> au <abbr class="dtend"><span title="2025-04-22T22:00:00.000Z" class="value-title"></span>23 avril 2025</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">La <dfn title="Structure fédérative de recherche">SFR</dfn> Confluences dévoile la programmation pour la saison 2024-2025 de son cycle de projections-débats CinéConf.
-                            </li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/nuit-des-chercheurs-2024-actualite/_attribute/illustration/image/NDC_700.jpg?objectId=defaultWebContent://690391f1-1044-425d-a4f3-99f6b06f253d" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/nuit-des-chercheurs-2024.html" class="u-link-v5 g-color-black g-font-size-18 ">Nouveau tour de piste pour la Nuit des chercheur&middot;es</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Le <abbr class="dtstart"><span title="2024-09-27T16:00:00.000Z" class="value-title"></span>27 septembre 2024</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">La 20e édition de la Nuit des chercheur&middot;es &agrave; Angers aura lieu le vendredi 27 septembre, &agrave; la <dfn title="Biblioth&egrave;que universitaire">BU</dfn> Belle-Beille. Au programme&nbsp;: des animations, des jeux, des mini-conférences et beaucoup d&rsquo;échanges entre le public et les scientifiques.
-                            </li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/axe-6-de-la-sfr-confluences-lancement-du-cycle-de-conferences-des-aliments-et-des-representations-actualite/_attribute/illustration/image/Bandeau_conf%C3%A9rence%20axe%206_10-10-2024.jpg?objectId=defaultWebContent://db92d8f7-9ba9-4fff-b16c-dc701652bf45"
-                            class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/axe-6-de-la-sfr-confluences-lancement-du-cycle-de-conferences-des-aliments-et-des-representations.html" class="u-link-v5 g-color-black g-font-size-18 ">Axe 6 de la SFR Confluences &nbsp;: Lancement du cycle de conférences &laquo;&nbsp;Des aliments et des représentations&nbsp;&raquo;</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Le <abbr class="dtstart"><span title="2024-10-10T15:00:00.000Z" class="value-title"></span>10 octobre 2024</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Lancement d&#039;un nouveau cycle de conférences transdisciplinaires en 2024-2025 intitulé &laquo; Des aliments et des représentations &raquo; dans le cadre des actions de l&#039;axe 6 &quot;Santé et Sociétés&quot; de la <dfn title="Structure fédérative de recherche">SFR</dfn> Confluences.<br />Premi&egrave;re
-                              séance consacrée &agrave; la thématique de la viande.
-                            </li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <script type="text/javascript">
-                 document.getElementById('fc_5628601058287779-part-3').style.display = 'none';
-                </script>
-                <div class="row justify-content-center" id="fc_5628601058287779-part-4">
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/conference-a-quelle-information-se-fier-calibrer-son-detecteur-a-foutaises-actualite/_attribute/illustration/image/osint.jpg?objectId=defaultWebContent://1b95875b-a275-429e-96bf-d91713cea0a5" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/conference-a-quelle-information-se-fier-calibrer-son-detecteur-a-foutaises.html" class="u-link-v5 g-color-black g-font-size-18 ">Conférence : &quot;&Agrave; quelle information se fier : calibrer son détecteur &agrave; &quot;foutaises&quot;&quot;</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date">
-                                Le <abbr class="dtstart"><span title="2024-10-03T16:00:00.000Z" class="value-title"></span>3 octobre 2024</abbr>
-                              </p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0"></li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/un-projet-de-recherche-ambitieux-pour-attirer-des-doctorants-actualite/_attribute/illustration/image/carr%C3%A9%20Breath.jpg?objectId=defaultWebContent://fa1e5780-17ff-4a6e-98aa-393db2d48e99" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/un-programme-europeen-ambitieux-pour-attirer-des-doctorants.html" class="u-link-v5 g-color-black g-font-size-18 ">Un programme européen ambitieux pour attirer des doctorants</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date"></p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Soutenu par la Commission européenne, le projet de recherche Breath cofinance un programme doctoral &agrave; l&rsquo;interface des sciences humaines et sociales (SHS) et des disciplines de santé pour vingt jeunes chercheur∙es des Universités d&rsquo;Angers, de Nantes, et du Mans. Le projet débutera en septembre
-                              2025.&nbsp;</li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                  <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
-                    <div class="ametys-cms-content news view-abstract vevent wrapper">
-                      <article class="u-block-hover g-brd-around g-border-top--sm">
-                        <figure class="g-pos-rel">
-                          <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/iuf-quatre-enseignants-chercheurs-de-l-ua-nommes-actualite/_attribute/illustration/image/carr%C3%A9%20Lu.jpg?objectId=defaultWebContent://81d3bb6d-f9a6-46b6-81f5-754912f8958f" class="img-fluid w-100 g-object-fit-cover g-height-400" />
-                        </figure>
-                        <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
-                          <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
-                            <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
-                              <a href="/fr/recherche/actualites/actus-2024/iuf-quatre-enseignants-chercheurs-de-l-ua-nommes.html" class="u-link-v5 g-color-black g-font-size-18 ">IUF : quatre enseignants-chercheurs de l&rsquo;UA nommés</a>
-                            </h4>
-                            <div class="g-color-bleu-ua">
-                              <p class="content-date"></p>
-                            </div>
-                          </div>
-                          <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
-                            <li class="g-mb-0">Marie Lezowski, Hoang-Chinh Lu, Nahema Hanafi et Aude Nuscia Ta&iuml;bi figurent parmi les lauréat∙es de la campagne 2024 de l&rsquo;Institut universitaire de France (IUF). Rencontres.</li>
-                          </ul>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <script type="text/javascript">
-                 document.getElementById('fc_5628601058287779-part-4').style.display = 'none';
-                </script>
-                <div class="position-relative g-mx-80--lg ">
-                  <div class="text-center pages">
-                    <script type="text/javascript">
-                     pagination_fc_5628601058287779_current = 0;
-                     var paginationLength = pagination_fc_5628601058287779.length;
-                     if (paginationLength > 1) {
-                      document
-                       .write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_9454820118817082fc_5628601058287779' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_5628601058287779(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
-
-                      var firstLastCls = '';
-                      for (var i = 0; i < paginationLength; i++) {
-                       firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
-                       document.write("<li id='content_filter_9454820118817082fc_5628601058287779" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_5628601058287779(" + i
-                        + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
-                       document.write("<li id='content_filter_9454820118817082fc_5628601058287779" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
-                      }
-                      document.write("<li id='content_filter_next_9454820118817082fc_5628601058287779' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_5628601058287779(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
-
-                      try {
-                       show_fc_5628601058287779_buttonsid
-                      } catch (e) {
-                       show_fc_5628601058287779_buttonsid = [];
-                      }
-
-                      show_fc_5628601058287779_buttonsid.push("9454820118817082")
-                      function show_fc_5628601058287779(count) {
-                       if (count == 'next') {
-                        count = pagination_fc_5628601058287779_current + 1;
-                       } else if (count == 'prev') {
-                        count = pagination_fc_5628601058287779_current - 1;
-                       }
-
-                       pagination_fc_5628601058287779_current = count;
-
-                       for (var idindex = 0; idindex < show_fc_5628601058287779_buttonsid.length; idindex++) {
-                        var id = show_fc_5628601058287779_buttonsid[idindex];
-
-                        for (var i = 0; i < pagination_fc_5628601058287779.length; i++) {
-                         if (i == count) {
-                          document.getElementById('fc_5628601058287779-part-' + pagination_fc_5628601058287779[i]).style.display = "";
-                          document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i + '_button').style.display = "none";
-                          document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i).style.display = "";
-                         } else {
-                          document.getElementById('fc_5628601058287779-part-' + pagination_fc_5628601058287779[i]).style.display = "none";
-                          document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i + '_button').style.display = "";
-                          document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i).style.display = "none";
-                         }
-                        }
-
-                        document.getElementById("content_filter_prev_" + id + "fc_5628601058287779").style.display = (pagination_fc_5628601058287779_current == "0" ? 'none' : '');
-                        document.getElementById("content_filter_next_" + id + "fc_5628601058287779").style.display = (pagination_fc_5628601058287779_current == (pagination_fc_5628601058287779.length - 1) ? 'none' : '');
-                       }
-
-                       // onPaginationShow hook.
-                       if ($j.isFunction(onPaginationShow_fc_5628601058287779)) {
-                        onPaginationShow_fc_5628601058287779(count + 1);
-                       }
-                      }
-                     }
-                    </script>
-                  </div>
-                </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
-          <div class="g-py-80">
-            <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
-              <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2">
-                <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-2-item-N103FD" class="first last">
-                  <div class="ametys-cms-service filtered-contents filtered-contents-link wrapper">
-                    <div class="d-flex">
-                      <div class="g-mt-minus-25 d-inline-flex g-bg-white g-px-17 g-mx-30 mb-3">
-                        <h1>Prochains événements</h1>
-                      </div>
-                    </div>
-                    <script type="text/javascript">
-                     var pagination_fc_3058209589082328 = [];
-
-                     pagination_fc_3058209589082328.push('1');
-                    </script>
-                    <div class="g-mb-30" id="fc_3058209589082328-part-1">
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">26</span><span class="d-block g-font-size-11">sept.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/cine-debat-l-eau-vive.html">Ciné-débat - &quot;L&#039;eau Vive&quot; : Autour de la renaturation d&rsquo;un cours d&rsquo;eau : l&rsquo;exemple du Vicoin</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le Centre Jean Bodin a le plaisir d&#039;accueillir le réalisateur Grégory Morin pour un ciné-débat autour du film &quot;L&#039;eau Vive&quot;, &agrave; la Faculté de Droit, d&#039;&Eacute;conomie et de Gestion d&#039;Angers.</p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">27</span><span class="d-block g-font-size-11">sept.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/nuit-des-chercheurs-2024.html">Nouveau tour de piste pour la Nuit des chercheur&middot;es</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
-                            La 20e édition de la Nuit des chercheur&middot;es &agrave; Angers aura lieu le vendredi 27 septembre, &agrave; la
-                            <dfn title="Biblioth&egrave;que universitaire">BU</dfn>
-                            Belle-Beille. Au programme&nbsp;: des animations, des jeux, des mini-conférences et beaucoup d&rsquo;échanges entre le public et les scientifiques.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">03</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/conference-de-thierry-burlot.html">Conférence de Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le Centre Jean Bodin a le plaisir de recevoir Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau, pour une conférence autour des enjeux de la gestion de l&#039;eau en France &agrave; l&#039;&egrave;re du dér&egrave;glement climatique, &agrave; la Faculté de
-                            Droit, d&#039;&Eacute;conomie et de Gestion d&#039;Angers.</p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">03</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/conference-a-quelle-information-se-fier-calibrer-son-detecteur-a-foutaises.html">Conférence : &quot;&Agrave; quelle information se fier : calibrer son détecteur &agrave; &quot;foutaises&quot;&quot;</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
-                            OSINT4Fun organise une conférence ouverte &agrave; tout public le 3 octobre de 18h &agrave; 19h30 dans l&#039;amphi Volney...<br />
-                          </p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">10</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/axe-6-de-la-sfr-confluences-lancement-du-cycle-de-conferences-des-aliments-et-des-representations.html">Axe 6 de la SFR Confluences &nbsp;: Lancement du cycle de conférences &laquo;&nbsp;Des aliments et des représentations&nbsp;&raquo;</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
-                            Lancement d&#039;un nouveau cycle de conférences transdisciplinaires en 2024-2025 intitulé &laquo; Des aliments et des représentations &raquo; dans le cadre des actions de l&#039;axe 6 &quot;Santé et Sociétés&quot; de la
-                            <dfn title="Structure fédérative de recherche">SFR</dfn>
-                            Confluences.<br />Premi&egrave;re séance consacrée &agrave; la thématique de la viande.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">11</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/seminaire-veg-al.html">Séminaire Vég&amp;al</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
-                            Dans le cadre de la préfiguration d&#039;une chaire pluridisciplinaire &quot;Plantes en Sociétés&quot;, un séminaire...<br />
-                          </p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                        <div class="px-3 bd-highlight">
-                          <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">04</span><span class="d-block g-font-size-11">nov.</span><span class="d-block g-font-size-11">2024</span>
-                        </div>
-                        <div class="bd-highlight">
-                          <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
-                            <a class="url" href="/fr/recherche/actualites/actus-2024/cycle-cineconf-programmation-2024-2025.html">Cycle CinéConf : Programmation 2024-2025</a>
-                          </h4>
-                          <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
-                            La
-                            <dfn title="Structure fédérative de recherche">SFR</dfn>
-                            Confluences dévoile la programmation pour la saison 2024-2025 de son cycle de projections-débats CinéConf.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <script type="text/javascript"></script>
-                    <div class="">
-                      <div class="text-md-right text-center">
-                        <script type="text/javascript">
-                         pagination_fc_3058209589082328_current = 0;
-                         var paginationLength = pagination_fc_3058209589082328.length;
-                         if (paginationLength > 1) {
-                          document
-                           .write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_3020209270349301fc_3058209589082328' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_3058209589082328(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
-
-                          var firstLastCls = '';
-                          for (var i = 0; i < paginationLength; i++) {
-                           firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
-                           document.write("<li id='content_filter_3020209270349301fc_3058209589082328" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_3058209589082328(" + i
-                            + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
-                           document.write("<li id='content_filter_3020209270349301fc_3058209589082328" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
-                          }
-                          document.write("<li id='content_filter_next_3020209270349301fc_3058209589082328' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_3058209589082328(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
-
-                          try {
-                           show_fc_3058209589082328_buttonsid
-                          } catch (e) {
-                           show_fc_3058209589082328_buttonsid = [];
-                          }
-
-                          show_fc_3058209589082328_buttonsid.push("3020209270349301")
-                          function show_fc_3058209589082328(count) {
-                           if (count == 'next') {
-                            count = pagination_fc_3058209589082328_current + 1;
-                           } else if (count == 'prev') {
-                            count = pagination_fc_3058209589082328_current - 1;
-                           }
-
-                           pagination_fc_3058209589082328_current = count;
-
-                           for (var idindex = 0; idindex < show_fc_3058209589082328_buttonsid.length; idindex++) {
-                            var id = show_fc_3058209589082328_buttonsid[idindex];
-
-                            for (var i = 0; i < pagination_fc_3058209589082328.length; i++) {
-                             if (i == count) {
-                              document.getElementById('fc_3058209589082328-part-' + pagination_fc_3058209589082328[i]).style.display = "";
-                              document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i + '_button').style.display = "none";
-                              document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i).style.display = "";
-                             } else {
-                              document.getElementById('fc_3058209589082328-part-' + pagination_fc_3058209589082328[i]).style.display = "none";
-                              document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i + '_button').style.display = "";
-                              document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i).style.display = "none";
-                             }
-                            }
-
-                            document.getElementById("content_filter_prev_" + id + "fc_3058209589082328").style.display = (pagination_fc_3058209589082328_current == "0" ? 'none' : '');
-                            document.getElementById("content_filter_next_" + id + "fc_3058209589082328").style.display = (pagination_fc_3058209589082328_current == (pagination_fc_3058209589082328.length - 1) ? 'none' : '');
-                           }
-
-                           // onPaginationShow hook.
-                           if ($j.isFunction(onPaginationShow_fc_3058209589082328)) {
-                            onPaginationShow_fc_3058209589082328(count + 1);
-                           }
-                          }
-                         }
-                        </script>
-                      </div>
+        <script type="text/javascript"></script>
+        <div class="row justify-content-center" id="fc_5628601058287779-part-2">
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://centrejeanbodin.univ-angers.fr/_resource/Chaire%20EARTH/Carr%C3%A9%20EXPO-TVDC-392%20Yann%20Arthus%20Bertrand.jpg" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Conférence de Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Le <abbr class="dtstart"><span title="2024-10-03T15:30:00.000Z" class="value-title"></span>3 octobre 2024</abbr>
+                      </p>
                     </div>
                   </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Le Centre Jean Bodin a le plaisir de recevoir Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau, pour une conférence autour des enjeux de la gestion de l&#039;eau en France &agrave; l&#039;&egrave;re du dér&egrave;glement climatique, &agrave; la Faculté de Droit, d&#039;&Eacute;conomie et de Gestion
+                      d&#039;Angers.</li>
+                  </ul>
                 </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://centrejeanbodin.univ-angers.fr/_resource/Chaire%20EARTH/Carr%C3%A9%20EXPO-TVDC-392%20Yann%20Arthus%20Bertrand.jpg" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Ciné-débat - &quot;L&#039;eau Vive&quot; : Autour de la renaturation d&rsquo;un cours d&rsquo;eau : l&rsquo;exemple du Vicoin</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Le <abbr class="dtstart"><span title="2024-09-26T15:30:00.000Z" class="value-title"></span>26 septembre 2024</abbr>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Le Centre Jean Bodin a le plaisir d&#039;accueillir le réalisateur Grégory Morin pour un ciné-débat autour du film &quot;L&#039;eau Vive&quot;, &agrave; la Faculté de Droit, d&#039;&Eacute;conomie et de Gestion d&#039;Angers.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/atlantic-sunset-actualite/_attribute/illustration/image/andreas-slotosch--cZao2CDG_Q-unsplash_800.jpg?objectId=defaultWebContent://c1079a11-ca45-4936-b2f3-14b1df2dd2bf" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Comment les couchers de soleil sont-ils valorisés&nbsp;?</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date"></p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Des enseignants-chercheurs de l&rsquo;<dfn title="Université d&#039;Angers">UA</dfn> participent au programme de recherche européen Atlantic Sunset, qui porte sur les couchers de soleil et la mani&egrave;re dont ils sont valorisés par les acteurs publics ou privés.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+        document.getElementById('fc_5628601058287779-part-2').style.display = 'none';
+        </script>
+        <div class="row justify-content-center" id="fc_5628601058287779-part-3">
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/cycle-cineconf-programmation-2024-2025-actualite/_attribute/illustration/image/Logo%20Cin%C3%A9Conf.jpg?objectId=defaultWebContent://670d2cba-11ec-4a81-b5c8-7a249025ff16" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Cycle CinéConf : Programmation 2024-2025</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Du <abbr class="dtstart"><span title="2024-11-03T23:00:00.000Z" class="value-title"></span>4 novembre 2024</abbr> au <abbr class="dtend"><span title="2025-04-22T22:00:00.000Z" class="value-title"></span>23 avril 2025</abbr>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">La <dfn title="Structure fédérative de recherche">SFR</dfn> Confluences dévoile la programmation pour la saison 2024-2025 de son cycle de projections-débats CinéConf.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/nuit-des-chercheurs-2024-actualite/_attribute/illustration/image/NDC_700.jpg?objectId=defaultWebContent://690391f1-1044-425d-a4f3-99f6b06f253d" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Nouveau tour de piste pour la Nuit des chercheur&middot;es</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Le <abbr class="dtstart"><span title="2024-09-27T16:00:00.000Z" class="value-title"></span>27 septembre 2024</abbr>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">La 20e édition de la Nuit des chercheur&middot;es &agrave; Angers aura lieu le vendredi 27 septembre, &agrave; la <dfn title="Biblioth&egrave;que universitaire">BU</dfn> Belle-Beille. Au programme&nbsp;: des animations, des jeux, des mini-conférences et beaucoup d&rsquo;échanges entre le public et les scientifiques.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/axe-6-de-la-sfr-confluences-lancement-du-cycle-de-conferences-des-aliments-et-des-representations-actualite/_attribute/illustration/image/Bandeau_conf%C3%A9rence%20axe%206_10-10-2024.jpg?objectId=defaultWebContent://db92d8f7-9ba9-4fff-b16c-dc701652bf45"
+                    class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Axe 6 de la SFR Confluences &nbsp;: Lancement du cycle de conférences &laquo;&nbsp;Des aliments et des représentations&nbsp;&raquo;</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Le <abbr class="dtstart"><span title="2024-10-10T15:00:00.000Z" class="value-title"></span>10 octobre 2024</abbr>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Lancement d&#039;un nouveau cycle de conférences transdisciplinaires en 2024-2025 intitulé &laquo; Des aliments et des représentations &raquo; dans le cadre des actions de l&#039;axe 6 &quot;Santé et Sociétés&quot; de la <dfn title="Structure fédérative de recherche">SFR</dfn> Confluences.<br />Premi&egrave;re
+                      séance consacrée &agrave; la thématique de la viande.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+        document.getElementById('fc_5628601058287779-part-3').style.display = 'none';
+        </script>
+        <div class="row justify-content-center" id="fc_5628601058287779-part-4">
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/conference-a-quelle-information-se-fier-calibrer-son-detecteur-a-foutaises-actualite/_attribute/illustration/image/osint.jpg?objectId=defaultWebContent://1b95875b-a275-429e-96bf-d91713cea0a5" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Conférence : &quot;&Agrave; quelle information se fier : calibrer son détecteur &agrave; &quot;foutaises&quot;&quot;</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date">
+                        Le <abbr class="dtstart"><span title="2024-10-03T16:00:00.000Z" class="value-title"></span>3 octobre 2024</abbr>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0"></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/un-projet-de-recherche-ambitieux-pour-attirer-des-doctorants-actualite/_attribute/illustration/image/carr%C3%A9%20Breath.jpg?objectId=defaultWebContent://fa1e5780-17ff-4a6e-98aa-393db2d48e99" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">Un programme européen ambitieux pour attirer des doctorants</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date"></p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Soutenu par la Commission européenne, le projet de recherche Breath cofinance un programme doctoral &agrave; l&rsquo;interface des sciences humaines et sociales (SHS) et des disciplines de santé pour vingt jeunes chercheur∙es des Universités d&rsquo;Angers, de Nantes, et du Mans. Le projet débutera en septembre
+                      2025.&nbsp;</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-11 col-lg-4 g-mb-40--lg g-mb-15 g-px-30--xs g-px-10--lg g-border-right--lg">
+            <div class="ametys-cms-content news view-abstract vevent wrapper">
+              <article class="u-block-hover g-brd-around g-border-top--sm">
+                <figure class="g-pos-rel">
+                  <img alt="" src="https://www.univ-angers.fr/_object/ametys-internal%253Asites/www/ametys-internal%253Acontents/iuf-quatre-enseignants-chercheurs-de-l-ua-nommes-actualite/_attribute/illustration/image/carr%C3%A9%20Lu.jpg?objectId=defaultWebContent://81d3bb6d-f9a6-46b6-81f5-754912f8958f" class="img-fluid w-100 g-object-fit-cover g-height-400" />
+                </figure>
+                <div class="u-block-hover__additional--partially-slide-up g-bg-white g-z-index-1 ">
+                  <div class="u-block-hover__visible g-pa-20 g-bg-gris-c-ua ">
+                    <h4 class="g-line-height-0_9 g-font-ua-poppins-regular">
+                      <a href="#" class="u-link-v5 g-color-black g-font-size-18 ">IUF : quatre enseignants-chercheurs de l&rsquo;UA nommés</a>
+                    </h4>
+                    <div class="g-color-bleu-ua">
+                      <p class="content-date"></p>
+                    </div>
+                  </div>
+                  <ul class="d-flex list-inline g-brd-top g-brd-gray-light-v4 g-pos-rel g-z-index-1 g-px-20 g-py-10 mb-0 g-bg-gris-c-ua">
+                    <li class="g-mb-0">Marie Lezowski, Hoang-Chinh Lu, Nahema Hanafi et Aude Nuscia Ta&iuml;bi figurent parmi les lauréat∙es de la campagne 2024 de l&rsquo;Institut universitaire de France (IUF). Rencontres.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+        document.getElementById('fc_5628601058287779-part-4').style.display = 'none';
+        </script>
+        <div class="position-relative g-mx-80--lg ">
+          <div class="text-center pages">
+            <script type="text/javascript">
+            pagination_fc_5628601058287779_current = 0;
+            var paginationLength = pagination_fc_5628601058287779.length;
+            if (paginationLength > 1) {
+              document
+              .write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_9454820118817082fc_5628601058287779' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_5628601058287779(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
+
+              var firstLastCls = '';
+              for (var i = 0; i < paginationLength; i++) {
+              firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
+              document.write("<li id='content_filter_9454820118817082fc_5628601058287779" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_5628601058287779(" + i
+                + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
+              document.write("<li id='content_filter_9454820118817082fc_5628601058287779" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+              }
+              document.write("<li id='content_filter_next_9454820118817082fc_5628601058287779' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_5628601058287779(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
+
+              try {
+              show_fc_5628601058287779_buttonsid
+              } catch (e) {
+              show_fc_5628601058287779_buttonsid = [];
+              }
+
+              show_fc_5628601058287779_buttonsid.push("9454820118817082")
+              function show_fc_5628601058287779(count) {
+              if (count == 'next') {
+                count = pagination_fc_5628601058287779_current + 1;
+              } else if (count == 'prev') {
+                count = pagination_fc_5628601058287779_current - 1;
+              }
+
+              pagination_fc_5628601058287779_current = count;
+
+              for (var idindex = 0; idindex < show_fc_5628601058287779_buttonsid.length; idindex++) {
+                var id = show_fc_5628601058287779_buttonsid[idindex];
+
+                for (var i = 0; i < pagination_fc_5628601058287779.length; i++) {
+                if (i == count) {
+                  document.getElementById('fc_5628601058287779-part-' + pagination_fc_5628601058287779[i]).style.display = "";
+                  document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i + '_button').style.display = "none";
+                  document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i).style.display = "";
+                } else {
+                  document.getElementById('fc_5628601058287779-part-' + pagination_fc_5628601058287779[i]).style.display = "none";
+                  document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i + '_button').style.display = "";
+                  document.getElementById('content_filter_' + id + 'fc_5628601058287779' + i).style.display = "none";
+                }
+                }
+
+                document.getElementById("content_filter_prev_" + id + "fc_5628601058287779").style.display = (pagination_fc_5628601058287779_current == "0" ? 'none' : '');
+                document.getElementById("content_filter_next_" + id + "fc_5628601058287779").style.display = (pagination_fc_5628601058287779_current == (pagination_fc_5628601058287779.length - 1) ? 'none' : '');
+              }
+
+              // onPaginationShow hook.
+              if ($j.isFunction(onPaginationShow_fc_5628601058287779)) {
+                onPaginationShow_fc_5628601058287779(count + 1);
+              }
+              }
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2">
+        <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-2-item-N103FD" class="first last">
+          <div class="ametys-cms-service filtered-contents filtered-contents-link wrapper">
+            <div class="d-flex">
+              <div class="g-mt-minus-25 d-inline-flex g-bg-white g-px-17 g-mx-30 mb-3">
+                <h1>Prochains événements</h1>
+              </div>
+            </div>
+            <script type="text/javascript">
+            var pagination_fc_3058209589082328 = [];
+
+            pagination_fc_3058209589082328.push('1');
+            </script>
+            <div class="g-mb-30" id="fc_3058209589082328-part-1">
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">26</span><span class="d-block g-font-size-11">sept.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Ciné-débat - &quot;L&#039;eau Vive&quot; : Autour de la renaturation d&rsquo;un cours d&rsquo;eau : l&rsquo;exemple du Vicoin</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le Centre Jean Bodin a le plaisir d&#039;accueillir le réalisateur Grégory Morin pour un ciné-débat autour du film &quot;L&#039;eau Vive&quot;, &agrave; la Faculté de Droit, d&#039;&Eacute;conomie et de Gestion d&#039;Angers.</p>
+                </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">27</span><span class="d-block g-font-size-11">sept.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Nouveau tour de piste pour la Nuit des chercheur&middot;es</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
+                    La 20e édition de la Nuit des chercheur&middot;es &agrave; Angers aura lieu le vendredi 27 septembre, &agrave; la
+                    <dfn title="Biblioth&egrave;que universitaire">BU</dfn>
+                    Belle-Beille. Au programme&nbsp;: des animations, des jeux, des mini-conférences et beaucoup d&rsquo;échanges entre le public et les scientifiques.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">03</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Conférence de Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le Centre Jean Bodin a le plaisir de recevoir Thierry Burlot, Président du Cercle fran&ccedil;ais de l&#039;eau, pour une conférence autour des enjeux de la gestion de l&#039;eau en France &agrave; l&#039;&egrave;re du dér&egrave;glement climatique, &agrave; la Faculté de
+                    Droit, d&#039;&Eacute;conomie et de Gestion d&#039;Angers.</p>
+                </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">03</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Conférence : &quot;&Agrave; quelle information se fier : calibrer son détecteur &agrave; &quot;foutaises&quot;&quot;</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
+                    OSINT4Fun organise une conférence ouverte &agrave; tout public le 3 octobre de 18h &agrave; 19h30 dans l&#039;amphi Volney...<br />
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">10</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Axe 6 de la SFR Confluences &nbsp;: Lancement du cycle de conférences &laquo;&nbsp;Des aliments et des représentations&nbsp;&raquo;</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
+                    Lancement d&#039;un nouveau cycle de conférences transdisciplinaires en 2024-2025 intitulé &laquo; Des aliments et des représentations &raquo; dans le cadre des actions de l&#039;axe 6 &quot;Santé et Sociétés&quot; de la
+                    <dfn title="Structure fédérative de recherche">SFR</dfn>
+                    Confluences.<br />Premi&egrave;re séance consacrée &agrave; la thématique de la viande.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">11</span><span class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Séminaire Vég&amp;al</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
+                    Dans le cadre de la préfiguration d&#039;une chaire pluridisciplinaire &quot;Plantes en Sociétés&quot;, un séminaire...<br />
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                <div class="px-3 bd-highlight">
+                  <span class="g-color-bleu-ua g-font-size-26 g-line-height-1">04</span><span class="d-block g-font-size-11">nov.</span><span class="d-block g-font-size-11">2024</span>
+                </div>
+                <div class="bd-highlight">
+                  <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase">
+                    <a class="url" href="#">Cycle CinéConf : Programmation 2024-2025</a>
+                  </h4>
+                  <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">
+                    La
+                    <dfn title="Structure fédérative de recherche">SFR</dfn>
+                    Confluences dévoile la programmation pour la saison 2024-2025 de son cycle de projections-débats CinéConf.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript"></script>
+            <div class="">
+              <div class="text-md-right text-center">
+                <script type="text/javascript">
+                pagination_fc_3058209589082328_current = 0;
+                var paginationLength = pagination_fc_3058209589082328.length;
+                if (paginationLength > 1) {
+                  document
+                  .write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_3020209270349301fc_3058209589082328' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_3058209589082328(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
+
+                  var firstLastCls = '';
+                  for (var i = 0; i < paginationLength; i++) {
+                  firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
+                  document.write("<li id='content_filter_3020209270349301fc_3058209589082328" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_3058209589082328(" + i
+                    + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
+                  document.write("<li id='content_filter_3020209270349301fc_3058209589082328" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+                  }
+                  document.write("<li id='content_filter_next_3020209270349301fc_3058209589082328' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_3058209589082328(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
+
+                  try {
+                  show_fc_3058209589082328_buttonsid
+                  } catch (e) {
+                  show_fc_3058209589082328_buttonsid = [];
+                  }
+
+                  show_fc_3058209589082328_buttonsid.push("3020209270349301")
+                  function show_fc_3058209589082328(count) {
+                  if (count == 'next') {
+                    count = pagination_fc_3058209589082328_current + 1;
+                  } else if (count == 'prev') {
+                    count = pagination_fc_3058209589082328_current - 1;
+                  }
+
+                  pagination_fc_3058209589082328_current = count;
+
+                  for (var idindex = 0; idindex < show_fc_3058209589082328_buttonsid.length; idindex++) {
+                    var id = show_fc_3058209589082328_buttonsid[idindex];
+
+                    for (var i = 0; i < pagination_fc_3058209589082328.length; i++) {
+                    if (i == count) {
+                      document.getElementById('fc_3058209589082328-part-' + pagination_fc_3058209589082328[i]).style.display = "";
+                      document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i + '_button').style.display = "none";
+                      document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i).style.display = "";
+                    } else {
+                      document.getElementById('fc_3058209589082328-part-' + pagination_fc_3058209589082328[i]).style.display = "none";
+                      document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i + '_button').style.display = "";
+                      document.getElementById('content_filter_' + id + 'fc_3058209589082328' + i).style.display = "none";
+                    }
+                    }
+
+                    document.getElementById("content_filter_prev_" + id + "fc_3058209589082328").style.display = (pagination_fc_3058209589082328_current == "0" ? 'none' : '');
+                    document.getElementById("content_filter_next_" + id + "fc_3058209589082328").style.display = (pagination_fc_3058209589082328_current == (pagination_fc_3058209589082328.length - 1) ? 'none' : '');
+                  }
+
+                  // onPaginationShow hook.
+                  if ($j.isFunction(onPaginationShow_fc_3058209589082328)) {
+                    onPaginationShow_fc_3058209589082328(count + 1);
+                  }
+                  }
+                }
+                </script>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid g-bg-gris-c-ua g-mt-30 g-pb-40">
-      <div data-ametys-zone="bottom" id="ametys-cms-zone-bottom"></div>
-    </div>
-    <div class="u-fleche-scroll text-right mt-5 g-hidden-md-down g-pr-50">
-      <a href="#!" class="g-bg-black-opacity-0_6 rounded-circle p-3"><img alt="Scroll" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/fleche-blanc.png" /></a>
-    </div>
+  </div>
 {% endblock %}

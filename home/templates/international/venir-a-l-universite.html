@@ -1,647 +1,343 @@
-{% extends 'layout/master.html' %}
+{% extends 'layout/master/child-content.html' %}
 
 {% block title %}
-  Venir à l'université
+    Venir à l'université
 {% endblock %}
 
-{% block content %}
-	<img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_international1.jpg" alt="" />
-    <div class="container-fluid g-px-50--sm g-px-125--xl">
-        <div class="row">
-            <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
-                <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
-                    <ul class="u-list-inline">
-                        <li class="list-inline-item g-mr-5"><span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="/fr/international.html">International</a>
-                        </li>
-                        <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Venir à l'université</span></li>
-                    </ul>
-                </div>
-                <div class="g-mt-30 d-flex"><a href="javascript:window.print();" class="u-image-lien u-image-print-ua"></a><span id="sendByMailHeader-07352521498927078"></span>
-                    <script type="text/javascript">
-                        $j("#sendByMailHeader-07352521498927078").wrapInner("<a class='u-image-lien u-image-mail-ua' href='javascript: sendByMail_form_popup_07352521498927078()'></a>")
-                    </script>
-                    <form method="post" action="/fr/_plugins/socialnetworking/page/send-mail" id="sendByMail-07352521498927078">
-                        <div class="sendByMail-form" id="sendByMail-form-07352521498927078"><input value="page://0af9ec91-263c-45b0-b5cd-666b250cbbc7" id="sendByMail-07352521498927078-id"
-                                name="page-id" type="hidden" />
-                            <div class="field">
-                                <div class="label"><label for="sendByMail-07352521498927078-name">Votre nom<span class="mandatory"> *</span></label></div>
-                                <div class="input"><input id="sendByMail-07352521498927078-name" name="name" type="text" /></div>
-                                <div class="field-end"></div>
-                                <script type="text/javascript">
-                                    getAmetysUser(function (user) {
-                                        if (user && user.fill) {
-                                            user.fill("sendByMail-07352521498927078-name", "fullname");
-                                        }
-                                    });
-                                </script>
-                            </div>
-                            <div class="field">
-                                <div class="label"><label for="sendByMail-07352521498927078-email-by">Votre email<span class="mandatory"> *</span></label></div>
-                                <div class="input"><input id="sendByMail-07352521498927078-email-by" name="email" type="text" /></div>
-                                <div class="field-end"></div>
-                                <script type="text/javascript">
-                                    getAmetysUser(function (user) {
-                                        if (user && user.fill) {
-                                            user.fill("sendByMail-07352521498927078-email-by", "email");
-                                        }
-                                    });
-                                </script>
-                            </div>
-                            <div class="field">
-                                <div class="label"><label for="sendByMail-07352521498927078-email-to">Destinataire(s)<span class="mandatory"> *</span></label></div>
-                                <div class="input"><input id="sendByMail-07352521498927078-email-to" name="emailTo" type="text" /><br /><span class="hint">Séparés par des
-                                        virgules</span></div>
-                                <div class="field-end"></div>
-                            </div>
-                            <div class="field">
-                                <div class="label"><label for="sendByMail-07352521498927078-text">Message</label></div>
-                                <div class="input"><textarea rows="3" cols="20" id="sendByMail-07352521498927078-text" name="text"></textarea></div>
-                                <div class="field-end"></div>
-                            </div>
-                            <div class="field">
-                                <div class="input"><noscript>
-                                        <div style="width: 302px; height: 462px;">
-                                            <div style="width: 302px; height: 422px; position: relative;">
-                                                <div style="width: 302px; height: 422px;"><iframe style="width: 302px; height:422px; border-style: none;" scrolling="no" frameborder="0"
-                                                        src="https://www.google.com/recaptcha/api/fallback?k=6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU"></iframe></div>
-                                                <div
-                                                    style="width: 300px; height: 60px; border-style: none;                           bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;                           background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-                                                    <textarea
-                                                        style="width: 250px; height: 40px; border: 1px solid #c1c1c1;                                  margin: 10px 25px; padding: 0px; resize: none;"
-                                                        class="g-recaptcha-response" name="captcha-value" id="g-recaptcha-response"></textarea><input name="captcha-key" type="hidden" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </noscript>
-                                    <script type="text/javascript">
-                                        document.write("<input type=\"hidden\" name=\"captcha-key\" id=\"sendByMail-07352521498927078-captcha-key\"/>")
-                                        document.write("<input type=\"hidden\" name=\"captcha-value\" id=\"sendByMail-07352521498927078-captcha\"/>")
-                                        document.write("<div class=\"g-recaptcha\" id=\"captcha5965158076362332\"></div>")
-                                        function loadValueToSend_captcha5965158076362332(value) {
-                                            document.getElementById("sendByMail-07352521498927078-captcha").value = value;
-                                        }
-                                        var widgetIds = [];
+{% block main_image %}
+    <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_international1.jpg" alt="" />
+{% endblock %}
 
-                                        function ReCaptchaCallback_captcha5965158076362332() {
-                                            recaptchaLoaded = true;
-                                            for (var i = 0; i < recaptchaFieldsToLoad.length; i++) {
-                                                var resetId = grecaptcha.render(recaptchaFieldsToLoad[i].captchaId, {
-                                                    'sitekey': '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
-                                                    'callback': recaptchaFieldsToLoad[i].callback,
-                                                    'theme': recaptchaFieldsToLoad[i].theme,
-                                                    'size': recaptchaFieldsToLoad[i].size,
-                                                    'tabindex': "1"
-                                                });
-                                                widgetIds[recaptchaFieldsToLoad[i].captchaId] = resetId;
-                                            }
-                                        }
+{% block fil_d_ariane %}
+    <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+        <ul class="u-list-inline">
+            <li class="list-inline-item g-mr-5"><span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="#">International</a>
+            </li>
+            <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>Venir à l'université</span></li>
+        </ul>
+    </div>
+{% endblock %}
 
-                                        if (typeof recaptchaLoaded == 'undefined') {
-                                            // The recaptcha script was never loaded
-                                            recaptchaLoaded = false;
-                                            recaptchaFieldsToLoad = [{
-                                                'captchaId': "captcha5965158076362332",
-                                                'callback': loadValueToSend_captcha5965158076362332,
-                                                'theme': 'light',
-                                                'size': 'normal',
-                                            }];
-                                            document.write("<script src=\"https://www.google.com/recaptcha/api.js?onload=ReCaptchaCallback_captcha5965158076362332&render=explicit\" async defer><\/script>");
-                                        }
-                                        else if (recaptchaLoaded == false) {
-                                            // The recaptcha script is loading but not ready.
-                                            recaptchaFieldsToLoad.push({
-                                                'captchaId': "captcha5965158076362332",
-                                                'callback': loadValueToSend_captcha5965158076362332,
-                                                'theme': 'light',
-                                                'size': 'normal'
-                                            })
-                                        }
-                                        else {
-                                            // the recaptcha script is loaded and ready
-                                            var resetId = grecaptcha.render("captcha5965158076362332", {
-                                                'sitekey': '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
-                                                'callback': loadValueToSend_captcha5965158076362332,
-                                                'theme': 'light',
-                                                'size': 'normal'
-                                            });
-                                            widgetIds[captcha5965158076362332] = resetId;
-                                        }
-
-                                        function refresh_sendByMail_07352521498927078(focusNow) {
-                                            grecaptcha.reset(widgetIds["captcha5965158076362332"]);
-                                        }
-                                    </script>
+{% block data %}
+    <div data-ametys-zone="default" id="ametys-cms-zone-default">
+        <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A4" class="first ">
+            <div class="ametys-cms-content article view-main wrapper">
+                <h1 class="art-postheader"><span class="content-title summary">Venir à l'UA</span></h1>
+                <p>Vous êtes chercheur ou étudiant international et vous souhaitez venir à l'Université d'Angers pour faire de la recherche, suivre
+                    vos études, venir dans la cadre d'un programme d'échange ou apprendre le français.</p>
+                <p>Vous trouverez dans les rubriques ci-dessous toutes les informations utiles pour mener à bien votre projet.</p>
+                <div class="content-richtext-end"><!--empty--></div>
+                <div class="meta"></div>
+            </div>
+        </div>
+        <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N10174" class="even ">
+            <div class="ametys-cms-service filtered-contents filtered-contents-link wrapper">
+                <script type="text/javascript">
+                    var pagination_fc_6655763088484206 = ['1'];
+                </script>
+                <div class="row" id="fc_6655763088484206-part-1">
+                    <div class="col-lg-6 g-mb-30 g-px-20">
+                        <div class="ametys-cms-content article view-link wrapper">
+                            <article class="text-center g-color-white g-overflow-hidden">
+                                <div data-bg-img-src="https://www.univ-angers.fr/_resource/Fonds%20illu%20article/motifs/motifs_400x400px_11.png"
+                                    class="u-block-hover--scale  g-flex-middle g-bg-cover g-bg-size-cover g-bg-bluegray-opacity-0_3--after g-transition-0_5">
+                                    <div class=" g-pos-rel g-z-index-1 g-py-120 g-px-20">
+                                        <h2 class="text-uppercase g-color-white g-font-size-18">Chercheur international</h2><a
+                                            href="#" class="u-btn-link-white g-font-weight-600 g-font-size-11">&gt;
+                                            En savoir plus</a>
+                                    </div>
                                 </div>
-                                <div class="field-end"></div>
-                            </div>
-                            <div id="sendByMail-submit-07352521498927078">
-                                <div class="button"><input type="submit" class="art-button" value="Envoyer" onclick="return sendByMail_form_submit_07352521498927078();" title="" /></div>
-                            </div>
+                            </article>
                         </div>
-                    </form>
-                    <script type="text/javascript">
-                        function sendByMail_form_switch_07352521498927078() {
-                            var form = document.getElementById('sendByMail-07352521498927078');
-                            var submit = document.getElementById('sendByMail-submit-07352521498927078');
-                            form.style.display = (form.style.display == 'none') ? '' : 'none';
-                            submit.style.display = (submit.style.display == 'none') ? '' : 'none';
-                        }
-
-                        sendByMail_captchaRequired_07352521498927078 = true;
-
-                        sendByMail_form_switch_07352521498927078();
-
-                        function sendByMail_form_popup_07352521498927078() {
-                            if (sendByMail_captchaRequired_07352521498927078) {
-                                refresh_sendByMail_07352521498927078();
-                            }
-                            $j("#sendByMail-form-07352521498927078 script").remove();
-                            $j("#sendByMail-form-07352521498927078").dialog({
-                                resizable: false,
-                                height: 'auto',
-                                width: 'auto',
-                                modal: true,
-                                title: 'Envoyer par mail',
-                                buttons: {
-                                    Envoyer: function () {
-                                        sendByMail_form_submit_07352521498927078();
-                                    },
-                                    Annuler: function () {
-                                        $j(this).dialog("close");
-                                    }
-                                }
-                            });
-
-                            $j('#sendByMail-07352521498927078-email-to').val('');
-                            $j('#sendByMail-07352521498927078-text').val('');
-                            $j('#sendByMail-07352521498927078-captcha').val('');
-                        }
-
-                        function sendByMail_form_submit_07352521498927078() {
-                            var form = document.getElementById('sendByMail-07352521498927078');
-
-                            var pageId = $j('#sendByMail-07352521498927078-id');
-                            var nameInput = $j('#sendByMail-07352521498927078-name');
-                            var emailInputBy = $j('#sendByMail-07352521498927078-email-by');
-                            var emailInputTo = $j('#sendByMail-07352521498927078-email-to');
-                            var contentInput = $j('#sendByMail-07352521498927078-text');
-                            var captchaKey = $j('#sendByMail-07352521498927078-captcha-key');
-                            var captchaInput = $j('#sendByMail-07352521498927078-captcha');
-
-                            var errors = false;
-
-                            if (/^\s*$/.test(nameInput.val())) {
-                                errors = true;
-                                nameInput.parentsUntil('.field').parent().addClass('error');
-                            }
-                            else {
-                                nameInput.parentsUntil('.field').parent().removeClass('error');
-                            }
-
-                            if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?$/.test(emailInputBy.val()) || /^\s*$/.test(emailInputBy.val())) {
-                                errors = true;
-                                emailInputBy.parentsUntil('.field').parent().addClass('error');
-                            }
-                            else {
-                                emailInputBy.parentsUntil('.field').parent().removeClass('error');
-                            }
-
-                            if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?(\s*,\s*([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?)*$/.test(emailInputTo.val()) || /^\s*$/.test(emailInputTo.val())) {
-                                errors = true;
-                                emailInputTo.parentsUntil('.field').parent().addClass('error');
-                            }
-                            else {
-                                emailInputTo.parentsUntil('.field').parent().removeClass('error');
-                            }
-
-                            if (!errors) {
-                                // send it in ajax
-                                var data = {
-                                    "page-id": pageId.val(),
-                                    "name": nameInput.val(),
-                                    "email": emailInputBy.val(),
-                                    "emailTo": emailInputTo.val(),
-                                    "text": contentInput.val(),
-                                    "captcha-key": captchaKey.val(),
-                                    "captcha-value": captchaInput.val(),
-                                    "ajax": "true"
-                                };
-
-                                function result(data) {
-                                    var s = "";
-                                    $j('errors error', data).each(function () {s += $j(this).text() + "\n";});
-
-                                    if (s == "") {
-                                        var errors = $j('error > error', data);
-                                        var mailErrors = $j('mailError > mailError', data);
-
-                                        if (errors.length == 0 && mailErrors.length == 0) {
-                                            $j("#sendByMail-form-07352521498927078").dialog("close");
-                                            alert("Le mail a bien été envoyé");
-                                        }
-                                        else if (errors.length > 0) {
-                                            var m = '';
-                                            $j('error > error', data).each(function () {
-                                                m += "\n*" + $j(this).text();
-                                            });
-                                            alert("Votre formulaire contient les erreurs suivantes :" + m);
-                                            if (sendByMail_captchaRequired_07352521498927078) {
-                                                refresh_sendByMail_07352521498927078();
-                                            }
-                                        }
-                                        else if (mailErrors.length > 0) {
-                                            var m = '';
-                                            $j('mailError > mailError', data).each(function () {
-                                                m += "\n" + $j(this).text();
-                                            });
-
-                                            alert("L'envoi du mail a échoué pour les adresses email suivantes :" + m);
-                                            if (sendByMail_captchaRequired_07352521498927078) {
-                                                refresh_sendByMail_07352521498927078();
-                                            }
-                                        }
-                                    }
-                                    else {
-                                        // Could really append ??
-                                        alert(s);
-                                        if (sendByMail_captchaRequired_07352521498927078) {
-                                            refresh_sendByMail_07352521498927078();
-                                        }
-                                    }
-                                }
-
-
-                                function handleError(jqXHR, textStatus, errorThrown) {
-                                    alert("Une erreur inattendue est survenue: l'envoi de mail a échoué.");
-                                }
-
-                                $j.ajax({
-                                    url: "/plugins/socialnetworking/send-mail",
-                                    data: data,
-                                    type: 'post',
-                                    success: result,
-                                    error: handleError
-                                });
-                            }
-
-                            return false;
-                        }
-                    </script>
-                    <div class="art-sharethis">
-                        <div class="art-sharethis-wrapper">
-                            <script type="text/javascript">
-                                var switchTo5x = true; // Multi Post
-                                $j(document).ready(function () {
-                                    var baseUrl = document.location.protocol == 'https:' ? 'https://ws.' : 'http://w.';
-                                    $j.getScript(baseUrl + "sharethis.com/button/buttons.js", function (data, textStatus) {
-                                        stLight.options({
-                                            publisher: '7fcfec1e-16ef-41a0-8902-67b9f511c6ba'
-                                            , lang: 'fr', fbLang: 'fr_FR'
-                                        });
-                                    });
-                                });
-                            </script>
-                            <script type="text/javascript">
-                                document.write("<span class='st_sharethis' displayText='ShareThis'></span>");
-                            </script>
+                    </div>
+                    <div class="col-lg-6 g-mb-30 g-px-20">
+                        <div class="ametys-cms-content article view-link wrapper">
+                            <article class="text-center g-color-white g-overflow-hidden">
+                                <div data-bg-img-src="https://www.univ-angers.fr/_resource/Fonds%20illu%20article/motifs/motifs_400x400px_10.png"
+                                    class="u-block-hover--scale  g-flex-middle g-bg-cover g-bg-size-cover g-bg-bluegray-opacity-0_3--after g-transition-0_5">
+                                    <div class=" g-pos-rel g-z-index-1 g-py-120 g-px-20">
+                                        <h2 class="text-uppercase g-color-white g-font-size-18">étudiant d'échange</h2><a
+                                            href="#" class="u-btn-link-white g-font-weight-600 g-font-size-11">&gt; En savoir
+                                            plus</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 g-mb-30 g-px-20">
+                        <div class="ametys-cms-content article view-link wrapper">
+                            <article class="text-center g-color-white g-overflow-hidden">
+                                <div data-bg-img-src="https://www.univ-angers.fr/_resource/Fonds%20illu%20article/motifs/motifs_400x400px_10.png"
+                                    class="u-block-hover--scale  g-flex-middle g-bg-cover g-bg-size-cover g-bg-bluegray-opacity-0_3--after g-transition-0_5">
+                                    <div class=" g-pos-rel g-z-index-1 g-py-120 g-px-20">
+                                        <h2 class="text-uppercase g-color-white g-font-size-18">étudiant hors-échange</h2><a
+                                            href="#" class="u-btn-link-white g-font-weight-600 g-font-size-11">&gt; En
+                                            savoir plus</a>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
-                <div data-ametys-zone="default" id="ametys-cms-zone-default">
-                    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100A4" class="first ">
-                        <div class="ametys-cms-content article view-main wrapper">
-                            <h1 class="art-postheader"><span class="content-title summary">Venir à l'UA</span></h1>
-                            <p>Vous êtes chercheur ou étudiant international et vous souhaitez venir à l'Université d'Angers pour faire de la recherche, suivre
-                                vos études, venir dans la cadre d'un programme d'échange ou apprendre le français.</p>
-                            <p>Vous trouverez dans les rubriques ci-dessous toutes les informations utiles pour mener à bien votre projet.</p>
-                            <div class="content-richtext-end"><!--empty--></div>
-                            <div class="meta"></div>
-                        </div>
-                    </div>
-                    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N10174" class="even ">
-                        <div class="ametys-cms-service filtered-contents filtered-contents-link wrapper">
-                            <script type="text/javascript">
-                                var pagination_fc_6655763088484206 = ['1'];
-                            </script>
-                            <div class="row" id="fc_6655763088484206-part-1">
-                                <div class="col-lg-6 g-mb-30 g-px-20">
-                                    <div class="ametys-cms-content article view-link wrapper">
-                                        <article class="text-center g-color-white g-overflow-hidden">
-                                            <div data-bg-img-src="https://www.univ-angers.fr/_resource/Fonds%20illu%20article/motifs/motifs_400x400px_11.png"
-                                                class="u-block-hover--scale  g-flex-middle g-bg-cover g-bg-size-cover g-bg-bluegray-opacity-0_3--after g-transition-0_5">
-                                                <div class=" g-pos-rel g-z-index-1 g-py-120 g-px-20">
-                                                    <h2 class="text-uppercase g-color-white g-font-size-18">Chercheur international</h2><a
-                                                        href="/fr/international/venir-a-l-universite/international-researcher.html" class="u-btn-link-white g-font-weight-600 g-font-size-11">&gt;
-                                                        En savoir plus</a>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 g-mb-30 g-px-20">
-                                    <div class="ametys-cms-content article view-link wrapper">
-                                        <article class="text-center g-color-white g-overflow-hidden">
-                                            <div data-bg-img-src="https://www.univ-angers.fr/_resource/Fonds%20illu%20article/motifs/motifs_400x400px_10.png"
-                                                class="u-block-hover--scale  g-flex-middle g-bg-cover g-bg-size-cover g-bg-bluegray-opacity-0_3--after g-transition-0_5">
-                                                <div class=" g-pos-rel g-z-index-1 g-py-120 g-px-20">
-                                                    <h2 class="text-uppercase g-color-white g-font-size-18">étudiant d'échange</h2><a
-                                                        href="/fr/international/venir-a-l-universite/exchange-student.html" class="u-btn-link-white g-font-weight-600 g-font-size-11">&gt; En savoir
-                                                        plus</a>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 g-mb-30 g-px-20">
-                                    <div class="ametys-cms-content article view-link wrapper">
-                                        <article class="text-center g-color-white g-overflow-hidden">
-                                            <div data-bg-img-src="https://www.univ-angers.fr/_resource/Fonds%20illu%20article/motifs/motifs_400x400px_10.png"
-                                                class="u-block-hover--scale  g-flex-middle g-bg-cover g-bg-size-cover g-bg-bluegray-opacity-0_3--after g-transition-0_5">
-                                                <div class=" g-pos-rel g-z-index-1 g-py-120 g-px-20">
-                                                    <h2 class="text-uppercase g-color-white g-font-size-18">étudiant hors-échange</h2><a
-                                                        href="/fr/international/venir-a-l-universite/etudiant-hors-echange.html" class="u-btn-link-white g-font-weight-600 g-font-size-11">&gt; En
-                                                        savoir plus</a>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                            <script type="text/javascript"></script>
-                            <div class="">
-                                <div class="text-center pages">
-                                    <script type="text/javascript">
+                <script type="text/javascript"></script>
+                <div class="">
+                    <div class="text-center pages">
+                        <script type="text/javascript">
 
-                                        pagination_fc_6655763088484206_current = 0;
-                                        var paginationLength = pagination_fc_6655763088484206.length;
-                                        if (paginationLength > 1) {
-                                            document.write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_3676099787457079fc_6655763088484206' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_6655763088484206(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
+                            pagination_fc_6655763088484206_current = 0;
+                            var paginationLength = pagination_fc_6655763088484206.length;
+                            if (paginationLength > 1) {
+                                document.write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_3676099787457079fc_6655763088484206' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_6655763088484206(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
 
-                                            var firstLastCls = '';
-                                            for (var i = 0; i < paginationLength; i++) {
-                                                firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
-                                                document.write("<li id='content_filter_3676099787457079fc_6655763088484206" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_6655763088484206(" + i + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
-                                                document.write("<li id='content_filter_3676099787457079fc_6655763088484206" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+                                var firstLastCls = '';
+                                for (var i = 0; i < paginationLength; i++) {
+                                    firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
+                                    document.write("<li id='content_filter_3676099787457079fc_6655763088484206" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_6655763088484206(" + i + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
+                                    document.write("<li id='content_filter_3676099787457079fc_6655763088484206" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+                                }
+                                document.write("<li id='content_filter_next_3676099787457079fc_6655763088484206' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_6655763088484206(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
+
+                                try {
+                                    show_fc_6655763088484206_buttonsid
+                                }
+                                catch (e) {
+                                    show_fc_6655763088484206_buttonsid = [];
+                                }
+
+                                show_fc_6655763088484206_buttonsid.push("3676099787457079")
+                                
+                                function show_fc_6655763088484206(count) {
+                                    if (count == 'next') {
+                                        count = pagination_fc_6655763088484206_current + 1;
+                                    }
+                                    else if (count == 'prev') {
+                                        count = pagination_fc_6655763088484206_current - 1;
+                                    }
+
+                                    pagination_fc_6655763088484206_current = count;
+
+                                    for (const element of show_fc_6655763088484206_buttonsid) {
+                                        var id = element;
+
+                                        for (var i = 0; i < pagination_fc_6655763088484206.length; i++) {
+                                            if (i == count) {
+                                                document.getElementById('fc_6655763088484206-part-' + pagination_fc_6655763088484206[i]).style.display = "";
+                                                document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i + '_button').style.display = "none";
+                                                document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i).style.display = "";
                                             }
-                                            document.write("<li id='content_filter_next_3676099787457079fc_6655763088484206' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_6655763088484206(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
-
-                                            try {
-                                                show_fc_6655763088484206_buttonsid
-                                            }
-                                            catch (e) {
-                                                show_fc_6655763088484206_buttonsid = [];
-                                            }
-
-                                            show_fc_6655763088484206_buttonsid.push("3676099787457079")
-                                            function show_fc_6655763088484206(count) {
-                                                if (count == 'next') {
-                                                    count = pagination_fc_6655763088484206_current + 1;
-                                                }
-                                                else if (count == 'prev') {
-                                                    count = pagination_fc_6655763088484206_current - 1;
-                                                }
-
-                                                pagination_fc_6655763088484206_current = count;
-
-                                                for (var idindex = 0; idindex < show_fc_6655763088484206_buttonsid.length; idindex++) {
-                                                    var id = show_fc_6655763088484206_buttonsid[idindex];
-
-                                                    for (var i = 0; i < pagination_fc_6655763088484206.length; i++) {
-                                                        if (i == count) {
-                                                            document.getElementById('fc_6655763088484206-part-' + pagination_fc_6655763088484206[i]).style.display = "";
-                                                            document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i + '_button').style.display = "none";
-                                                            document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i).style.display = "";
-                                                        }
-                                                        else {
-                                                            document.getElementById('fc_6655763088484206-part-' + pagination_fc_6655763088484206[i]).style.display = "none";
-                                                            document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i + '_button').style.display = "";
-                                                            document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i).style.display = "none";
-                                                        }
-                                                    }
-
-                                                    document.getElementById("content_filter_prev_" + id + "fc_6655763088484206").style.display = (pagination_fc_6655763088484206_current == "0" ? 'none' : '');
-                                                    document.getElementById("content_filter_next_" + id + "fc_6655763088484206").style.display = (pagination_fc_6655763088484206_current == (pagination_fc_6655763088484206.length - 1) ? 'none' : '');
-                                                }
-
-                                                // onPaginationShow hook.
-                                                if ($j.isFunction(onPaginationShow_fc_6655763088484206)) {
-                                                    onPaginationShow_fc_6655763088484206(count + 1);
-                                                }
+                                            else {
+                                                document.getElementById('fc_6655763088484206-part-' + pagination_fc_6655763088484206[i]).style.display = "none";
+                                                document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i + '_button').style.display = "";
+                                                document.getElementById('content_filter_' + id + 'fc_6655763088484206' + i).style.display = "none";
                                             }
                                         }
 
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N101FF" class="last">
-                        <div class="ametys-cms-content article view-main wrapper">
-                            <p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/uGHOCxouGU0?si=syRqz6H66AJFV5fu" title="YouTube video player"
-                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-                            <div class="content-richtext-end"><!--empty--></div>
-                            <div class="meta"></div>
-                        </div>
+                                        document.getElementById("content_filter_prev_" + id + "fc_6655763088484206").style.display = (pagination_fc_6655763088484206_current == "0" ? 'none' : '');
+                                        document.getElementById("content_filter_next_" + id + "fc_6655763088484206").style.display = (pagination_fc_6655763088484206_current == (pagination_fc_6655763088484206.length - 1) ? 'none' : '');
+                                    }
+
+                                    // onPaginationShow hook.
+                                    if ($j.isFunction(onPaginationShow_fc_6655763088484206)) {
+                                        onPaginationShow_fc_6655763088484206(count + 1);
+                                    }
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
-                <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
-                    <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
-                        <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N102EA" class="first last">
-                            <div class="ametys-cms-content article view-main wrapper">
-                                <h1 class="art-postheader"><span class="content-title summary">Schéma de l'enseignement supérieur</span><span class="content-subtitle">Les
-                                        études à l'UA</span></h1>
-                                <p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox"
-                                            href="/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-1242/_attribute/content/_data/schema_etudes_2021.jpg"><img
-                                                src="https://www.univ-angers.fr/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-1242/_attribute/content/_data/schema_etudes_2021_500x707.jpg"
-                                                alt="" width="707" height="500" /></a></span></p>
-                                <div class="content-richtext-end"><!--empty--></div>
-                                <div class="meta"></div>
+        </div>
+        <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N101FF" class="last">
+            <div class="ametys-cms-content article view-main wrapper">
+                <p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/uGHOCxouGU0?si=syRqz6H66AJFV5fu" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                <div class="content-richtext-end"><!--empty--></div>
+                <div class="meta"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
+        <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
+            <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N102EA" class="first last">
+                <div class="ametys-cms-content article view-main wrapper">
+                    <h1 class="art-postheader"><span class="content-title summary">Schéma de l'enseignement supérieur</span><span class="content-subtitle">Les
+                            études à l'UA</span></h1>
+                    <p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox"
+                                href="/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-1242/_attribute/content/_data/schema_etudes_2021.jpg"><img
+                                    src="https://www.univ-angers.fr/_richText-file/ametys-internal%253Asites/www/ametys-internal%253Acontents/nouvel-article-1242/_attribute/content/_data/schema_etudes_2021_500x707.jpg"
+                                    alt="" width="707" height="500" /></a></span></p>
+                    <div class="content-richtext-end"><!--empty--></div>
+                    <div class="meta"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-py-80">
+        <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+            <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2">
+                <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-2-item-N103DF" class="first last">
+                    <div class="ametys-cms-service filtered-contents filtered-contents-link wrapper">
+                        <div class="d-flex">
+                            <div class="g-mt-minus-25 d-inline-flex g-bg-white g-px-17 g-mx-30 mb-3">
+                                <h1>Agenda</h1>
+                                <div class="rss floatright"><a href="/_plugins/web/zoneItem/bca7e088-6fa0-4af9-b0f8-47d31e76c201/rss.xml"><img alt="Voir le flux RSS de ces contenus"
+                                            src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/picto_bleu_rss.png" /></a></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="g-py-80">
-                    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
-                        <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2">
-                            <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-2-item-N103DF" class="first last">
-                                <div class="ametys-cms-service filtered-contents filtered-contents-link wrapper">
-                                    <div class="d-flex">
-                                        <div class="g-mt-minus-25 d-inline-flex g-bg-white g-px-17 g-mx-30 mb-3">
-                                            <h1>Agenda</h1>
-                                            <div class="rss floatright"><a href="/_plugins/web/zoneItem/bca7e088-6fa0-4af9-b0f8-47d31e76c201/rss.xml"><img alt="Voir le flux RSS de ces contenus"
-                                                        src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/picto_bleu_rss.png" /></a></div>
-                                        </div>
-                                    </div>
-                                    <script type="text/javascript">
+                        <script type="text/javascript">
+                            var pagination_fc_8284765268434569 = ['1', '2'];
+                        </script>
+                        <div class="g-mb-30" id="fc_8284765268434569-part-1">
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">05</span><span
+                                        class="d-block g-font-size-11">déc.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
+                                            href="#">Soirée de fin d'année à l'Iceparc</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Il est encore temps de se faire des souvenirs avant la fin du semestre et la
+                                        fin de l'année !<br />Inscrivez-vous à la soirée Patinoire et Pull moche de no&euml;l et participez aux jeux sur glace
+                                        (ventre-glisse, bowling, ...).<br />Inscriptions jusqu'au 3 décembre !<br /></p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">23</span><span
+                                        class="d-block g-font-size-11">nov.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
+                                            href="#">Visite de la distillerie Cointreau</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le bureau des Internationaux vous propose de découvrir, le Cointreau,
+                                        liqueur de renommée mondiale lors d'une visite de la distillerie. </p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">26</span><span
+                                        class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
+                                            href="#">Halloween à Terra Botanica</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Découvrez Terra Botanica, l'unique parc d'attraction du
+                                        végétal en Europe pour fêter Halloween et l'automne.<br />Tarif préférentiel !</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">15</span><span
+                                        class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
+                                            href="#">Ville d'Angers : Accueil des
+                                            étudiants internationaux</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le Maire de la Ville d'Angers invite tous les étudiants
+                                        internationaux à une cérémonie d'accueil.<br /></p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">05</span><span
+                                        class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url" href="#">Voyage en
+                                            Anjou</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1"><br />Samedi 5 octobre 2024, le Bureau des Internationaux propose à
+                                        tous les étudiants et chercheurs internationaux de l'Université et à leurs Buddy Mentors de découvrir les
+                                        alentours d'Angers lors du voyage en Anjou. Découvrez le patrimoine, les caves et le charme du Saumurois.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript"></script>
+                        <div class="g-mb-30" id="fc_8284765268434569-part-2">
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">01</span><span
+                                        class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
+                                            href="#">Parcours entrepreneurial avec EU GREEN</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Tu es étudiant&middot;e et tu as une idée innovante en lien avec
+                                        le développement durable ? L&rsquo;<dfn title="Université d'Angers">UA</dfn> t&rsquo;offre l&rsquo;opportunité de la
+                                        développer à l&rsquo;échelle européenne, à travers le parcours &quot;Entrepreneurial Journey&quot; mis en
+                                        place dans le cadre de l&rsquo;alliance européenne EU Green.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
+                                <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">19</span><span
+                                        class="d-block g-font-size-11">sept.</span><span class="d-block g-font-size-11">2024</span></div>
+                                <div class="bd-highlight">
+                                    <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
+                                            href="#">L'international à Campus Day</a></h4>
+                                    <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Profitez de ce Campus Day pour découvrir l'International.
+                                        <br />Participez à nos animations et défis tout au long de la journée (cours de langue, calligraphie, from <dfn
+                                            title="Université d'Angers">UA</dfn> with Love, photobooth, etc.)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            document.getElementById('fc_8284765268434569-part-2').style.display = 'none';
+                        </script>
+                        <div class="">
+                            <div class="text-md-right text-center">
+                                <script type="text/javascript">
 
-                                        var pagination_fc_8284765268434569 = [];
+                                    pagination_fc_8284765268434569_current = 0;
+                                    var paginationLength = pagination_fc_8284765268434569.length;
+                                    if (paginationLength > 1) {
+                                        document.write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_33167900344009926fc_8284765268434569' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_8284765268434569(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
 
+                                        var firstLastCls = '';
+                                        for (var i = 0; i < paginationLength; i++) {
+                                            firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
+                                            document.write("<li id='content_filter_33167900344009926fc_8284765268434569" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_8284765268434569(" + i + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
+                                            document.write("<li id='content_filter_33167900344009926fc_8284765268434569" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+                                        }
+                                        document.write("<li id='content_filter_next_33167900344009926fc_8284765268434569' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_8284765268434569(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
 
+                                        try {
+                                            show_fc_8284765268434569_buttonsid
+                                        }
+                                        catch (e) {
+                                            show_fc_8284765268434569_buttonsid = [];
+                                        }
 
-                                        pagination_fc_8284765268434569.push('1');
+                                        show_fc_8284765268434569_buttonsid.push("33167900344009926")
+                                        function show_fc_8284765268434569(count) {
+                                            if (count == 'next') {
+                                                count = pagination_fc_8284765268434569_current + 1;
+                                            }
+                                            else if (count == 'prev') {
+                                                count = pagination_fc_8284765268434569_current - 1;
+                                            }
 
+                                            pagination_fc_8284765268434569_current = count;
 
+                                            for (const element of show_fc_8284765268434569_buttonsid) {
+                                                var id = element;
 
-                                        pagination_fc_8284765268434569.push('2');
-
-
-                                    </script>
-                                    <div class="g-mb-30" id="fc_8284765268434569-part-1">
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">05</span><span
-                                                    class="d-block g-font-size-11">déc.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
-                                                        href="/fr/international/animations/soiree-de-fin-d-annee.html">Soirée de fin d'année à l'Iceparc</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Il est encore temps de se faire des souvenirs avant la fin du semestre et la
-                                                    fin de l'année !<br />Inscrivez-vous à la soirée Patinoire et Pull moche de no&euml;l et participez aux jeux sur glace
-                                                    (ventre-glisse, bowling, ...).<br />Inscriptions jusqu'au 3 décembre !<br /></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">23</span><span
-                                                    class="d-block g-font-size-11">nov.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
-                                                        href="/fr/international/animations/visite-de-la-distillerie-cointreau.html">Visite de la distillerie Cointreau</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le bureau des Internationaux vous propose de découvrir, le Cointreau,
-                                                    liqueur de renommée mondiale lors d'une visite de la distillerie. </p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">26</span><span
-                                                    class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
-                                                        href="/fr/international/animations/halloween-a-terra-botanica.html">Halloween à Terra Botanica</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Découvrez Terra Botanica, l'unique parc d'attraction du
-                                                    végétal en Europe pour fêter Halloween et l'automne.<br />Tarif préférentiel !</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">15</span><span
-                                                    class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
-                                                        href="/fr/international/animations/accueil-des-etudiants-internationaux-de-la-ville-d-angers.html">Ville d'Angers : Accueil des
-                                                        étudiants internationaux</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Le Maire de la Ville d'Angers invite tous les étudiants
-                                                    internationaux à une cérémonie d'accueil.<br /></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">05</span><span
-                                                    class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url" href="/fr/international/animations/voyage-en-anjou.html">Voyage en
-                                                        Anjou</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1"><br />Samedi 5 octobre 2024, le Bureau des Internationaux propose à
-                                                    tous les étudiants et chercheurs internationaux de l'Université et à leurs Buddy Mentors de découvrir les
-                                                    alentours d'Angers lors du voyage en Anjou. Découvrez le patrimoine, les caves et le charme du Saumurois.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <script type="text/javascript"></script>
-                                    <div class="g-mb-30" id="fc_8284765268434569-part-2">
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">01</span><span
-                                                    class="d-block g-font-size-11">oct.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
-                                                        href="/fr/international/actualites/a2024/parcours-entrepreneurial-eu-green.html">Parcours entrepreneurial avec EU GREEN</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Tu es étudiant&middot;e et tu as une idée innovante en lien avec
-                                                    le développement durable ? L&rsquo;<dfn title="Université d'Angers">UA</dfn> t&rsquo;offre l&rsquo;opportunité de la
-                                                    développer à l&rsquo;échelle européenne, à travers le parcours &quot;Entrepreneurial Journey&quot; mis en
-                                                    place dans le cadre de l&rsquo;alliance européenne EU Green.</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-row bd-highlight mx-3 g-border-bottom-gris-f2-ua g-bg-white--hover g-pt-5">
-                                            <div class="px-3 bd-highlight"><span class="g-color-bleu-ua g-font-size-26 g-line-height-1">19</span><span
-                                                    class="d-block g-font-size-11">sept.</span><span class="d-block g-font-size-11">2024</span></div>
-                                            <div class="bd-highlight">
-                                                <h4 class="mb-1 g-font-size-12 g-color-black text-uppercase"><a class="url"
-                                                        href="/fr/international/animations/l-international-a-campus-day.html">L'international à Campus Day</a></h4>
-                                                <p class="g-font-size-10-5 g-font-ua-poppins-regular g-line-height-1">Profitez de ce Campus Day pour découvrir l'International.
-                                                    <br />Participez à nos animations et défis tout au long de la journée (cours de langue, calligraphie, from <dfn
-                                                        title="Université d'Angers">UA</dfn> with Love, photobooth, etc.)
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <script type="text/javascript">
-
-                                        document.getElementById('fc_8284765268434569-part-2').style.display = 'none';
-
-                                    </script>
-                                    <div class="">
-                                        <div class="text-md-right text-center">
-                                            <script type="text/javascript">
-
-                                                pagination_fc_8284765268434569_current = 0;
-                                                var paginationLength = pagination_fc_8284765268434569.length;
-                                                if (paginationLength > 1) {
-                                                    document.write("<nav class='pages' aria-label='Page Navigation'><ul class='list-inline'><li class='list-inline-item' id='content_filter_prev_33167900344009926fc_8284765268434569' style='display: none;' class='precede'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19 ' type='submit' onclick='try { show_fc_8284765268434569(\"prev\"); } catch(e) {} return false;' value='<'/></li>");
-
-                                                    var firstLastCls = '';
-                                                    for (var i = 0; i < paginationLength; i++) {
-                                                        firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
-                                                        document.write("<li id='content_filter_33167900344009926fc_8284765268434569" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + (firstLastCls ? ("' class='list-inline-item " + firstLastCls + "'") : "' class='list-inline-item'") + "'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_8284765268434569(" + i + "); } catch(e) {} return false;' value='" + (i + 1) + "'/></li>");
-                                                        document.write("<li id='content_filter_33167900344009926fc_8284765268434569" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='list-inline-item current" + (firstLastCls ? (' ' + firstLastCls) : '') + "'><span class='u-pagination-v1__item u-pagination-ua g-pa-12-19 current'>" + (i + 1) + "</span></li>");
+                                                for (var i = 0; i < pagination_fc_8284765268434569.length; i++) {
+                                                    if (i == count) {
+                                                        document.getElementById('fc_8284765268434569-part-' + pagination_fc_8284765268434569[i]).style.display = "";
+                                                        document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i + '_button').style.display = "none";
+                                                        document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i).style.display = "";
                                                     }
-                                                    document.write("<li id='content_filter_next_33167900344009926fc_8284765268434569' class='list-inline-item next'><input class='u-pagination-v1__item u-pagination-ua g-pa-12-19' type='submit' onclick='try { show_fc_8284765268434569(\"next\"); } catch(e) {} return false;' value='>'/></li></ul></nav><div style='clear: both;'></div>");
-
-                                                    try {
-                                                        show_fc_8284765268434569_buttonsid
-                                                    }
-                                                    catch (e) {
-                                                        show_fc_8284765268434569_buttonsid = [];
-                                                    }
-
-                                                    show_fc_8284765268434569_buttonsid.push("33167900344009926")
-                                                    function show_fc_8284765268434569(count) {
-                                                        if (count == 'next') {
-                                                            count = pagination_fc_8284765268434569_current + 1;
-                                                        }
-                                                        else if (count == 'prev') {
-                                                            count = pagination_fc_8284765268434569_current - 1;
-                                                        }
-
-                                                        pagination_fc_8284765268434569_current = count;
-
-                                                        for (var idindex = 0; idindex < show_fc_8284765268434569_buttonsid.length; idindex++) {
-                                                            var id = show_fc_8284765268434569_buttonsid[idindex];
-
-                                                            for (var i = 0; i < pagination_fc_8284765268434569.length; i++) {
-                                                                if (i == count) {
-                                                                    document.getElementById('fc_8284765268434569-part-' + pagination_fc_8284765268434569[i]).style.display = "";
-                                                                    document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i + '_button').style.display = "none";
-                                                                    document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i).style.display = "";
-                                                                }
-                                                                else {
-                                                                    document.getElementById('fc_8284765268434569-part-' + pagination_fc_8284765268434569[i]).style.display = "none";
-                                                                    document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i + '_button').style.display = "";
-                                                                    document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i).style.display = "none";
-                                                                }
-                                                            }
-
-                                                            document.getElementById("content_filter_prev_" + id + "fc_8284765268434569").style.display = (pagination_fc_8284765268434569_current == "0" ? 'none' : '');
-                                                            document.getElementById("content_filter_next_" + id + "fc_8284765268434569").style.display = (pagination_fc_8284765268434569_current == (pagination_fc_8284765268434569.length - 1) ? 'none' : '');
-                                                        }
-
-                                                        // onPaginationShow hook.
-                                                        if ($j.isFunction(onPaginationShow_fc_8284765268434569)) {
-                                                            onPaginationShow_fc_8284765268434569(count + 1);
-                                                        }
+                                                    else {
+                                                        document.getElementById('fc_8284765268434569-part-' + pagination_fc_8284765268434569[i]).style.display = "none";
+                                                        document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i + '_button').style.display = "";
+                                                        document.getElementById('content_filter_' + id + 'fc_8284765268434569' + i).style.display = "none";
                                                     }
                                                 }
 
-                                            </script>
-                                        </div>
-                                    </div>
-                                </div>
+                                                document.getElementById("content_filter_prev_" + id + "fc_8284765268434569").style.display = (pagination_fc_8284765268434569_current == "0" ? 'none' : '');
+                                                document.getElementById("content_filter_next_" + id + "fc_8284765268434569").style.display = (pagination_fc_8284765268434569_current == (pagination_fc_8284765268434569.length - 1) ? 'none' : '');
+                                            }
+
+                                            // onPaginationShow hook.
+                                            if ($j.isFunction(onPaginationShow_fc_8284765268434569)) {
+                                                onPaginationShow_fc_8284765268434569(count + 1);
+                                            }
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -649,9 +345,4 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid g-bg-gris-c-ua g-mt-30 g-pb-40">
-        <div data-ametys-zone="bottom" id="ametys-cms-zone-bottom"></div>
-    </div>
-    <div class="u-fleche-scroll text-right mt-5 g-hidden-md-down g-pr-50"><a href="#!" class="g-bg-black-opacity-0_6 rounded-circle p-3"><img alt="Scroll"
-                src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/fleche-blanc.png" /></a></div>
 {% endblock %}

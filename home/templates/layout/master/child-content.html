@@ -10,10 +10,321 @@
         {% block fil_d_ariane %}
 
         {% endblock %}
-        {% include '_partial/sendmail-share-js.html' %}
+
+        <div class="g-mt-30 d-flex">
+          <a href="javascript:window.print();" class="u-image-lien u-image-print-ua"></a><span id="sendByMailHeader-8973357629198009"></span>
+          <script type="text/javascript">
+              $j("#sendByMailHeader-8973357629198009").wrapInner('<a class="u-image-lien u-image-mail-ua" href="javascript: sendByMail_form_popup_8973357629198009()"></a>')
+          </script>
+          <form method="post" action="/fr/_plugins/socialnetworking/page/send-mail" id="sendByMail-8973357629198009">
+              <div class="sendByMail-form" id="sendByMail-form-8973357629198009">
+                  <input value="page://c3192f2a-326e-4320-b76b-b9c5eebeebdb" id="sendByMail-8973357629198009-id" name="page-id" type="hidden" />
+                  <div class="field">
+                      <div class="label">
+                          <label for="sendByMail-8973357629198009-name">Votre nom<span class="mandatory">*</span></label>
+                      </div>
+                      <div class="input">
+                          <input id="sendByMail-8973357629198009-name" name="name" type="text" />
+                      </div>
+                      <div class="field-end"></div>
+                      <script type="text/javascript">
+                          getAmetysUser(function (user) {
+                              if (user && user.fill) {
+                                  user.fill("sendByMail-8973357629198009-name", "fullname");
+                              }
+                          });
+                      </script>
+                  </div>
+                  <div class="field">
+                      <div class="label">
+                          <label for="sendByMail-8973357629198009-email-by">Votre email<span class="mandatory">*</span></label>
+                      </div>
+                      <div class="input">
+                          <input id="sendByMail-8973357629198009-email-by" name="email" type="text" />
+                      </div>
+                      <div class="field-end"></div>
+                      <script type="text/javascript">
+                          getAmetysUser(function (user) {
+                              if (user && user.fill) {
+                                  user.fill("sendByMail-8973357629198009-email-by", "email");
+                              }
+                          });
+                      </script>
+                  </div>
+                  <div class="field">
+                      <div class="label">
+                          <label for="sendByMail-8973357629198009-email-to">Destinataire(s)<span class="mandatory">*</span></label>
+                      </div>
+                      <div class="input">
+                          <input id="sendByMail-8973357629198009-email-to" name="emailTo" type="text" /><br /><span class="hint">SÉparÉs par des virgules</span>
+                      </div>
+                      <div class="field-end"></div>
+                  </div>
+                  <div class="field">
+                      <div class="label">
+                          <label for="sendByMail-8973357629198009-text">Message</label>
+                      </div>
+                      <div class="input">
+                          <textarea rows="3" cols="20" id="sendByMail-8973357629198009-text" name="text"></textarea>
+                      </div>
+                      <div class="field-end"></div>
+                  </div>
+                  <div class="field">
+                      <div class="input">
+                          <noscript>
+                              <div style="width: 302px; height: 462px;">
+                                  <div style="width: 302px; height: 422px; position: relative;">
+                                      <div style="width: 302px; height: 422px;">
+                                          <iframe style="width: 302px; height:422px; border-style: none;" scrolling="no" frameborder="0"
+                                              src="https://www.google.com/recaptcha/api/fallback?k=6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU"></iframe>
+                                      </div>
+                                      <div
+                                          style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                                          <textarea style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" class="g-recaptcha-response"
+                                              name="captcha-value" id="g-recaptcha-response"></textarea>
+                                          <input name="captcha-key" type="hidden" />
+                                      </div>
+                                  </div>
+                              </div>
+                          </noscript>
+                          <script type="text/javascript">
+                              document.write("<input type=\"hidden\" name=\"captcha-key\" id=\"sendByMail-8973357629198009-captcha-key\"/>")
+                              document.write("<input type=\"hidden\" name=\"captcha-value\" id=\"sendByMail-8973357629198009-captcha\"/>")
+                              document.write("<div class=\"g-recaptcha\" id=\"captcha2914624471923609\"></div>")
+                              function loadValueToSend_captcha2914624471923609(value) {
+                                  document.getElementById("sendByMail-8973357629198009-captcha").value = value;
+                              }
+                              var widgetIds = [];
+      
+                              function ReCaptchaCallback_captcha2914624471923609() {
+                                  recaptchaLoaded = true;
+                                  for (const element of recaptchaFieldsToLoad) {
+                                      var resetId = grecaptcha.render(element.captchaId, {
+                                          'sitekey': '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
+                                          'callback': element.callback,
+                                          'theme': element.theme,
+                                          'size': element.size,
+                                          'tabindex': "1"
+                                      });
+                                      widgetIds[element.captchaId] = resetId;
+                                  }
+                              }
+      
+                              if (typeof recaptchaLoaded == 'undefined') {
+                                  // The recaptcha script was never loaded
+                                  recaptchaLoaded = false;
+                                  recaptchaFieldsToLoad = [{
+                                      'captchaId': "captcha2914624471923609",
+                                      'callback': loadValueToSend_captcha2914624471923609,
+                                      'theme': 'light',
+                                      'size': 'normal',
+                                  }];
+                                  document.write("<script src=\"https://www.google.com/recaptcha/api.js?onload=ReCaptchaCallback_captcha2914624471923609&render=explicit\" async defer><\/script>");
+                              }
+                              else if (!recaptchaLoaded) {
+                                  // The recaptcha script is loading but not ready.
+                                  recaptchaFieldsToLoad.push({
+                                      'captchaId': "captcha2914624471923609",
+                                      'callback': loadValueToSend_captcha2914624471923609,
+                                      'theme': 'light',
+                                      'size': 'normal'
+                                  })
+                              }
+                              else {
+                                  // the recaptcha script is loaded and ready
+                                  var resetId = grecaptcha.render("captcha2914624471923609", {
+                                      'sitekey': '6LcXZ2keAAAAAM9vGeAW51KGxDLMZAu5bINCvABU',
+                                      'callback': loadValueToSend_captcha2914624471923609,
+                                      'theme': 'light',
+                                      'size': 'normal'
+                                  });
+                                  widgetIds[captcha2914624471923609] = resetId;
+                              }
+      
+                              function refresh_sendByMail_8973357629198009(focusNow) {
+                                  grecaptcha.reset(widgetIds["captcha2914624471923609"]);
+                              }
+                          </script>
+                      </div>
+                      <div class="field-end"></div>
+                  </div>
+                  <div id="sendByMail-submit-8973357629198009">
+                      <div class="button">
+                          <input type="submit" class="art-button" value="Envoyer" onclick="return sendByMail_form_submit_8973357629198009();" title="" />
+                      </div>
+                  </div>
+              </div>
+          </form>
+          <script type="text/javascript">
+              function sendByMail_form_switch_8973357629198009() {
+                  var form = document.getElementById('sendByMail-8973357629198009');
+                  var submit = document.getElementById('sendByMail-submit-8973357629198009');
+                  form.style.display = (form.style.display == 'none') ? '' : 'none';
+                  submit.style.display = (submit.style.display == 'none') ? '' : 'none';
+              }
+      
+              let sendByMail_captchaRequired_8973357629198009 = true;
+      
+              sendByMail_form_switch_8973357629198009();
+      
+              function sendByMail_form_popup_8973357629198009() {
+                  if (sendByMail_captchaRequired_8973357629198009) {
+                      refresh_sendByMail_8973357629198009();
+                  }
+                  $j("#sendByMail-form-8973357629198009 script").remove();
+                  $j("#sendByMail-form-8973357629198009").dialog({
+                      resizable: false,
+                      height: 'auto',
+                      width: 'auto',
+                      modal: true,
+                      title: 'Envoyer par mail',
+                      buttons: {
+                          Envoyer: function () {
+                              sendByMail_form_submit_8973357629198009();
+                          },
+                          Annuler: function () {
+                              $j(this).dialog("close");
+                          }
+                      }
+                  });
+      
+                  $j('#sendByMail-8973357629198009-email-to').val('');
+                  $j('#sendByMail-8973357629198009-text').val('');
+                  $j('#sendByMail-8973357629198009-captcha').val('');
+              }
+      
+              function sendByMail_form_submit_8973357629198009() {
+                  var form = document.getElementById('sendByMail-8973357629198009');
+      
+                  var pageId = $j('#sendByMail-8973357629198009-id');
+                  var nameInput = $j('#sendByMail-8973357629198009-name');
+                  var emailInputBy = $j('#sendByMail-8973357629198009-email-by');
+                  var emailInputTo = $j('#sendByMail-8973357629198009-email-to');
+                  var contentInput = $j('#sendByMail-8973357629198009-text');
+                  var captchaKey = $j('#sendByMail-8973357629198009-captcha-key');
+                  var captchaInput = $j('#sendByMail-8973357629198009-captcha');
+      
+                  var errors = false;
+      
+                  if (/^\s*$/.test(nameInput.val())) {
+                      errors = true;
+                      nameInput.parentsUntil('.field').parent().addClass('error');
+                  }
+                  else {
+                      nameInput.parentsUntil('.field').parent().removeClass('error');
+                  }
+      
+                  if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?$/.test(emailInputBy.val()) || /^\s*$/.test(emailInputBy.val())) {
+                      errors = true;
+                      emailInputBy.parentsUntil('.field').parent().addClass('error');
+                  }
+                  else {
+                      emailInputBy.parentsUntil('.field').parent().removeClass('error');
+                  }
+      
+                  if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?(\s*,\s*([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?)*$/.test(emailInputTo.val()) || /^\s*$/.test(emailInputTo.val())) {
+                      errors = true;
+                      emailInputTo.parentsUntil('.field').parent().addClass('error');
+                  }
+                  else {
+                      emailInputTo.parentsUntil('.field').parent().removeClass('error');
+                  }
+      
+                  if (!errors) {
+                      // send it in ajax
+                      var data = {
+                          "page-id": pageId.val(),
+                          "name": nameInput.val(),
+                          "email": emailInputBy.val(),
+                          "emailTo": emailInputTo.val(),
+                          "text": contentInput.val(),
+                          "captcha-key": captchaKey.val(),
+                          "captcha-value": captchaInput.val(),
+                          "ajax": "true"
+                      };
+      
+                      function result(data) {
+                          var s = "";
+                          $j('errors error', data).each(function () {s += $j(this).text() + "\n";});
+      
+                          if (s == "") {
+                              var errors = $j('error > error', data);
+                              var mailErrors = $j('mailError > mailError', data);
+      
+                              if (errors.length == 0 && mailErrors.length == 0) {
+                                  $j("#sendByMail-form-8973357629198009").dialog("close");
+                                  alert("Le mail a bien été envoyé");
+                              }
+                              else if (errors.length > 0) {
+                                  var m = '';
+                                  $j('error > error', data).each(function () {
+                                      m += "\n*" + $j(this).text();
+                                  });
+                                  alert("Votre formulaire contient les erreurs suivantes :" + m);
+                                  if (sendByMail_captchaRequired_8973357629198009) {
+                                      refresh_sendByMail_8973357629198009();
+                                  }
+                              }
+                              else if (mailErrors.length > 0) {
+                                  var m = '';
+                                  $j('mailError > mailError', data).each(function () {
+                                      m += "\n" + $j(this).text();
+                                  });
+      
+                                  alert("L'envoi du mail a échoué pour les adresses email suivantes :" + m);
+                                  if (sendByMail_captchaRequired_8973357629198009) {
+                                      refresh_sendByMail_8973357629198009();
+                                  }
+                              }
+                          }
+                          else {
+                              // Could really append ??
+                              alert(s);
+                              if (sendByMail_captchaRequired_8973357629198009) {
+                                  refresh_sendByMail_8973357629198009();
+                              }
+                          }
+                      }
+      
+                      function handleError(jqXHR, textStatus, errorThrown) {
+                          alert("Une erreur inattendue est survenue: l'envoi de mail a échoué.");
+                      }
+      
+                      $j.ajax({
+                          url: "/plugins/socialnetworking/send-mail",
+                          data: data,
+                          type: 'post',
+                          success: result,
+                          error: handleError
+                      });
+                  }
+                  return false;
+              }
+          </script>
+          <div class="art-sharethis">
+              <div class="art-sharethis-wrapper">
+                  <script type="text/javascript">
+                      var switchTo5x = true; // Multi Post
+                      $j(document).ready(function () {
+                          var baseUrl = document.location.protocol == 'https:' ? 'https://ws.' : 'http://w.';
+                          $j.getScript(baseUrl + "sharethis.com/button/buttons.js", function (data, textStatus) {
+                              stLight.options({
+                                  publisher: '7fcfec1e-16ef-41a0-8902-67b9f511c6ba'
+                                  , lang: 'fr', fbLang: 'fr_FR'
+                              });
+                          });
+                      });
+                  </script>
+                  <script type="text/javascript">
+                      document.write("<span class='st_sharethis' displayText='ShareThis'></span>");
+                  </script>
+              </div>
+          </div>
+        </div>
+
         {% block data %}
 
-        {% endblock %}
+        {% endblock %}        
       </div>
       <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
         {% block sidebar %}
@@ -22,5 +333,10 @@
       </div>
     </div>
   </div>
-  {% include '_partial/bottom-zone-fleche.html' %}
+  <div class="container-fluid g-bg-gris-c-ua g-mt-30 g-pb-40">
+    <div data-ametys-zone="bottom" id="ametys-cms-zone-bottom"></div>
+  </div>
+  <div class="u-fleche-scroll text-right mt-5 g-hidden-md-down g-pr-50">
+      <a href="#!" class="g-bg-black-opacity-0_6 rounded-circle p-3"><img alt="Scroll" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/fleche-blanc.png" /></a>
+  </div>
 {% endblock %}

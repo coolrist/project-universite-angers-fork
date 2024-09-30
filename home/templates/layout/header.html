@@ -1,7 +1,7 @@
 <header data-header-fix-effect="slide" data-header-fix-moment="500" class="u-header u-header--static u-header--show-hide u-header--change-appearance" id="js-header">
   <div class="g-bg-bleu-ua bar-langue g-color-white g-py-4">
     <div class="g-mx-80--lg text-right g-pr-30">
-      <a href="{% url 'home' %}" title="Voir la page en français">fr</a> | <a href="/en/index.html" title="See this page in english">en</a>
+      <a href="{% url 'home' %}" title="Voir la page en français">fr</a> | <a href="#" title="See this page in english">en</a>
     </div>
   </div>
   <div data-header-fix-moment-classes="g-bg-white-opacity-0_7 u-shadow-v18 g-py-0" data-header-fix-moment-exclude="g-bg-white g-py-10" class="u-header__section u-header__section--dark g-bg-black g-transition-0_3">
@@ -15,52 +15,88 @@
             <a href="{% url 'home' %}"><img alt="Accueil" src="https://www.univ-angers.fr/skins/UnivAngers-v2/resources/img/logo-header-blanc-bleu.png" class="img-fluid w-auto g-py-20" /></a>
           </div>
           <div class="col col-auto my-auto order-md-last pr-0">
-            <button title="MENU" data-target="#navBar" data-toggle="collapse" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation" type="button" class="navbar-toggler navbar-toggler-right btn g-brd-none">
-              <span class="d-block lib-menu">MENU</span><span class="hamburger hamburger--slider g-pt-5"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
-            </button>
+            <button title="MENU" data-target="#navBar" data-toggle="collapse" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation" type="button" class="navbar-toggler navbar-toggler-right btn g-brd-none"><span class="d-block lib-menu">MENU</span><span class="hamburger hamburger--slider g-pt-5"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
           </div>
           <div class="search col col-12 col-md-auto my-auto">
-            <form method="post" action="/fr/moteur-de-recherche.html">
-              <input placeholder="recherche" title="Saisissez le mots-clefs pour lancer la recherche" name="textfield" class="input-text input-ua" type="text" /> <input value="true" name="multisite" type="hidden" /> <input value="www" name="sites" type="hidden" /> <input value="www2" name="sites" type="hidden" /> <input value="odf" name="sites" type="hidden" /> <input value="" name="input"
-                class="art-hmenu-form-button btn btn-search-img" type="submit" /> <input type="hidden" name="submit-form" />
+            <form method="post" action="#">
+              <input placeholder="recherche" title="Saisissez le mots-clefs pour lancer la recherche" name="textfield" class="input-text input-ua" type="text" />
+              <input value="true" name="multisite" type="hidden" />
+              <input value="www" name="sites" type="hidden" />
+              <input value="www2" name="sites" type="hidden" />
+              <input value="odf" name="sites" type="hidden" />
+              <input value="" name="input" class="art-hmenu-form-button btn btn-search-img" type="submit" />
+              <input type="hidden" name="submit-form" />
             </form>
           </div>
         </div>
-        <div data-navigation-overlay-classes="g-bg-black-opacity-0_8 g-transition-0_5" data-navigation-init-body-classes="g-transition-0_5" data-navigation-init-classes="g-transition-0_5" data-navigation-position="right" data-navigation-breakpoint="lg" id="navBar"
-          class="js-navigation navbar-collapse align-items-center flex-sm-row u-main-nav--overlay-hidden g-bg-bleu-ua g-pt-10 g-pt-5--lg g-transition-0_5">
+        <div data-navigation-overlay-classes="g-bg-black-opacity-0_8 g-transition-0_5" data-navigation-init-body-classes="g-transition-0_5" data-navigation-init-classes="g-transition-0_5" data-navigation-position="right" data-navigation-breakpoint="lg" id="navBar" class="js-navigation navbar-collapse align-items-center flex-sm-row u-main-nav--overlay-hidden g-bg-bleu-ua g-pt-10 g-pt-5--lg g-transition-0_5">
           <div class="u-main-nav__list-wrapper ml-auto">
             <div class="mobile-burger d-block d-sm-none col col-auto my-auto order-md-last pr-0">
-              <button title="MENU" data-target="#navBar" data-toggle="collapse" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation" type="button" class="navbar-toggler navbar-toggler-right btn g-brd-none">
-                <span class="d-block lib-menu">MENU</span><span class="hamburger hamburger--slider g-pt-5"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span>
-              </button>
+              <button title="MENU" data-target="#navBar" data-toggle="collapse" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation" type="button" class="navbar-toggler navbar-toggler-right btn g-brd-none"><span class="d-block lib-menu">MENU</span><span class="hamburger hamburger--slider g-pt-5"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
             </div>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown bases {% if 'vous-etes' in request.resolver_match.app_names %} show {% endif %}"><a aria-haspopup="true" role="button" href="{% url 'vous-etes:futur-etudiant:index' %}" class="nav-link dropdown-toggle" aria-expanded="true" data-toggle="dropdown"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Vous êtes</a>
+              <li class="nav-item dropdown bases {% if 'vous-etes' in request.resolver_match.app_names %} show {% endif %}">
+                <a aria-haspopup="true" role="button" href="{% url 'vous-etes:futur-etudiant:index' %}" class="nav-link dropdown-toggle" aria-expanded="true" data-toggle="dropdown"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Vous êtes</a>
                 <div class="dropdown-menu u-dropdown-static {% if 'vous-etes' in request.resolver_match.app_names %} show {% endif %}">
                   <ul class="nav flex-column">
-                    <li class="nav-item bases"><a href="{% url 'vous-etes:futur-etudiant:index' %}" class="nav-link g-font-weight-bold--hover">Futur étudiant / Lycéen</a></li>
-                    <li class="nav-item bases"><a href="{% url 'vous-etes:etudiant:index' %}" class="nav-link g-font-weight-bold--hover">étudiant</a></li>
-                    <li class="nav-item bases"><a href="{% url 'international:venir-a-l-ua' %}" class="nav-link g-font-weight-bold--hover">étudiant international</a></li>
-                    <li class="nav-item bases"><a href="{% url 'recherche:etudes-doctorales-et-hdr' %}" class="nav-link g-font-weight-bold--hover">Doctorant</a></li>
-                    <li class="nav-item bases"><a href="{% url 'vous-etes:entreprise:index' %}" class="nav-link g-font-weight-bold--hover">Entreprise / Partenaire</a></li>
-                    <li class="nav-item bases"><a href="{% url 'vous-etes:journaliste:index' %}" class="nav-link g-font-weight-bold--hover">Journaliste</a></li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'vous-etes:futur-etudiant:index' %}" class="nav-link g-font-weight-bold--hover">Futur étudiant / Lycéen</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'vous-etes:etudiant:index' %}" class="nav-link g-font-weight-bold--hover">étudiant</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'international:venir-a-l-ua' %}" class="nav-link g-font-weight-bold--hover">étudiant international</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'recherche:etudes-doctorales-et-hdr' %}" class="nav-link g-font-weight-bold--hover">Doctorant</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'vous-etes:entreprise:index' %}" class="nav-link g-font-weight-bold--hover">Entreprise / Partenaire</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'vous-etes:journaliste:index' %}" class="nav-link g-font-weight-bold--hover">Journaliste</a>
+                    </li>
                   </ul>
-                </div></li>
-              <li class="nav-item dropdown bases {% if 'universite' in request.resolver_match.app_names %} show {% endif %}"><a aria-haspopup="true" role="button" href="{% url 'universite:index' %}" class="nav-link dropdown-toggle" aria-expanded="true" data-toggle="dropdown"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Université</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown bases {% if 'universite' in request.resolver_match.app_names %} show {% endif %}">
+                <a aria-haspopup="true" role="button" href="{% url 'universite:index' %}" class="nav-link dropdown-toggle" aria-expanded="true" data-toggle="dropdown"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Université</a>
                 <div class="dropdown-menu u-dropdown-static {% if 'universite' in request.resolver_match.app_names %} show {% endif %}">
                   <ul class="nav flex-column">
-                    <li class="nav-item bases"><a href="{% url 'universite:qui-sommes-nous:nos-missions-et-nos-valeurs' %}" class="nav-link g-font-weight-bold--hover">Qui sommes-nous ?</a></li>
-                    <li class="nav-item bases"><a href="{% url 'universite:fonctionnement:organigramme' %}" class="nav-link g-font-weight-bold--hover">Fonctionnement</a></li>
-                    <li class="nav-item bases"><a href="{% url 'universite:strategies-et-grands-projets:index' %}" class="nav-link g-font-weight-bold--hover">Stratégies et grands projets</a></li>
-                    <li class="nav-item bases"><a href="{% url 'universite:les-chantiers-de-l-ua:index' %}" class="nav-link g-font-weight-bold--hover">Les chantiers de l'UA</a></li>
-                    <li class="nav-item bases"><a href="{% url 'universite:travailler-a-l-ua:index' %}" class="nav-link g-font-weight-bold--hover">Travailler à l'UA</a></li>
-                    <li class="nav-item bases"><a href="{% url 'universite:hrs4r:index' %}" class="nav-link g-font-weight-bold--hover">HRS4R</a></li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'universite:qui-sommes-nous:nos-missions-et-nos-valeurs' %}" class="nav-link g-font-weight-bold--hover">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'universite:fonctionnement:organigramme' %}" class="nav-link g-font-weight-bold--hover">Fonctionnement</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'universite:strategies-et-grands-projets:index' %}" class="nav-link g-font-weight-bold--hover">Stratégies et grands projets</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'universite:les-chantiers-de-l-ua:index' %}" class="nav-link g-font-weight-bold--hover">Les chantiers de l'UA</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'universite:travailler-a-l-ua:index' %}" class="nav-link g-font-weight-bold--hover">Travailler à l'UA</a>
+                    </li>
+                    <li class="nav-item bases">
+                      <a href="{% url 'universite:hrs4r:index' %}" class="nav-link g-font-weight-bold--hover">HRS4R</a>
+                    </li>
                   </ul>
-                </div></li>
-              <li class="nav-item dropdown bases"><a aria-haspopup="true" role="button" href="{% url 'recherche:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Recherche</a></li>
-              <li class="nav-item dropdown bases"><a aria-haspopup="true" role="button" href="{% url 'formations:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Formations</a></li>
-              <li class="nav-item dropdown bases"><a aria-haspopup="true" role="button" href="{% url 'international:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>International</a></li>
-              <li class="nav-item dropdown bases"><a aria-haspopup="true" role="button" href="{% url 'vie-des-campus:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Vie des campus</a></li>
+                </div>
+              </li>
+              <li class="nav-item dropdown bases">
+                <a aria-haspopup="true" role="button" href="{% url 'recherche:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Recherche</a>
+              </li>
+              <li class="nav-item dropdown bases">
+                <a aria-haspopup="true" role="button" href="{% url 'formations:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Formations</a>
+              </li>
+              <li class="nav-item dropdown bases">
+                <a aria-haspopup="true" role="button" href="{% url 'international:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>International</a>
+              </li>
+              <li class="nav-item dropdown bases">
+                <a aria-haspopup="true" role="button" href="{% url 'vie-des-campus:index' %}" class="nav-link dropdown-toggle" aria-expanded="false"><i aria-hidden="true" class="fa icon-rotates chevron-menu">&gt;</i>Vie des campus</a>
+              </li>
             </ul>
           </div>
         </div>

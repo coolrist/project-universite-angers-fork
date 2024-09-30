@@ -1,143 +1,119 @@
-{% extends 'layout/master.html' %}
+{% extends 'layout/master/child-content.html' %}
 
 {% block title %}
   HRS4R
 {% endblock %}
 
-{% block content %}
-    <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_recherche_moltech_chimie.jpg" alt="" />
-    <div class="container-fluid g-px-50--sm g-px-125--xl">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 g-px-0--lg g-z-index-2">
-          <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
-            <ul class="u-list-inline">
-              <li class="list-inline-item g-mr-5"><span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="{% url 'universite:index' %}">Université</a></li>
-              <li class="list-inline-item g-color-bleu-ua"><span class="g-mr-5">&gt;</span><span>HRS4R</span></li>
-            </ul>
-          </div>
-          {% include '_partial/sendmail-share-js.html' %}
-          <div data-ametys-zone="default" id="ametys-cms-zone-default">
-            <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100B0" class="first last">
-              <div class="ametys-cms-content article view-main wrapper">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">Labellisation HRS4R</span>
-                </h1>
-                <p class="introduction">
-                  Depuis le 4 décembre 2020, l'Université d'Angers bénéficie du label <a href="https://euraxess.ec.europa.eu/jobs/hrs4r" class="external" target="_blank">HRS4R (Human Resources Strategy for Researchers)</a> délivré par <a href="https://euraxess.ec.europa.eu/" class="external" target="_blank">Euraxess</a>, un organisme lié
-                  à la <a href="https://ec.europa.eu/info/index_fr" class="external" target="_blank">Commission européenne</a> destiné à faciliter la mobilité des chercheurs en Europe.
-                </p>
-                <a name="N10052"></a>
-                <h2 class="ametys-richtext-title-1">Une stratégie qualitative pour l'université</h2>
-                <a name="N10055"></a>
-                <h2 class="ametys-richtext-title-1">
-                  <span class="image-wrapper simple floatright" style="display: inline-block; text-align: center"><img src="https://www.univ-angers.fr/_resource/Logos/HRS4R_203x300.png" alt="" width="300" height="203" /></span>
-                </h2>
-                <p>
-                  L'Université d'Angers a adhéré dès le début au processus de constitution de l'espace européen de la recherche et sa philosophie en signant <a href="https://cdn2.euraxess.org/sites/default/files/brochures/eur_21620_en-fr.pdf" class="external" target="_blank">la Charte européenne des chercheurs et le Code de
-                    conduite de recrutement des chercheurs</a> de l'Union Européenne, publiée en 2005 et validée en 2007 par l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  . Elle s'est engagée depuis des années dans l'amélioration du recrutement et de la vie de ses personnels, chercheurs et concourant à la recherche. La labellisation <a href="https://euraxess.ec.europa.eu/jobs/hrs4r" class="external" target="_blank">HRS4R</a> obtenue en décembre 2020 est une reconnaissance du projet
-                  d'amélioration continue de l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  . L'Université d'Angers ambitionne de changer de vitesse et d'aller plus loin en créant une dynamique collective autour des actions à mener. C'est donc l'occasion de réaffirmer ses principes et valeurs.
-                </p>
-                <a name="N1006D"></a>
-                <h2 class="ametys-richtext-title-1">Les engagements HRS4R</h2>
-                <p>
-                  Le label décline la stratégie qualitative globale en quatre grands domaines. Ces quatre axes de réflexion et d'action définis par l'UE sont très largement partagés par l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  qui n'a pas attendu le processus HRS4R pour s'interroger sur les moyens de progresser vers l'excellence dans tous les domaines.
-                </p>
-                <a name="N10072"></a><a name="N10074"></a>
-                <h4 class="ametys-richtext-title-3">
-                  <strong>&Eacute;thique et responsabilité professionnelle</strong>
-                </h4>
-                <p>
-                  L'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  respecte pleinement les principes de fonctionnement éthiques et déontologiques, à commencer par les libertés académiques. Elle est fortement engagée sur les questions d'égalité et de non-discrimination, d'équilibre homme-femme, de respect de la propriété intellectuelle&hellip; Une formation
-                  est systématiquement dispensée aux doctorants, et un référent intégrité et un comité éthique sont en place. Ce dispositif a été complété par la désignation d'un référent égalité, et sera renforcé par une formation systématique des personnels
-                  sur toutes ces questions afin de traquer les préjugés.
-                </p>
-                <a name="N1007B"></a>
-                <h4 class="ametys-richtext-title-3">
-                  <strong>Recrutement et développement de carrière</strong>
-                </h4>
-                <p>
-                  Le recrutement fait l'objet d'une attention particulière de l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  afin de garantir les principes de mérite, de transparence et d'ouverture, et de garantir un traitement équitable des candidats, quels que soient les emplois. L'amélioration du mode de fonctionnement des commissions, comités, jurys, est un processus continu. Il passe par une formation permanente, en particulier pour les présidents,
-                  afin de diffuser les bonnes pratiques, mais passe aussi par une information plus complète des candidats et une harmonisation des pratiques. Harmonisation ne signifie cependant pas standardisation. Le chantier en cours doit ainsi intégrer les spécificités de chaque poste, discipline, catégorie.
-                </p>
-                <a name="N10082"></a>
-                <h4 class="ametys-richtext-title-3">
-                  <strong>Conditions de travail et la qualité de l'environnement professionnel</strong>
-                </h4>
-                <p>Les conditions de travail représentent un chantier permanent. Dans un contexte très fortement contraint par un double déficit en moyens financiers et humains, l'université parvient à offrir un cadre de travail de qualité et qui est reconnu comme tel. Elle est par ailleurs très engagée de manière
-                  concrète sur le terrain de l'égalité des personnels, donc de la non-discrimination. L'objectif est de mieux repérer les difficultés dans l'exercice du métier et dans l'environnement professionnel, et d'accompagner les personnels en développant des systèmes de mentorat ou de
-                  référent.</p>
-                <a name="N10089"></a>
-                <h4 class="ametys-richtext-title-3">
-                  <strong>Formation et le développement professionnel</strong>
-                </h4>
-                <p>
-                  La formation des personnels est un élément fort de l'
-                  <dfn title="Université d'Angers">UA</dfn>
-                  , qui peut encore gagner en croisant plusieurs offres de recherche offertes par diverses entités. L'évolutivité des compétences et des besoins &ndash; la crise sanitaire l'a mis en exergue &ndash; nécessite un effort permanent d'identification des besoins et de formation appropriée, que ce soit pour la pédagogie
-                  ou les responsabilités de gestion de projets et de structure administrative.
-                </p>
-                <div class="content-richtext-end">
-                  <!--empty-->
-                </div>
-                <div class="meta"></div>
-              </div>
-            </div>
-          </div>
+{% block main_image %}
+  <img class="img-fluid w-100" src="https://www.univ-angers.fr/_resource/Pages_Bandeau_Illustration/Illustration_recherche_moltech_chimie.jpg" alt="" />
+{% endblock %}
+
+{% block fil_d_ariane %}
+  <div class="ml-auto text-uppercase g-font-ua-poppins-semibold g-font-size-12 g-pt-5 g-hidden-sm-down">
+    <ul class="u-list-inline">
+      <li class="list-inline-item g-mr-5">
+        <span class="g-mr-5">&gt;</span><a class="u-link-v5 g-color-main g-color-bleu-ua--hover" href="{% url 'universite:index' %}">Université</a>
+      </li>
+      <li class="list-inline-item g-color-bleu-ua">
+        <span class="g-mr-5">&gt;</span><span>HRS4R</span>
+      </li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block data %}
+  <div data-ametys-zone="default" id="ametys-cms-zone-default">
+    <div data-ametys-zone-level="1" id="ametys-cms-zone-default-item-N100B0" class="first last">
+      <div class="ametys-cms-content article view-main wrapper">
+        <h1 class="art-postheader"><span class="content-title summary">Labellisation HRS4R</span></h1>
+        <p class="introduction">
+          Depuis le 4 décembre 2020, l'Université d'Angers bénéficie du label <a href="https://euraxess.ec.europa.eu/jobs/hrs4r" class="external" target="_blank">HRS4R (Human Resources Strategy for Researchers)</a> délivré par <a href="https://euraxess.ec.europa.eu/" class="external" target="_blank">Euraxess</a>, un organisme lié à la <a href="https://ec.europa.eu/info/index_fr" class="external" target="_blank">Commission européenne</a> destiné à faciliter la mobilité des chercheurs en Europe.
+        </p>
+        <a name="N10052"></a>
+        <h2 class="ametys-richtext-title-1">Une stratégie qualitative pour l'université</h2>
+        <a name="N10055"></a>
+        <h2 class="ametys-richtext-title-1"><span class="image-wrapper simple floatright" style="display: inline-block; text-align: center"><img src="https://www.univ-angers.fr/_resource/Logos/HRS4R_203x300.png" alt="" width="300" height="203" /></span></h2>
+        <p>
+          L'Université d'Angers a adhéré dès le début au processus de constitution de l'espace européen de la recherche et sa philosophie en signant <a href="https://cdn2.euraxess.org/sites/default/files/brochures/eur_21620_en-fr.pdf" class="external" target="_blank">la Charte européenne des chercheurs et le Code de conduite de recrutement des chercheurs</a> de l'Union Européenne, publiée en 2005 et validée en 2007 par l'
+          <dfn title="Université d'Angers">UA</dfn>
+          . Elle s'est engagée depuis des années dans l'amélioration du recrutement et de la vie de ses personnels, chercheurs et concourant à la recherche. La labellisation <a href="https://euraxess.ec.europa.eu/jobs/hrs4r" class="external" target="_blank">HRS4R</a> obtenue en décembre 2020 est une reconnaissance du projet d'amélioration continue de l'
+          <dfn title="Université d'Angers">UA</dfn>
+          . L'Université d'Angers ambitionne de changer de vitesse et d'aller plus loin en créant une dynamique collective autour des actions à mener. C'est donc l'occasion de réaffirmer ses principes et valeurs.
+        </p>
+        <a name="N1006D"></a>
+        <h2 class="ametys-richtext-title-1">Les engagements HRS4R</h2>
+        <p>
+          Le label décline la stratégie qualitative globale en quatre grands domaines. Ces quatre axes de réflexion et d'action définis par l'UE sont très largement partagés par l'
+          <dfn title="Université d'Angers">UA</dfn>
+          qui n'a pas attendu le processus HRS4R pour s'interroger sur les moyens de progresser vers l'excellence dans tous les domaines.
+        </p>
+        <a name="N10072"></a><a name="N10074"></a>
+        <h4 class="ametys-richtext-title-3"><strong>&Eacute;thique et responsabilité professionnelle</strong></h4>
+        <p>
+          L'
+          <dfn title="Université d'Angers">UA</dfn>
+          respecte pleinement les principes de fonctionnement éthiques et déontologiques, à commencer par les libertés académiques. Elle est fortement engagée sur les questions d'égalité et de non-discrimination, d'équilibre homme-femme, de respect de la propriété intellectuelle&hellip; Une formation est systématiquement dispensée aux doctorants, et un référent intégrité et un comité éthique sont en place. Ce dispositif a été complété par la désignation d'un référent égalité, et sera renforcé par une formation systématique des personnels sur toutes ces questions afin de traquer les préjugés.
+        </p>
+        <a name="N1007B"></a>
+        <h4 class="ametys-richtext-title-3"><strong>Recrutement et développement de carrière</strong></h4>
+        <p>
+          Le recrutement fait l'objet d'une attention particulière de l'
+          <dfn title="Université d'Angers">UA</dfn>
+          afin de garantir les principes de mérite, de transparence et d'ouverture, et de garantir un traitement équitable des candidats, quels que soient les emplois. L'amélioration du mode de fonctionnement des commissions, comités, jurys, est un processus continu. Il passe par une formation permanente, en particulier pour les présidents, afin de diffuser les bonnes pratiques, mais passe aussi par une information plus complète des candidats et une harmonisation des pratiques. Harmonisation ne signifie cependant pas standardisation. Le chantier en cours doit ainsi intégrer les spécificités de chaque poste, discipline, catégorie.
+        </p>
+        <a name="N10082"></a>
+        <h4 class="ametys-richtext-title-3"><strong>Conditions de travail et la qualité de l'environnement professionnel</strong></h4>
+        <p>Les conditions de travail représentent un chantier permanent. Dans un contexte très fortement contraint par un double déficit en moyens financiers et humains, l'université parvient à offrir un cadre de travail de qualité et qui est reconnu comme tel. Elle est par ailleurs très engagée de manière concrète sur le terrain de l'égalité des personnels, donc de la non-discrimination. L'objectif est de mieux repérer les difficultés dans l'exercice du métier et dans l'environnement professionnel, et d'accompagner les personnels en développant des systèmes de mentorat ou de référent.</p>
+        <a name="N10089"></a>
+        <h4 class="ametys-richtext-title-3"><strong>Formation et le développement professionnel</strong></h4>
+        <p>
+          La formation des personnels est un élément fort de l'
+          <dfn title="Université d'Angers">UA</dfn>
+          , qui peut encore gagner en croisant plusieurs offres de recherche offertes par diverses entités. L'évolutivité des compétences et des besoins &ndash; la crise sanitaire l'a mis en exergue &ndash; nécessite un effort permanent d'identification des besoins et de formation appropriée, que ce soit pour la pédagogie ou les responsabilités de gestion de projets et de structure administrative.
+        </p>
+        <div class="content-richtext-end">
+          <!-- empty -->
         </div>
-        <div class="col-lg-4 col-md-5 g-pr-0--lg g-pl-30--lg g-pt-55--md g-pt-25 g-z-index-2">
-          {% include 'universite/_partial/sidemenu.html' %}
-          <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
-            <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
-              <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10222" class="first ">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">&laquo; Une reconnaissance de la stratégie engagée &raquo;</span>
-                </h1>
-                <p>
-                  <a href="javascript:void(0);" class="simple">Lire l'interview d'&Eacute;ric Delabaere, vice-président Politique ressources humaines et Dialogue social à l'UA</a>
-                </p>
-              </div>
-              <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10269" class="even ">
-                <h1 class="art-postheader">
-                  <span class="content-title summary">HRS4R : un projet collectif</span>
-                </h1>
-                <p>
-                  <a href="/fr/universite/hrs4r/un-projet-collectif.html" class="simple">Découvrir le fonctionnement des groupes de travail, les premières actions et le calendrier du projet</a>
-                </p>
-              </div>
-              <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N102B0" class="last">
-                <div class="ametys-cms-content article view-main wrapper">
-                  <h1 class="art-postheader">
-                    <span class="content-title summary">Ressources HRS4R</span>
-                  </h1>
-                  <p>
-                    <a href="/_attachment/nouvel-article-1198/OTM-Rpol-comm2022-FR-V2.pdf?download=true" class="download">Stratégie HRS4R Université Angers</a><br />
-                    <a href="/_attachment/nouvel-article-1198/CommPlanActionR%C3%A9vis%C3%A92022-FR-V2.pdf?download=true" class="download">Plan d'action HRS4R</a>
-                  </p>
-                  <div class="content-richtext-end">
-                    <!--empty-->
-                  </div>
-                  <div class="meta"></div>
-                </div>
-              </div>
-            </div>
+        <div class="meta"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'universite/_partial/sidemenu.html' %}
+  <div class="g-bg-gris-f-ua g-shadow-block-gris-c-ua-md g-pa-25 g-mr-25--xl">
+    <div data-ametys-zone="zone-1" id="ametys-cms-zone-zone-1">
+      <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10222" class="first">
+        <h1 class="art-postheader"><span class="content-title summary">&laquo; Une reconnaissance de la stratégie engagée &raquo;</span></h1>
+        <p>
+          <a href="javascript:void(0);" class="simple">Lire l'interview d'&Eacute;ric Delabaere, vice-président Politique ressources humaines et Dialogue social à l'UA</a>
+        </p>
+      </div>
+      <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N10269" class="even">
+        <h1 class="art-postheader"><span class="content-title summary">HRS4R : un projet collectif</span></h1>
+        <p>
+          <a href="#" class="simple">Découvrir le fonctionnement des groupes de travail, les premières actions et le calendrier du projet</a>
+        </p>
+      </div>
+      <div data-ametys-zone-level="1" id="ametys-cms-zone-zone-1-item-N102B0" class="last">
+        <div class="ametys-cms-content article view-main wrapper">
+          <h1 class="art-postheader"><span class="content-title summary">Ressources HRS4R</span></h1>
+          <p>
+            <a href="/_attachment/nouvel-article-1198/OTM-Rpol-comm2022-FR-V2.pdf?download=true" class="download">Stratégie HRS4R Université Angers</a><br />
+            <a href="/_attachment/nouvel-article-1198/CommPlanActionR%C3%A9vis%C3%A92022-FR-V2.pdf?download=true" class="download">Plan d'action HRS4R</a>
+          </p>
+          <div class="content-richtext-end">
+            <!-- empty -->
           </div>
-          <div class="g-py-80">
-            <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
-              <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
-            </div>
-          </div>
+          <div class="meta"></div>
         </div>
       </div>
     </div>
-    {% include '_partial/bottom-zone-fleche.html' %}
+  </div>
+  <div class="g-py-80">
+    <div class="g-bg-gris-f2-ua h-100 g-font-ua-poppins-semibold">
+      <div data-ametys-zone="zone-2" id="ametys-cms-zone-zone-2"></div>
+    </div>
+  </div>
 {% endblock %}
